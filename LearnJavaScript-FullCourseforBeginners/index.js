@@ -2118,6 +2118,7 @@ console.log(myArray);  // Output: [1, 2, 3, 4]
 // console.log(temp);
 
 // ? Understand the Differences Between Import and require
+
 // import * as capitalizeStrings from "string_function";
 
 // import { capitalizeString } from "string_function";
