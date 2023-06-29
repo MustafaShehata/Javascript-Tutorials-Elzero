@@ -394,12 +394,12 @@ console.log(c); // 1
 // ---- Lesson 19 - Unary Plus And Negation Operators ----
 
 /*
-  - "+" Unary Plus [Return Number If Its Not Nubmer]
+  - "+" Unary Plus [Return Number If Its Not Number]
   - "-" Unary Negation [Return Number If Its Not Number + Negates It]
   Tests
   - Normal Number
   - String Number
-  - String Negative Nubmer
+  - String Negative Number
   - String Text
   - Float
   - Hexadecimal Numeral System => 0xFF
@@ -581,29 +581,29 @@ console.log(a); // 3
       Value = 13
       Explain = pre-increment increase the value of a by 1 to be 13
       
-  [+] = addtion operator
+  [+] = addition operator
 
   [-b]
       Value = -21
-      Explain = Unary negation operator convent the data type from string to number with differnt sign
+      Explain = Unary negation operator convent the data type from string to number with different sign
 
   [+] = addition operator
   
   [+c++]
       Value = 81;
-      Explain = Unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 82 but not used
+      Explain = Unary plus operator has not effect because the date type already number, then post-increment increase the value by 1 to be 82 but not used
   
-  [-] = subtraction operater
+  [-] = subtraction operator
 
   [-a++]
       Value = -13
       Explain = post-increment increase the value by 1 to be 14 but not used
   
-  [+] = additon operator
+  [+] = addition operator
 
   [+a]
       Value = 14
-      Explain = Unary plus operator has not effect becuase the date type already number
+      Explain = Unary plus operator has not effect because the date type already number
 
 
   so, the total value = 13 -21 + 81 - -13 + 14 = 100
@@ -616,7 +616,7 @@ console.log(a); // 3
 /*
   [--c]
       Value = 81
-      Explain = pre-decrement decress the value by 1 to be 81
+      Explain = pre-decrement decrease the value by 1 to be 81
   
   [+] = addition operator
 
@@ -628,7 +628,7 @@ console.log(a); // 3
 
   [--a]
       Value = 13
-      Explain = pre decrement decress the value by 1 to be 13
+      Explain = pre decrement decrease the value by 1 to be 13
   
   [*] = multiplication operator
 
@@ -640,9 +640,9 @@ console.log(a); // 3
 
   [+b]
       Value = 22
-      Expalin = Unary plus operator has no effect effect
+      Explain = Unary plus operator has no effect effect
   
-  [*] = multiplaction operator
+  [*] = multiplication operator
 
   [a]
       Value = 13
@@ -652,25 +652,25 @@ console.log(a); // 3
 
   [--a]
       Value = 12
-      Explain = Pre-decrement decress the value by 1 to be 12
+      Explain = Pre-decrement decrease the value by 1 to be 12
   
   [-] = subtraction operator
 
   [+true]
       Value = 1
-      Expalin = unary plus opertor change the date type from boolean to be number
+      Explain = unary plus Operator change the date type from boolean to be number
 
       so, the total value = 81 + 21 + (13 * 21) - (22 * 13) + 12 - 1 = 100
 */
 
-/*Challenge 2 */
+/* Challenge 2 */
 // let d = "-100";
 // let e = "20";
 // let f = 30;
 // let g = true;
 
 // console.log(-d * +e); //2000
-// console.log(++e * ++g + -d + ++f); //173
+// console.log(++e * ++g + -d + ++f); // 173
 
 
 // ---- Lesson 23 - Number ----
@@ -682,7 +682,7 @@ console.log(a); // 3
   - e
   - **
   - With Decimal
-  - Nubmer + BigInt
+  - Number + BigInt
   - Number Min Value
   - Number Max Value
 */
@@ -701,4 +701,400 @@ console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
 console.log(Number.MAX_VALUE + 23434343434); // 1.7976931348623157e+308 */
 
 // ---- Lesson 24 - Number Methods ----
+
+/*
+  Number Methods
+  - Two Dots To Call A Methods
+  - toString()
+  - toFixed(number)
+  - parseInt()
+  - parseFloat()
+  - isInteger() [ES6]
+  - isNaN() [ES6]
+*/
+
+/*
+console.log((100).toString());
+console.log(100..toString());
+console.log(100.0.toString());
+console.log(100.1.toString());
+console.log(100.10.toString());
+
+console.log(100.555555.toFixed(2));
+console.log(100.553555.toFixed(2));
+
+console.log(parseInt("100"));
+console.log(+"100");
+console.log(Number("100"));
+console.log(+"Osama 100"); // NaN
+console.log(Number("Osama 100")); // NaN
+console.log(parseInt("100 Osama")); // 100 as a Number
+console.log(parseInt("Osama 100")); // NaN
+console.log(parseInt("Osama 100 Osama")); // NaN
+
+console.log(parseFloat("100 Osama")); // 100
+console.log(parseFloat("100.500 Osama")); // 100.5
+console.log(parseInt("100.500 Osama")); // 100 without rounding off the Number as 1.5 => 1 not 2
+console.log(parseInt("1.5")); // 1 not 2
+
+console.log(Number.isInteger("100")); // false ? Is he will convert string to a number then check isInteger() or Not? An: he will check only if he an integer or not
+console.log(Number.isInteger(100.500)); // false
+console.log(Number.isInteger(100)); // true
+
+console.log(Number.isNaN("Osama")); // false
+console.log(Number.isNaN(100)); // false
+console.log(Number.isNaN("Osama"/20)); // true
+*/
+
+// ---- Lesson 25 - Math Object ----
+
+/*
+  Math Object
+  - round()
+  - ceil()
+  - floor()
+  - min()
+  - max()
+  - pow()
+  - random()
+  - trunc() [ES6]
+*/
+
+// console.log(Math.round(99.2)); // 99
+// console.log(Math.round(99.5)); // 100
+
+// console.log(Math.ceil(99.2)); // 100
+// console.log(Math.floor(99.9)); // 99
+
+// console.log(Math.min(10, 20, 100, -100, 90)); // -100
+// console.log(Math.max(10, 20, 100, -100, 90)); // 100
+
+// console.log(Math.pow(2, 4)); // 16
+
+/*
+  Math.random(): \
+  This function returns a floating-point number between 0 and 1 (exclusive), 
+  which means it generates a random decimal value greater than or equal to 0 
+  and less than 1. 0 >= num < 1
+*/
+
+/*
+  Math.random() * 10: Multiplying the random number generated by 10 
+  gives us a random decimal value between 0 and 10 (exclusive). 
+  This means the result can be any decimal number greater than or equal to 0 
+  and less than 10. 0>= num < 10 exclusive for all decimal numbers 
+*/
+
+/*
+  0 >= num < 9 for only Integer numbers
+*/
+
+/*
+  parseInt(Math.random() * 10) + 6: Adding 6 to the result obtained in step 3 
+  shifts the range of possible values. Now we have an integer between 6 and 15 (inclusive) 
+  because the smallest value the previous expression can produce is 6 (0 + 6), 
+  and the largest value is 15 (9 + 6).
+*/
+
+/*
+  To summarize, the code generates a random integer between 6 and 15 and 
+  displays it in the console.
+*/
+
+// console.log(parseInt(Math.random()*10) + 6); // 6 -> 15
+
+// console.log(Math.trunc(99.5)); // 99
+
+// ! Note: search for "floor and trunc" -- your Task "24-6-2023"
+
+// ---- Lesson 26 - Number Challenge ----
+
+/*
+  Number Challenge
+*/
+
+// let a = 1_00;
+// let b = 2_00.5;
+// let c = 1e2;
+// let d = 2.4;
+
+// // Find Smallest Number In All Variables And Return Integer
+// console.log(Math.round(Math.min(a, b, c, d))); // 2
+// console.log(Math.trunc(Math.min(a, b, c, d))); // 2
+// console.log(parseInt(Math.min(a, b, c, d))); // 2
+
+// // Use Variables a + d One Time To Get The Needed Output
+// console.log(a ** Math.trunc(d)); // 100^2 = 10000
+// console.log(Math.pow(a, Math.trunc(d))); // 100^2 = 10000
+
+// // Get Integer "2" From d Variable With 4 Methods
+// console.log(Math.round(d));
+// console.log(Math.floor(d));
+// console.log(Math.trunc(d));
+// console.log(parseInt(d));
+
+// // Use Variables b + d To Get This Value
+// console.log((Math.floor(b) / Math.ceil(d)).toFixed(2).toString()); // 66.67 => String
+// console.log(Math.round(b) / Math.ceil(d)); // 67 => Number
+
+// ---- Lesson 27 - String Methods Part 1 ----
+
+/*
+  String Methods
+  - Access With Index
+  - Access With charAt()
+  - length
+  - trim()
+  - toUpperCase()
+  - toLowerCase()
+  - Chain Methods
+*/
+
+
+// let theName = "Ahmed";
+// let theList = [1, 2, 3, 4, 5]; // Array
+
+// console.log(theName); // Ahmed
+// console.log(theName[1]); // h
+// console.log(theName[5]); // undefined
+
+// console.log(theName.charAt(1)); // h
+// console.log(theName.charAt(5)); // null or empty
+
+// console.log(theName.toUpperCase()); // Capital Letters
+// console.log(theName.toLowerCase()); // Small Letter
+
+// console.log(theName.length); // 5 count form 1 to last element
+
+// let theName2 = "  Ahmed  ";
+
+// console.log(theName2[1]);
+// console.log(theName2[5]);
+
+// console.log(theName2.length); // 9
+
+// console.log(theName2.trim()); // Remove the leading and trailing white spaces "Ahmed"
+
+// // Task Trim() theName2 Without White Spaces and Convert alphabet "m" to CAPITAL "M"
+
+// console.log(theName2.trim()[2].toUpperCase()); // M
+// console.log(theName2.trim().toUpperCase()[2]); // M
+// console.log(theName2.trim().charAt(2).toUpperCase()); // M
+
+// console.log(theName2.replace("m", "M").trim()); // ahMed -- review it
+
+
+// ---- Lesson 28 - String Methods Part 2 ----
+
+/*
+  String Methods
+  - indexOf(value [Mand], Start [Opt] Length)
+  - lastIndexOf(value [Mand], Start [Opt] Length)
+  - slice(Start [Mand], End [Opt] Not Include End)
+  - repeat(Times) [ES6]
+  - split(Separator [Opt], Limit [Opt])
+*/
+
+// let a = "Elzero Web School";
+
+// // while you don't specify the index the should start search from it will search
+// // from index "zero"
+// console.log(a.indexOf("Web"));
+// console.log(a.indexOf("Web", 8)); // It Starts From 8 and Not Found Web then returns -1
+
+// console.log(a.lastIndexOf("Web")); // Search for last to First index // 7 // counting from zero from last index
+
+// console.log(a.lastIndexOf("o")); // 15
+// console.log(a.indexOf("o")); // 5
+
+// console.log(a.slice(11)); // Take (Start, to the last element if you don't write it) // "School"
+// console.log(a.slice(2, 7)); // Take (Start, End But It Is Not Included) // "zero "
+// console.log(a.slice(2, 8)); // "zero w"
+// console.log(a.slice(2, 6)); // "zero"
+
+// console.log(a.slice(-6)); // "School"
+// console.log(a.slice(-1)); // "l"
+// console.log(a.slice(-5, -3)); // "ch"
+// console.log(a.slice(-13, -7)); // start = "r" index: -13, end = " " index: -7 but it is not included so it takes "b"
+
+// console.log(a.repeat(3));
+
+// console.log(a.split());
+// console.log(a.split(""));
+// console.log(a.split(" ", 2));
+// console.log(a.split("", 6));
+
+// ---- Lesson 29 - String Methods Part 3 ----
+
+/*
+  String Methods
+  - Substring(Start [Mand], End [Opt] Not Including End)
+  --- Start > End Will Swap
+  --- Start < 0 It Start From 0
+  --- Use Length To Get Last Character
+  - Substr(Start [Mand], Characters To Extract)
+  --- Start >= Length = ""
+  --- Negative Start From End
+  - includes(Value [Mand], Start [Opt] Default 0) [ES6]
+  - startsWith(Value [Mand], Start [Opt] Default 0) [ES6]
+  - endsWith(Value [Mand], length [Opt] Default Full Length) [ES6]
+*/
+
+// let a = "Elzero Web School"; // length = 17 starts from 1
+
+// console.log(a.length);
+
+// console.log(a.substring(2)); // Starts form index 0 so 2 - a.length (17)
+// console.log(a.substring(2, 6));
+// console.log(a.substring(6, 2)); // same as 2 - 6 (Swaping)
+// console.log(a.substring(-10, 6)); // 0 - 6
+// console.log(a.substring(17)); // out of scope (string)
+// console.log(a.substring(a.length)); // 17
+// console.log(a.substring(a.length - 1)); // "l"
+// console.log(a.substring(a.length - 5, a.length - 3)); // "ch" 12 - 14 (end not included 14 - 1 = 13)
+
+// console.log(a.substr(0)); // from 0 to the length of String a
+// console.log(a.substr(0, 6)); // Elzero
+// console.log(a.substr(17)); // "" empty string because 17 is the Start Position from 0
+// console.log(a.substr(-3)); // "ool"
+// console.log(a.substr(-5, 2)); // "ch"
+
+// console.log(a.includes("Web")); // true
+// console.log(a.includes("web", 8)); // false
+
+// console.log(a.startsWith("E")); // true
+// console.log(a.startsWith("E", 2)); // false
+// console.log(a.startsWith("zero", 2)); // true
+
+// console.log(a.endsWith("o", 6)); // Elzer"o" // true
+// console.log(a.endsWith("o")); // false // l
+// console.log(a.endsWith("ro", 6)); // true // Elze"ro"
+// console.log(a.endsWith("l"));
+
+
+// ---- Lesson 30 - String Challenge ----
+
+/*
+  String Challenge
+  All Solutions Must Be In One Chain
+  You Can Use Concatenate
+*/
+
+// let a = "Elzero Web School";
+
+// // Include This Methods In Your Solution [slice, charAt]
+// console.log(a.charAt(2).toUpperCase() + a.slice(3, 6)); // Zero
+
+// // 8 H
+// console.log(a.charAt(13).toUpperCase().repeat(8)); // HHHHHHHH
+
+// // Return Array
+// console.log(a.split(" ", 1)); // [Elzero]
+
+// // Use Only "substr" Method + Template Leterals In Your Solution
+// console.log(`${a.substr(0, 6)} ${a.substr(11, 6)}`); // Elzero School
+
+// // Solution Must Be Dynamic And String May Change
+// console.log(a.charAt(0).toLowerCase() + a.substring(1, a.length-1).toUpperCase() + a.charAt(a.length-1).toLowerCase()); // eLZERO WEB SCHOOl
+
+
+// ---- Lesson 31 - Comparison Operators ----
+
+/*
+  Comparison Operator
+  - == Equal
+  - != Not Equal
+
+  - === Identical
+  - !== Not Identical
+
+  - > Larger Than
+  - >= Larger Than Or Equal
+
+  - < Smaller Than
+  - <= Smaller Than Or Equal
+*/
+
+// console.log(10 == "10"); // Compare Value Only
+// console.log(-100 == "-100"); // Compare Value Only
+// console.log(10 != "10"); // Compare Value Only
+
+// console.log(10 === "10"); // Compare Value + Type
+// console.log(10 !== "10"); // Compare Value + Type
+// console.log(10 !== 10); // Compare Value + Type
+
+// console.log(10 > 20);
+// console.log(10 > 10);
+// console.log(10 >= 10);
+
+// console.log(10 < 20);
+// console.log(10 < 10);
+// console.log(10 <= 10);
+
+// console.log("Osama" === "Ahmed");
+// console.log("Osama" == "Ahmed");
+// console.log("Osama" !== "Ahmed");
+// console.log("Osama" != "Ahmed");
+// console.log(typeof("Osama") === typeof("Ahmed")); // String === String
+
+
+// ---- Lesson 32 - Logical Operators ----
+
+/*
+  Logical Operators
+  - ! Not
+  - && And
+  - || Or
+*/
+
+
+// console.log(true); // true
+// console.log(!true); // false
+
+// console.log(!false); // false
+
+// console.log(!(10 == "10")); // !(true) => false
+
+// console.log(10 == "10" && 10 > 8); // true
+
+// console.log(10 == "10" && 10 > 8 && 10 >= 10); // true
+
+// console.log(10 == "10" && 10 > 8 && 10 > 50); // true && true && false = false
+
+// console.log(10 == "10" || 10 > 80 || 10 > 50); // true || true || false = true
+
+
+// ---- Lesson 33 - If Conditions ----
+
+/*
+  Control Flow
+  - if
+  - else if
+  - else
+
+  if (Condition) {
+    // Block Of Code
+  }
+
+*/
+
+// let price = 100;
+// let discount = false;
+// let discountAmount = 30;
+// let country = "KSA";
+
+// if (discount === true) {
+//   price -= discountAmount; // price = price - 30; ==> price = price - discountAmount
+// } else if (country === "Egypt") {
+//   // price -= discountAmount; // price = price - discountAmount
+//   price -= 40; // price = price - discountAmount
+// } else if (country === "Syria") {
+//   price -= 50;
+// } else {
+//   price -= 10;
+// }
+
+// console.log(price);
+
+// ---- Lesson 34 - Nested If Conditions ----
 

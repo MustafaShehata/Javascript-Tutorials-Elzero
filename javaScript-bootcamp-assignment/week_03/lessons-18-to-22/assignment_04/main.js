@@ -24,7 +24,7 @@ console.log(points++ + points++ + ++points - points - points);
 //             10    +    11    +    13    -   13   -   13     = 8
 // console.log(10 + 11 + 13 - 13 - 13); // 8
 
-/*
+/* Another Solutions
 let points = 10;
 console.log(++points +(true + true)); // 13
 console.log(--points -(true + true)); // 8;
