@@ -109,7 +109,7 @@
 // console.log(typeof null);
 
 
-// ---- Lesson 11 - Variables Introduction ---- 
+// ---- Lesson 11 - Variables Introduction ----
 
 /*
   Variables Intro
@@ -131,7 +131,7 @@
 
 // hello.innerHTML = "Option";
 
-// ---- Lesson 12 - Identifiers Name Convetions And Rules ---- 
+// ---- Lesson 12 - Identifiers Name Convetions And Rules ----
 
 /*
   Identifiers
@@ -145,7 +145,7 @@
 // var $us$1er$1 = "Sayed"; // Valid
 // var user = "Osama"; // Identifier is Case Sensitive user - User - USER - uSer - usEr - is different
 // var User = "Muhammed"; // Identifier is Case Sensitive
-// var userName = "Sayed"; // camelCase is used in JS 
+// var userName = "Sayed"; // camelCase is used in JS
 
 // console.log(user);
 // console.log(User);
@@ -240,7 +240,7 @@ console.log(c); // 1
 */
 
 // console.log('Elzero Web "School"'); // You can put "" inside a '' single quote It's Normal
-// console.log("Elzero Web 'School'"); // You can put '' inside a "" double quote It's Normal 
+// console.log("Elzero Web 'School'"); // You can put '' inside a "" double quote It's Normal
 // console.log("Elzero Web \"School\""); // Elzero Web "School"
 // console.log('Elzero Web \'School\''); // Elzero Web 'School'
 // console.log("Elzero \\ Web 'School'");
@@ -280,11 +280,11 @@ console.log(c); // 1
 // let d = "Programming";
 
 // console.log(a + " " + b + " " + c + " " + d);
-// console.log(a + " " + b + 
+// console.log(a + " " + b +
 // "\n" + c + " " + d);
 
 
-// console.log(a + " \"\" " + b + 
+// console.log(a + " \"\" " + b +
 // "\n" + c + " " + d);
 
 
@@ -1097,4 +1097,597 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(price);
 
 // ---- Lesson 34 - Nested If Conditions ----
+
+/*
+  Nested If
+*/
+
+// let price = 100;
+// let discount = false;
+// let discountAmount = 40;
+// let country = "Egypt";
+// let student = true;
+
+// if (discount === true) {
+//   price -= discountAmount;
+// } else if (country === "Egypt") {
+//   if (student === true) {
+//     price -= discountAmount + 30;
+//   } else {
+//     price -= discountAmount + 10;
+//   }
+// } else {
+//   price -= 10;
+// }
+
+// console.log(price);
+
+
+// ---- Lesson 35 - Conditional Ternary Operator ----
+
+/*
+  Conditional (Ternary) Operator
+*/
+
+
+// let theName = "Mona";
+// let theGender = "Female";
+// let theAge = 30;
+
+// if (theGender === "Male") {
+//   console.log("Mr");
+// } else {
+//   console.log("Mrs");
+// }
+
+// Condition ? If True : If False
+
+// theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+
+// let result = theGender === "Male" ? "Mr" : "Mrs";
+
+// document.write(result);
+
+// console.log(theGender === "Male" ? "Mr" : "Mrs");
+
+// console.log(`Hello ${theGender === "Male" ? "Mr" : "Mrs"} ${theName}`);
+// console.log(`Hello ${result} ${theName}`);
+
+// theAge < 20
+//   ? console.log(20)
+//   : theAge > 20 && theAge < 60
+//   ? console.log("20 To 60")
+//   : theAge > 60
+//   ? console.log("Larger Than 60")
+//   : console.log("Unknown");
+
+
+
+
+// ---- Lesson 36 - Nullish Coalescing Operator And Logical Or ---- Try To Search For This Lesson Again
+
+/*
+  Logical Or ||
+  -- Null + Undefined + Any Falsy Value
+
+  falsy values 
+    1-false 
+    2-null
+    3-undefined 
+    4-"" (empty string)
+    5-0
+    6-NaN
+
+  all other values including all objects  are truthy
+    "0"  "false "
+
+  Nullish Coalescing Operator ??
+  -- Null + Undefined
+*/
+
+// let price1;
+// console.log(`The Price Is ${price1}`); // Price Is Undefined
+
+// let price2 = undefined;
+// console.log(`The Price Is ${price2}`);
+
+// let price3 = null;
+// console.log(`The Price Is ${price3}`);
+
+// let price4 = "";
+// console.log(`The Price Is ${price4 || 200}`); // 200
+
+// let price5 = 0;
+// console.log(`The Price Is ${price3 || 200}`); // 200
+
+// let price6 = undefined;
+// console.log(`The Price Is ${price6 || 200}`); // 200
+
+// console.log(Boolean(100));
+// console.log(Boolean(-100));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+
+
+// let price; // Undefined
+// console.log(`The Price Is ${price ?? 200}`); // 200
+// price = null;
+// console.log(`The Price Is ${price ?? 200}`); // 200
+// price = undefined;
+// console.log(`The Price Is ${price ?? 200}`); // 200
+// price = "";
+// console.log(`The Price Is ${price ?? 200}`); // empty
+// price = 0;
+// console.log(`The Price Is ${price ?? 200}`); // 0
+
+// Logical And &&
+// let p = 10;
+// console.log(`${p && 'Good'}`); // Good
+// p = 0;
+// console.log(`${p && "Good"}`); // 0
+
+// ---- Lesson 37 - If Condition Challenge ----
+
+/*
+  If Challenge
+*/
+
+// let a = 10;
+
+// if (a < 10) {
+//   console.log(10);
+// } else if (a >= 10 && a <= 40) {
+//   console.log("10 To 40");
+// } else if (a > 40) {
+//   console.log("> 40");
+// } else {
+//   console.log("Unknown");
+// }
+
+// // Write With Ternary If Syntax
+
+// // MySolution
+// a < 10
+//   ? console.log(10)
+//   : a >= 10 && a <= 40
+//   ? console.log("10 To 40")
+//   : a > 40
+//   ? console.log("> 40")
+//   : console.log("Unknown");
+
+
+// let st = "Elzero Web School";
+// // console.log(st.length); // 17
+
+// if ( st.repeat(2).length.toFixed() === "34" ) {
+//   console.log("Good");
+// }
+
+// if ( (st.length * 2).toString() === "34" ) {
+//   console.log("Good");
+// }
+
+// // W Position May Change - Dynamic Position
+// if (st.charAt(st.indexOf("W")).toLowerCase() === "w") {
+//   console.log("Good");
+// }
+
+// if ( typeof(st.length) !== "string") {
+//   console.log("Good");
+// }
+
+// if (typeof Number(st) !== "string") {
+//   console.log("Good");
+// }
+
+// if (typeof(st.length) === "number") {
+//   console.log("Good");
+// }
+
+// if (st.substr(0, 6).repeat(2) === "ElzeroElzero") {
+//   console.log("Good");
+// }
+
+// CodePen.io
+
+// ---- Lesson 38 - Switch Statemnent ----
+
+/*
+  Switch Statement
+  Switch(expression) {
+    Case 1:
+      // Code Block
+      break;
+    Case 2:
+      // Code Block
+      break;
+    Default:
+      // Code Block
+  }
+  - Default Ordering
+  - Multiple Match
+  - ===
+*/
+
+// Note: Try to Search for differneces between
+// If Condition Statement and Switch Statement
+
+// let day = 7;
+
+// switch (day) {
+//   case 0:
+//     console.log("Saturday");
+//     break;
+//   case 1:
+//     console.log("Sunday");
+//     break;
+//   case 2:
+//     console.log("Monday");
+//     break;
+//   case 3:
+//     console.log("Tuesday");
+//     break;
+//   default: // You Can Put it in First But Should
+//   // Write break After Block Code
+//     console.log("Unknown Day");
+// }
+
+
+// day = 6;
+
+// switch (day) {
+//   default:
+//     console.log("Unknown Day");
+//     break;
+//   case 0:
+//     console.log("Saturday");
+//     break; // Stop the
+//   case 1:
+//     console.log("Sunday");
+//     break;
+//   case 2:
+//     console.log("Monday");
+//     break;
+//   case 3:
+//     console.log("Tuesday");
+//     break;
+// }
+
+// ---- Lesson 39 - Switch And If Condition Challenge ----
+
+/*
+  Switch Challenge
+*/
+
+// let job = "Support";
+// let salary = 0;
+
+// if (job === "Manager") {
+//   salary = 8000;
+// } else if (job === "IT" || job === "Support") {
+//   salary = 6000;
+// } else if (job === "Developer" || job === "Designer") {
+//   salary = 7000;
+// } else {
+//   salary = 4000;
+// }
+
+// -------------------- MySolution --------------------
+
+// switch (job) {
+//   case "Manager":
+//     salary = 8000;
+//     break;
+//   // "IT" || "Support"
+//   case "IT":
+//   case "Support":
+//     salary = 6000;
+//     break;
+//   case "Developer":
+//   case "Designer":
+//       salary = 7000;
+//       break;
+//   default:
+//     salary = 4000;
+// }
+
+// console.log(salary);
+
+// /*
+//   If Challenge
+// */
+
+// let holidays = 0;
+// let money = 0;
+
+// switch (holidays) {
+//   case 0:
+//     money = 5000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 1:
+//   case 2:
+//     money = 3000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 3:
+//     money = 2000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 4:
+//     money = 1000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 5:
+//     money = 0;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   default:
+//     money = 0;
+//     console.log(`My Money is ${money}`);
+// }
+
+// -------------------- MySolution --------------------
+
+// if (holidays === 0) {
+//   money = 5000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays === 1 || holidays === 2) {
+//   money = 3000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays === 3) {
+//   money = 2000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays === 4) {
+//   money = 1000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays === 5) {
+//   console.log(`My Money is ${money}`);
+// } else {
+//   money = 0;
+//   console.log(`My Money is ${money}`);
+// }
+
+
+// codepen.io
+
+// ---- Lesson 40 - Array Big Introduction ----
+
+/*
+  Arrays
+  - Create Arrays [Two Methods] new Array() + []
+  - Access Arrays Elements
+  - Nested Arrays
+  - Change Arrays Elements
+  - Check For Array Array.isArray(arr);
+*/
+
+// let myFriends = ["Ahmed", "Mohamed", "Sayed", ["Marwan", "Ali"]];
+
+// console.log(`Hello ${myFriends[0]}`);
+// console.log(`Hello ${myFriends[2]}`);
+// console.log(`${myFriends[1].charAt(2)}`);
+// console.log(`${myFriends[1][2]}`);
+// console.log(`Hello ${myFriends[3][1]}`);
+// console.log(`${myFriends[3][1][2]}`);
+
+// console.log(myFriends);
+// myFriends[1] = "Gamal";
+// console.log(myFriends);
+// myFriends[3] = "Sameh";
+// console.log(myFriends);
+// myFriends[3] = ["Sameh", "Ameer"];
+// console.log(myFriends);
+
+// console.log(typeof myFriends); // Object
+
+// console.log(Array.isArray(myFriends)); // true
+
+// let str = "Mustafa";
+// console.log(Array.isArray(str)); // false
+
+
+// ---- Lesson 41 - Using Length With Array ----
+
+/*
+  Arrays Methods
+  - Length
+*/
+
+// Index Starts From 0 [ 0, 1, 2, 3, 4 ]
+
+// let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
+
+// console.log(myFriends.length); // 4
+
+// myFriends[myFriends.length - 1] = "Gamal";
+
+// console.log(myFriends);
+
+// myFriends.length = 2;
+
+// console.log(myFriends); // index [0, 1]
+
+// ---- Lesson 42 - Add And Remove From Array ----
+
+/*
+  Array Methods [Adding And Removing]
+  - unshift("", "") Add Element To The First
+  - push("", "") Add Element To The End
+  - shift() Remove First Element From Array
+  - pop() Remove Last Element From Array
+*/
+
+// let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
+
+// console.log(myFriends);
+
+// myFriends.unshift("Osama", "Nabil");
+
+// console.log(myFriends);
+
+// myFriends.push("Samah", "Eman");
+
+// console.log(myFriends);
+
+// let first = myFriends.shift();
+
+// console.log(myFriends);
+
+// console.log(`First Name Is ${first}`);
+
+// let last = myFriends.pop();
+
+// console.log(myFriends);
+
+// console.log(`Last Name Is ${last}`);
+
+// ---- Lesson 43 - Searching Array ----
+
+/*
+  Arrays Mehtods [Search]
+  - indexOf(Search Elemnet, From Index [Opt])
+  - lastIndexOf(Search Element, From Index [Opt])
+  - includes(valueToFind, fromIndex [Opt]) [ES7]
+*/
+
+// let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa", "Ahmed"];
+
+// console.log(myFriends);
+
+// console.log(myFriends.indexOf("Ahmed")); // 0
+// console.log(myFriends.indexOf("Ahmed", 2)); // 4
+
+// console.log(myFriends.lastIndexOf("Ahmed")); // 4
+// console.log(myFriends.lastIndexOf("Ahmed", -2)); // 0
+
+// console.log(myFriends.includes("Ahmed")); // true
+// console.log(myFriends.includes("Ahmed", 2)); // true
+
+// if (myFriends.lastIndexOf("Osama") == -1) {
+//   console.log("Not Found");
+// }
+
+// console.log(myFriends.indexOf("Osama"));
+// console.log(myFriends.lastIndexOf("Osama"));
+
+// ---- Lesson 44 - Sorting Arrays ----
+
+/*
+  Arrays Methods [Sort]
+  - Sort(Function [Opt])
+  - reverse
+*/
+
+// let myFriends = [10, "Sayed", "Mohamed", "90", 1000, 100, 20, "10", -20, -10];
+
+// console.log(myFriends);
+
+// console.log(myFriends.sort());
+
+// console.log(myFriends.reverse());
+
+// console.log(myFriends.sort().reverse());
+
+// ---- Lesson 45 - Slicing Array ----
+
+/*
+  Array Methods [Slicing]
+  - slice(start [Opt], End [Opt] Not Including End)
+  --- slice() => All Array
+  --- If Start Is Undefined => 0
+  --- Negative Count From End
+  --- If End Is Undefined || > Indexes => Slice To The End Array.length
+  --- Return New Array
+  - splice(start [Mand], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
+  --- If Negative => Start From The End
+*/
+
+// let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
+// console.log(myFriends);
+// console.log(myFriends.slice()); // Return All Array
+// console.log(myFriends.slice(1)); // Start From Index 1
+// console.log(myFriends.slice(1, 3)); // Start From Index 1 and End Not Included Is 3 Means Index = 2
+// console.log(myFriends.slice(-3)); // Osama , Gamal , Ameer from End Index = -3 to the length of Array
+// console.log(myFriends.slice(1, -2)); // Sayed , Ali , Osama , Not Included Gamal
+// console.log(myFriends.slice(-4, -1)); // Ali , Osama , Gamal
+// console.log(myFriends.slice(-4, -2)); // Ali , Osama
+// console.log(myFriends);
+
+// // myFriends.splice(0, 0, "Sameer","Samara"); // Add "Sameer" and "Samara" to the Index Zero
+// // console.log(myFriends);
+// // myFriends.splice(0, 1, "Sameer","Samara"); // Add "Sameer" and "Samara" to the Index Zero
+// // console.log(myFriends);
+// // myFriends.splice(0, 2, "Sameer", "Samara");
+// // console.log(myFriends);
+// myFriends.splice(1, 2, "Sameer", "Samara"); // Ahmed , Sameer , Samara , Osama , Gamal , Ameer
+// console.log(myFriends);
+
+// ---- Lesson 46 - Joining Arrays ----
+
+/*
+  Arrays Methods [Joining]
+  - concat(array, array) => Return A New Array
+  - join(Seperator)
+*/
+
+// let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
+// let myNewFriends = ["Samar", "Sameh"];
+// let schoolFriends = ["Haytham", "Shady"];
+
+// let allFriends = myFriends.concat(myNewFriends, schoolFriends, "Gameel", [1, 2]);
+
+// console.log(allFriends);
+
+// console.log(allFriends.join());
+// console.log(allFriends.join(""));
+// console.log(allFriends.join(" @ "));
+// console.log(allFriends.join("|"));
+// console.log(allFriends.join("|").toUpperCase());
+
+// ---- Lesson 47 - Array Challenge ----
+
+/*
+  Array Challenge
+*/
+
+// let zero = 0;
+
+// let counter = 3;
+
+// let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// /* First Solution */
+// my.reverse().splice(zero, --counter);
+
+// console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"]
+
+// /* Second Solution */
+// console.log(my.slice(++zero, ++counter)); // ["Elham", "Mazero"]
+
+// /* Third Solution */
+// console.log(my[--counter][--zero, counter] = "El" + my[counter].slice(counter)); // "Elzero"
+
+// /* Fourth Solution */
+// console.log(my[counter].slice(-counter, --zero) + my[counter][--my[counter].length].toUpperCase()); // "rO"
+
+// ---- Lesson 48 - Loop - For And Concept Of Loop ----
+
+/*
+  Loop
+  - For
+  for ([1] [2] [3]) {
+    // Block Of Code
+  }
+*/
+
+
+// for (let i = 0; i < 10; i += 1) {
+//   console.log(i);
+// }
+
+// ---- Lesson 49 - Looping On Sequences ----
+
+
 
