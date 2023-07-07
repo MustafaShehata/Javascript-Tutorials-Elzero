@@ -1682,12 +1682,440 @@ console.log(Number.isNaN("Osama"/20)); // true
   }
 */
 
-
 // for (let i = 0; i < 10; i += 1) {
 //   console.log(i);
 // }
 
 // ---- Lesson 49 - Looping On Sequences ----
 
+/*
+  Loop
+  - Loop On Sequence
+*/
 
+// let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 5 ,"Ali", "Amira"];
+
+// let onlyNames = [];
+
+// for (let i = 0; i < myFriends.length; i++) {
+//   if (typeof myFriends[i] === "string")
+//     onlyNames.push(myFriends[i]);
+// }
+// console.log(onlyNames);
+
+
+// console.log(myFriends[0]);
+// console.log(myFriends[1]);
+// console.log(myFriends[2]);
+// console.log(myFriends[3]);
+// console.log(myFriends[4]);
+
+// for (let i = 0; i < myFriends.length; i++) {
+//   // console.log(i); // 0 1 2 3 4
+//   console.log(myFriends[i]);
+// }
+
+// ---- Lesson 50 - Nested Loops And Trainings ----
+
+/*
+  Loop
+  - Nested Loops
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+// let colors = ["Red", "Green", "Black"];
+
+// let models = [2020, 2021];
+
+
+// for (let i = 0; i < products.length; i++) {
+//   console.log("#".repeat(15));
+//   console.log(`# ${products[i]}`);
+//   console.log("#".repeat(15));
+//   console.log("Colors: ");
+//   for (let j = 0; j < colors.length; j++) {
+//     console.log(`- ${colors[j]}`);
+//   }
+//   console.log("Models: ");
+//   for (let k = 0; k < models.length; k++) {
+//     console.log(`- ${models[k]}`);
+//   }
+// }
+
+
+// ---- Lesson 51 - Loop Control - Break, Continue, Label ----
+
+/*
+  Loop Control
+  - Break
+  - Continue
+  - Label
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+// let colors = ["Red", "Green", "Black"];
+
+// mainLoop: for (let i = 0; i < products.length; i++) {
+//   // if (typeof products[i] === "number") {
+//   //   continue;
+//   // }
+//   console.log(products[i]);
+//   nestedLoop: for (let j = 0; j < colors.length; j++) {
+//     if (colors[j] === "Green") {
+//       break mainLoop;
+//     }
+//     console.log(`- ${colors[j]}`);
+//   }
+// }
+
+// ---- Lesson 52 - Loop - For Advanced Example ----
+
+/*
+  Loop For Advanced Example
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iphone"];
+
+// let i = 0;
+
+// for (;;) {
+//   console.log(products[i]);
+//   i += 2;
+//   if (i == products.length)
+//     break;
+// }
+
+// ---- Lesson 53 - Practice - Add Products To Page ----
+
+/*
+  Products Practice
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
+// let colors = ["Red", "Green", "Blue"];
+// let showCount = 5;
+
+// document.write(`<h1>Show ${showCount} Products</h1>`);
+// for (let i = 0; i < showCount; i++) {
+//   document.write(`<div>`);
+//   document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
+//   for (let j = 0; j < colors.length; j++) {
+//     document.write(`<p>${colors[j]}</p>`);
+//   }
+//   document.write(`<p>${colors.join(" | ")}</p>`);
+//   document.write(`</div>`);
+// }
+
+// ---- Lesson 54 - Loop - While ----
+
+/*
+  Loop
+  - While
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
+
+// let index = 0;
+
+// while (index < products.length) {
+//   console.log(products[index]);
+//   index++;
+// }
+
+// ---- Lesson 55 - Loop - Do-While ----
+
+/*
+  Loop
+  - Do-While
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
+
+// let i = 0;
+
+// while (false) {
+//   console.log(i);
+//   i++;
+// }
+
+// do {
+//   // Block Of Code
+//   console.log(i);
+//   i++;
+// } while (false);
+
+// console.log(i);
+
+// ---- Lesson 56 - Loop - Challenge ----
+
+/*
+  Loop Challenge
+*/
+
+// let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samara"];
+// let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
+// let cnt = 0;
+// document.write(`<div>We Have X Admins</div>`);
+// document.write(`<div>We Have ${myAdmins.indexOf("Stop")} Admins</div>`); // No Of Admins Before Stop
+
+// for (let i = 0; i < myAdmins.length; i++) {
+//   if (myAdmins[i] === "Stop") break;
+//   document.write(`<hr/>`);
+//   document.write(`<div>The Admin For Team ${i + 1} Is ${myAdmins[i]}`);
+//   document.write(`<h3>Team Members: </h3>`);
+//   for (let j = 0; j < myEmployees.length; j++) {
+//     if (myAdmins[i][0] === myEmployees[j][0])
+//       document.write(`<p>- ${++cnt} ${myEmployees[j]}</p>`);
+//     // continue;
+//   }
+//   document.write(`</div>`);
+//   cnt = 0;
+// }
+
+
+// ---- Lesson 57 - Function Intro And Basic Usage ----
+
+/*
+  Function
+  - What Is Function ?
+  - User-Defined vs Built-In Functions
+  - Syntax + Basic Usage
+  - Example From Real Life
+  - Parameter + Argument
+  - Practical Example
+*/
+
+// console.log(typeof console); // Object
+// console.log(typeof console.log); // Function
+
+
+// function sayHello() { // Without Parameters
+//   console.log(`Hello, Osama!`);
+// }
+
+// sayHello(); // Without Arguments
+
+// function sayHello(userName) { // With Parameters
+//   console.log(`Hi, ${userName}!`);
+// }
+
+// sayHello("Mustafa"); // With Arguments
+// sayHello("Sayed");
+// sayHello("Ali");
+
+// ---- Lesson 58 - Function Advanced Examples ----
+
+// function sayHello(userName, age) {
+//   if (age < 20) {
+//     console.log("App Is Not Suitable For You!");
+//   } else {
+//     console.log(`Hello, ${userName}!, You Age Is ${age}`);
+//   }
+// }
+
+// sayHello("Osama", 38);
+// sayHello("Sayed", 40);
+// sayHello("Ali", 18);
+
+// function generateYears(start, end, exclude) {
+//   for (let i = start; i <= end; i++) {
+//     if (i === exclude) {
+//       continue;
+//     }
+//     console.log(i);
+//   }
+// }
+
+// generateYears(1982, 2021, 2020);
+
+// ---- Lesson 59 - Function Return And Use Cases ----
+
+/*
+  Function
+  - Return
+  - Automatic Semicolon Insertion [No Line Terminator Allowed]
+  - Interruptting
+*/
+
+// function sayHello(userName) {
+//   return "Hello, " + userName + "!";
+// }
+
+// console.log(sayHello("Mustafa"));
+
+// function calc(num1, num2) {
+//   return (num1 + num2);
+// }
+
+// let result = calc(10, 20);
+
+// console.log(result + 100);
+
+// function generate(start, end) {
+//   for (let i = start; i <= end; i++) {
+//     console.log(i);
+//     if (i === 15) {
+//       return `Interrruptting`;
+//     }
+//   }
+// }
+
+// generate(10, 20);
+
+// ---- Lesson 60 - Function Default Parameters ----
+
+/*
+  Function
+  - Default Function Parameters
+  - Function Parameters Default [Undefined]
+  - Old Strategies [Condition + Logical Or]
+  - ES6 Method
+*/
+
+// function sayHello(userName= "Unknown", age="Unknown") {
+//   // if (age === undefined) {
+//   //   age = "Unknown";
+//   // }
+//   // age = age || "Unknown";
+//   return `Hello, ${userName}! Your Age Is ${age}.`;
+// }
+
+// console.log(sayHello());
+
+// ---- Lesson 61 - Function Rest Parameters ----
+
+/*
+  Function
+  - Rest Parameters
+  - Only One Allowed
+  - Must Be Last Element
+*/
+
+// function calc(...numbers) { // Array of Arguments
+//   // console.log(Array.isArray(numbers));
+//   // return num1 + num2 + num3;
+
+//   let result = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     result += numbers[i];
+//   }
+//   return `Final Result Is ${result}`;
+// }
+
+// console.log(calc(10, 20, 10, 30, 50, 30));
+
+// ---- Lesson 62 - Function Ultimate Practice ----
+
+/*
+  Function Advanced Practice
+  - Parameters
+  - Default
+  - Rest
+  - Loop
+  - Condition
+*/
+
+// function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) {
+//   document.write(`<div>`);
+//   document.write(`<h2>Welcome, ${us}</h2>`);
+//   document.write(`<p>Age: ${ag}</p>`);
+//   document.write(`<p>Hour Rate: $${rt}</p>`);
+//   if (show === "Yes") {
+//     if (sk.length > 0) {
+//       document.write(`<p>Skills: ${sk.join(" | ")}</p>`);
+//     } else {
+//       document.write(`<p>Skills: No Skills</p>`)
+//     }
+//   } else {
+//     document.write(`<p>Skills Is Hidden</p>`);
+//   }
+//   document.write(`</div>`);
+// }
+
+
+// showInfo("Mustafa", 22, 20, "No", "Html", "CSS");
+
+// ---- Lesson 63 - Random Arguments Function Challenge ----
+
+/*
+  Function - Random Argument Challenges
+  =====================================
+  Create Function showDetails()
+  Function Accept 3 Parameters [a, b, c]
+  Data Types For Info Is
+  - String => Name
+  - Number => Age
+  - Boolean => Status
+  Argument Is Random
+  Data Is Not Sorted Output Depend On Data Types
+  - Use Ternary Conditional Operator
+*/
+
+
+
+// showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+// showDetails(true, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+
+// --------- MySolution 1 - Not An Efficient Solution ---------
+// function showDetails(v1, v2, v3) {
+//   typeof v1 === "string" &&
+//   typeof v2 === "number" &&
+//   typeof v3 === "boolean"
+//     ? console.log(
+//         `Hello ${v1}, Your Age Is ${v2}, You Are Available For Hire`
+//       )
+//     : typeof v1 === "number" &&
+//       typeof v2 === "string" &&
+//       typeof v3 === "boolean"
+//     ? console.log(
+//         `Hello ${v2}, Your Age Is ${v1}, You Are Available For Hire`
+//       )
+//     : typeof v1 === "boolean" &&
+//       typeof v2 === "number" &&
+//       typeof v3 === "string"
+//     ? console.log(
+//         `Hello ${v3}, Your Age Is ${v2}, You Are Available For Hire`
+//       )
+//     : typeof v1 === "boolean" &&
+//       typeof v2 === "string" &&
+//       typeof v3 === "number" &&
+//       v1 === false
+//     ? console.log(
+//         `Hello ${v2}, Your Age Is ${v3}, You Are Not Available For Hire`
+//       )
+//     : console.log(
+//         `Hello ${v2}, Your Age Is ${v3}, You Are Available For Hire`
+//       );
+// }
+
+
+// --------- MySolution 2 - An Efficient Solution ---------
+// function showDetails(a, b, c) {
+//   let name, age, availableOrNot;
+//   for (let i = 0; i < arguments.length; i++) {
+//     typeof arguments[i] === "string"
+//       ? name = arguments[i]
+//       : typeof arguments[i] === "number"
+//         ? age = arguments[i]
+//         : arguments[i]
+//           ? availableOrNot = "Are Available For Hire"
+//           : availableOrNot = "Are Not Available For Hire";
+//   }
+//   console.log(`Hello ${name}, Your Age Is ${age}, You ${availableOrNot}`);
+// }
+
+// showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+// showDetails(true, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+// showDetails(38, false, "Osama"); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+
+
+// ---- Lesson 64 - Anonymous Function And Practice ----
 
