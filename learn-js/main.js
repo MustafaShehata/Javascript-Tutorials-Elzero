@@ -2119,3 +2119,297 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // ---- Lesson 64 - Anonymous Function And Practice ----
 
+/*
+  Function
+  - Anonymous Function
+  - Calling Named Function Vs Anonymous Function
+  - Argument To Other Function
+  - Task Without Name
+  - SetTimeout
+*/
+
+// console.log(calc(10, 5)); // calling function calc that hase been already created
+
+// function calc(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(calc(10, 5)); // calling function calc
+
+// let calculator = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+// console.log(calculator(10, 20));
+
+// function sayHello() {
+//   console.log("Hello, Mustafa");
+// }
+
+// document.getElementById("show").onclick = sayHello;
+
+// setTimeout( function () {
+//   console.log("Good");
+// }, 2000);
+
+// ---- Lesson 65 - Return Nested Function ----
+
+/*
+  Function
+  - Function Inside Function
+  - Return Function
+*/
+
+
+// Example 1
+// function sayMessage(fName, lName) {
+//   let message = "Hello";
+//   // Nested Function
+//   function concatMsg() {
+//     message = `${message} ${fName} ${lName}`;
+//   }
+//   concatMsg();
+//   return message;
+// }
+
+// console.log(sayMessage("Osama", "Muhammed"));
+
+// Example 2
+// function sayMessage(fName, lName) {
+//   let message = "Hello";
+//   // Nested Function
+//   function concatMsg() {
+//     return `${message} ${fName} ${lName}`;
+//   }
+//   return concatMsg();
+// }
+
+// console.log(sayMessage("Osama", "Muhammed"));
+
+// Example 3
+// function sayMessage(fName, lName) {
+//   let message = "Hello";
+//   // Nested Function
+//   function concatMsg() {
+//     function getFullName() {
+//       return `${fName} ${lName}`;
+//     }
+//     return `${message} ${getFullName()}`;
+//   }
+//   return concatMsg();
+// }
+
+// console.log(sayMessage("Osama", "Muhammed"));
+
+// ---- Lesson 66 - Arrow Function Syntax ----
+
+/*
+  Function
+  - Arrow Function
+  - Regular Vs Arrow [Param + No Param]
+  - Multiple Lines
+*/
+
+// let print = function () {
+//   return 10;
+// };
+
+// let print = () => {
+//   // let a  = 10;
+//   return 10;
+// };
+
+// let print = () => 10;
+// let print = _ => 10;
+
+// let print = function (num) {
+//   return num;
+// };
+
+// let print = (num) => num;
+// let print = num => num; // In Case One Parameter You Can Remove braces
+
+// let print = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+
+// let print = (num1, num2) => num1 + num2;
+
+// console.log(print(100, 50));
+
+// ? ---- Lesson 67 - Scope - Global And Local ----
+
+/*
+  Scope
+  - Global And Local Scope
+*/
+
+// Global Scope
+// var a = 1;
+// let b = 2;
+
+// function showText() {
+//   // Local Scope
+//   var a = 10;
+//   let b = 20;
+//   console.log(`Function - From Local ${a}`);
+//   console.log(`Function - From Local ${b}`);
+// }
+
+// console.log(`From Global ${a}`);
+// console.log(`From Global ${b}`);
+
+// showText();
+
+// ? ---- Lesson 68 - Scope - Block ----
+
+/*
+  Scope
+  - Block Scope [If, Swithch, For]
+*/
+
+// var x = 10;
+
+// if (10 === 10) {
+//   let x = 50;
+//   console.log(`From If Block ${x}`);
+// }
+
+// console.log(x);
+
+// var a = 1;
+// let b = 2;
+
+// function showText() {
+//   var a = 10;
+//   let b = 20;
+//   console.log(`Function = From Local ${a}`);
+//   console.log(`Function - From Local ${b}`);
+// }
+
+
+// console.log(`From Global ${a}`);
+// console.log(`From Global ${b}`);
+
+// showText();
+
+// ? ---- Lesson 69 - Scope - Lexical (Static) ----
+
+
+/* Searching Topics Important
+
+  JavaScript Function
+  JavaScript Function Currying
+  JavaScript Function Arrow Function
+  JavaScript Scope
+
+*/
+
+
+/*
+  Scope
+  - Lexical Scope
+
+  Search
+  - Execution Context
+  - Lexical Environment
+  - Namaste JavaScript - Searching On YouTube
+*/
+
+
+// More Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let a = 10;
+// function parent() {
+//   let a = 10;
+//   function child() {
+//     // let a = 10;
+//     console.log(a);
+//     function grand() {
+//       console.log(`From Grand ${a}`);
+//     }
+//     grand();
+//   }
+//   child();
+// }
+// parent();
+
+
+// ? ---- Lesson 70 - Arrow Function challenge ----
+
+/*
+  Function Arrow Challenge
+*/
+
+// [1] One Statement In Function
+// [2] Convert To Arrow Function
+// [3] Print The Output [Arguments May Change]
+
+// let names = function (...n) {
+//   // Parameter ?
+//   return `String [${n.join("], [")}] => Done !`;
+// };
+
+
+// MySolution
+// Arrow Function In One Line
+// let names = (...n) => `String [${n.join("], [")}] => Done !`;
+
+// console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+// String [Osama], [Mohamed], [Ali], [Ibrahim] => Done !
+
+/* =============================================== */
+
+// [1] Replace ??? In Return Statement To Get The Output
+// [2] Create The Same Function With Regular Syntax
+// [3] Use Array Inside The Arguments To Get The Output
+
+// let myNumbers = [20, 50, 10, 60]; // Array
+
+// My Solution
+
+// let calc = (one, two, ...nums) => one * two + nums[one- one][two-one/one] - nums[one - one][one - one]; // 10 * 4 + 40 = 80
+// let calc = function (one, two, ...nums) {
+//   return  one * two + nums[one- one][two-one/one] - nums[one - one][one - one]; // 10 * 4 + 40 = 80
+// }
+
+// console.log(calc(10, myNumbers.length, myNumbers)); // 80
+// Another_Solution
+
+// let calc = function (one, two, ...nums) {
+//   return one + +two + +nums;
+// }
+
+// console.log(calc(10, myNumbers.shift(), myNumbers.shift()));  // 80
+
+
+// ? ---- Lesson 71 - Higher Order Functions - Map ----
+
+
