@@ -1,7 +1,7 @@
 // // Wait The Window To Load
 // window.onload = function () {
 //   // Single Line Comment
-//   document.querySelector("h1").style.color = "Blue"; // Single Line commet
+//   document.querySelector("h1").style.color = "Blue"; // Single Line comment
 // };
 
 // ---- Lesson 6 ----
@@ -108,7 +108,6 @@
 // console.log(typeof undefined);
 // console.log(typeof null);
 
-
 // ---- Lesson 11 - Variables Introduction ----
 
 /*
@@ -138,7 +137,6 @@
   - Name Conventions And Rules
   - Reserved Words
 */
-
 
 // var _us_1er_1 = "Sayed"; // Valid Identifiers
 // var $us$1er$1 = "Sayed"; // Valid Name
@@ -196,7 +194,6 @@ console.log(c); // 1
 
 // We can't declare the same name of an variable "Identifier"
 
-
 // Access Before Declare A Variable -- With Var Not Given An Error
 // console.log(a);
 // var a = 1;
@@ -209,7 +206,6 @@ console.log(c); // 1
 // console.log(a);
 // const a = 1;
 
-
 // Variable Scope Drama
 
 // var aabb = 1; // It adds to Window Object
@@ -218,10 +214,7 @@ console.log(c); // 1
 
 // Search For "javaScript Scope Drama"
 
-
-
 // ---- Lesson 14 - String Syntax And Character Escape Sequence  ----
-
 
 /*
   String Syntax + Character Escape Sequences - Searching for Character Escape Sequences
@@ -251,7 +244,6 @@ console.log(c); // 1
 // Web \
 // School"); // Elzero Web School
 // console.log("Elzero\nWeb\nSchool");
-
 
 // ---- Lesson 15 - Concatenation  ----
 
@@ -283,10 +275,8 @@ console.log(c); // 1
 // console.log(a + " " + b +
 // "\n" + c + " " + d);
 
-
 // console.log(a + " \"\" " + b +
 // "\n" + c + " " + d);
-
 
 // Using Backtick and Searching for it to learn more Information
 // console.log(`${a} "" '' \\ ${b}
@@ -309,7 +299,6 @@ console.log(c); // 1
 
 // document.write(markUp);
 
-
 // ---- Lesson 17 - Variable And Concatenation Challenge ----
 
 // camelCasing
@@ -324,7 +313,6 @@ console.log(c); // 1
 // `;
 // document.write(article.repeat(4));
 
-
 // Variable Challenge - Another Solution
 // let pagTitle = "Elzero", pagDescription = "Elzero Web School", pagDate="25/10";
 // let card=`<div>
@@ -333,8 +321,6 @@ console.log(c); // 1
 // <span>${pagDate}</span>
 // </div>`;
 // document.write(card.repeat(4));
-
-
 
 // // Create three variables in one statement using object destructuring
 // let {titleContent, descriptionContent, dateContent} = {
@@ -390,7 +376,6 @@ console.log(c); // 1
 
 // console.log("35 % 2"); // 1
 
-
 // ---- Lesson 19 - Unary Plus And Negation Operators ----
 
 /*
@@ -432,7 +417,6 @@ console.log(c); // 1
 
 // console.log(Number("100")); // Convert a String into a number
 
-
 // ---- Lesson 20 - Type Coercion ----
 
 /*
@@ -442,7 +426,6 @@ console.log(c); // 1
   - "" - 2
   - false - true
 */
-
 
 /* let a = "10";
 let b = 20;
@@ -499,16 +482,13 @@ console.log(a); // 3
   Challenge 1
 */
 
-
 // let a = 10;
 // let b = "20";
 // let c = 80;
 
-
 // console.log( ++a + +b++ + +c++ - +a++ ); // 100
 // console.log( ++a + -b + +c++ - -a++ + +a ); // 100
 // console.log( --c + +b + --a * +b++ - +b * a + --a - +true ); // 100
-
 
 /*
   [++a] [+] +[]
@@ -535,8 +515,6 @@ console.log(a); // 3
 // console.log(-d + ++f + ++e * ++g); // 173
 
 // codepen.io
-
-
 
 // Another Answer
 
@@ -610,7 +588,6 @@ console.log(a); // 3
   
 */
 
-
 // a = 14    b = 21     c = 82
 // console.log(--c + +b + --a * +b++ - +b * a + --a - +true);
 /*
@@ -671,7 +648,6 @@ console.log(a); // 3
 
 // console.log(-d * +e); //2000
 // console.log(++e * ++g + -d + ++f); // 173
-
 
 // ---- Lesson 23 - Number ----
 
@@ -850,7 +826,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   - Chain Methods
 */
 
-
 // let theName = "Ahmed";
 // let theList = [1, 2, 3, 4, 5]; // Array
 
@@ -882,7 +857,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(theName2.trim().charAt(2).toUpperCase()); // M
 
 // console.log(theName2.replace("m", "M").trim()); // ahMed -- review it
-
 
 // ---- Lesson 28 - String Methods Part 2 ----
 
@@ -971,7 +945,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(a.endsWith("ro", 6)); // true // Elze"ro"
 // console.log(a.endsWith("l"));
 
-
 // ---- Lesson 30 - String Challenge ----
 
 /*
@@ -996,7 +969,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // // Solution Must Be Dynamic And String May Change
 // console.log(a.charAt(0).toLowerCase() + a.substring(1, a.length-1).toUpperCase() + a.charAt(a.length-1).toLowerCase()); // eLZERO WEB SCHOOl
-
 
 // ---- Lesson 31 - Comparison Operators ----
 
@@ -1037,7 +1009,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log("Osama" != "Ahmed");
 // console.log(typeof("Osama") === typeof("Ahmed")); // String === String
 
-
 // ---- Lesson 32 - Logical Operators ----
 
 /*
@@ -1046,7 +1017,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   - && And
   - || Or
 */
-
 
 // console.log(true); // true
 // console.log(!true); // false
@@ -1062,7 +1032,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(10 == "10" && 10 > 8 && 10 > 50); // true && true && false = false
 
 // console.log(10 == "10" || 10 > 80 || 10 > 50); // true || true || false = true
-
 
 // ---- Lesson 33 - If Conditions ----
 
@@ -1122,13 +1091,11 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(price);
 
-
 // ---- Lesson 35 - Conditional Ternary Operator ----
 
 /*
   Conditional (Ternary) Operator
 */
-
 
 // let theName = "Mona";
 // let theGender = "Female";
@@ -1160,9 +1127,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   : theAge > 60
 //   ? console.log("Larger Than 60")
 //   : console.log("Unknown");
-
-
-
 
 // ---- Lesson 36 - Nullish Coalescing Operator And Logical Or ---- Try To Search For This Lesson Again
 
@@ -1209,7 +1173,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(Boolean(""));
 // console.log(Boolean(null));
 
-
 // let price; // Undefined
 // console.log(`The Price Is ${price ?? 200}`); // 200
 // price = null;
@@ -1255,7 +1218,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   : a > 40
 //   ? console.log("> 40")
 //   : console.log("Unknown");
-
 
 // let st = "Elzero Web School";
 // // console.log(st.length); // 17
@@ -1332,7 +1294,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   // Write break After Block Code
 //     console.log("Unknown Day");
 // }
-
 
 // day = 6;
 
@@ -1449,7 +1410,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   console.log(`My Money is ${money}`);
 // }
 
-
 // codepen.io
 
 // ---- Lesson 40 - Array Big Introduction ----
@@ -1486,7 +1446,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // let str = "Mustafa";
 // console.log(Array.isArray(str)); // false
-
 
 // ---- Lesson 41 - Using Length With Array ----
 
@@ -1703,7 +1662,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // }
 // console.log(onlyNames);
 
-
 // console.log(myFriends[0]);
 // console.log(myFriends[1]);
 // console.log(myFriends[2]);
@@ -1728,7 +1686,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // let models = [2020, 2021];
 
-
 // for (let i = 0; i < products.length; i++) {
 //   console.log("#".repeat(15));
 //   console.log(`# ${products[i]}`);
@@ -1742,7 +1699,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //     console.log(`- ${models[k]}`);
 //   }
 // }
-
 
 // ---- Lesson 51 - Loop Control - Break, Continue, Label ----
 
@@ -1874,7 +1830,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   cnt = 0;
 // }
 
-
 // ---- Lesson 57 - Function Intro And Basic Usage ----
 
 /*
@@ -1889,7 +1844,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(typeof console); // Object
 // console.log(typeof console.log); // Function
-
 
 // function sayHello() { // Without Parameters
 //   console.log(`Hello, Osama!`);
@@ -2034,7 +1988,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   document.write(`</div>`);
 // }
 
-
 // showInfo("Mustafa", 22, 20, "No", "Html", "CSS");
 
 // ---- Lesson 63 - Random Arguments Function Challenge ----
@@ -2052,8 +2005,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   Data Is Not Sorted Output Depend On Data Types
   - Use Ternary Conditional Operator
 */
-
-
 
 // showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
@@ -2093,7 +2044,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //       );
 // }
 
-
 // --------- MySolution 2 - An Efficient Solution ---------
 // function showDetails(a, b, c) {
 //   let name, age, availableOrNot;
@@ -2115,7 +2065,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
 // showDetails(true, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(38, false, "Osama"); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
-
 
 // ---- Lesson 64 - Anonymous Function And Practice ----
 
@@ -2159,7 +2108,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   - Function Inside Function
   - Return Function
 */
-
 
 // Example 1
 // function sayMessage(fName, lName) {
@@ -2233,7 +2181,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   return num1 + num2;
 // };
 
-
 // let print = (num1, num2) => num1 + num2;
 
 // console.log(print(100, 50));
@@ -2266,7 +2213,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 /*
   Scope
-  - Block Scope [If, Swithch, For]
+  - Block Scope [If, Switch, For]
 */
 
 // var x = 10;
@@ -2288,14 +2235,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   console.log(`Function - From Local ${b}`);
 // }
 
-
 // console.log(`From Global ${a}`);
 // console.log(`From Global ${b}`);
 
 // showText();
 
 // ? ---- Lesson 69 - Scope - Lexical (Static) ----
-
 
 /* Searching Topics Important
 
@@ -2305,7 +2250,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   JavaScript Scope
 
 */
-
 
 /*
   Scope
@@ -2317,27 +2261,7 @@ console.log(Number.isNaN("Osama"/20)); // true
   - Namaste JavaScript - Searching On YouTube
 */
 
-
 // More Notes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2361,7 +2285,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // }
 // parent();
 
-
 // ? ---- Lesson 70 - Arrow Function challenge ----
 
 /*
@@ -2376,7 +2299,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   // Parameter ?
 //   return `String [${n.join("], [")}] => Done !`;
 // };
-
 
 // MySolution
 // Arrow Function In One Line
@@ -2409,7 +2331,346 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(calc(10, myNumbers.shift(), myNumbers.shift()));  // 80
 
-
 // ? ---- Lesson 71 - Higher Order Functions - Map ----
 
+/*
+  Higher Order Functions 
+  ---> Is a function that accepts function as parameter and/or returns a function.
+
+  - Map
+  --- Method creates a new array
+  --- populated with the results of calling a provided function on every element 
+  --- in the calling array.
+
+  Syntax map(callBackFunction(Element, Index, Array) { }, thisArg)
+  - Element => The Current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array -> The current Array
+
+  Notes:
+  - Map Returns A New Array
+
+  Examples
+  - Anonymous Function
+  - Named Function
+*/
+
+// let myNums = [1, 2, 3, 4, 5, 6];
+// let newArray = [];
+
+// for(let i=0; i<myNums.length; ++i) {
+//   newArray.push(myNums[i]+myNums[i]);
+// }
+
+// console.log(newArray);
+
+// Same Idea With Map
+
+// let addSelf = myNums.map(function(element, index, arr) {
+//   // console.log(`Current Element => ${element}`);
+//   // console.log(`Current Index => ${index}`);
+//   // console.log(`Array => ${arr}`);
+//   // console.log(`This => ${this}`);
+//   return element + element;
+// }, 10)
+
+// let addSelf = myNums.map((el) => el + el);
+// console.log(addSelf);
+
+// function addition(ele) {
+//   return ele + ele;
+// }
+
+// let add = myNums.map(addition);
+
+// console.log(add);
+
+// ? ---- Lesson 72 - Higher Order Functions - Map Practice ----
+
+/*
+  Map
+  - Swap Cases
+  - Inverted Numbers
+  - Ignore Boolean Value
+*/
+
+// let swappingCases = "elZERo";
+// let invertedNumbers = [1, -10, -20, 15, 100, -30];
+// let ignoreNumbers = "Elz123er4o";
+
+// Problem 1:
+// let sw = swappingCases.split("").map(function(ele) {
+//   // Codition ? True : False --> Ternary Operators
+//   return ele === ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase();
+// })
+// .join("");
+
+// Arrow Function Version
+// let sw = swappingCases
+//   .split("")
+//   .map((ele) => ele === ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase())
+//   .join("");
+
+// console.log(sw); // ELzerO
+
+// Problem 2:
+// Convert Positive number to Negative number and Negative number to Positive number
+// let inv = invertedNumbers.map(function (ele) {
+//   return -ele;
+// });
+
+// console.log(inv);
+
+// Problem 3:
+// let ign = ignoreNumbers.split("").map(function (ele) {
+//   return isNaN(parseInt(ele)) ? ele: "";
+// })
+// .join("");
+
+// Arrow Function Version
+
+// let ign = ignoreNumbers.split("").map( (ele) => isNaN(parseInt(ele)) ? ele: "").join("");
+
+// console.log(ign);
+
+// ? ---- Lesson 73 - Higher Order Functions - Filter ----
+
+/*
+  - Filter
+  --- method creates a new array
+  --- with all elements that pass the test implemented by the provided function.
+
+  Syntax filter(callBackFunction(Element, Index, Array) { }, thisArg)
+  - Element => The Current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array => The Current Array
+*/
+
+// Get Friends With Name Starts With A
+// let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+
+// let filterFriends = friends.filter(function(el) {
+//   // return el.startsWith("A");
+//   return el.startsWith("A") ? true  : false;
+// });
+
+// console.log(filterFriends);
+
+// Get Even Numbers Only
+// let numbers = [11, 20, 2, 5, 17, 10];
+
+// let evenNumbers = numbers.filter(function(el) {
+//   return el % 2 === 0;
+// });
+
+// console.log(evenNumbers);
+
+// Test Map vs Filter
+
+// let addMap = numbers.map(function(el) {
+//   return el + el;
+// });
+
+// console.log(addMap);
+
+// let addFilter = numbers.filter(function(el) {
+//   return el + el;
+// });
+
+// console.log(addFilter);
+
+// ? ---- Lesson 74 - Higher Order Functions - Filter Pratice ----
+
+/*
+  Filter
+  - Filter Longest Word By Number
+*/
+
+// Filter Words More Than 4 Characters
+// let sentence = "I Love Foood Code Too Playing Much";
+
+// let smallWords = sentence
+//   .split(" ")
+//   .filter(function (ele) {
+//     return ele.length <= 4;
+//   })
+//   .join(" ");
+
+// console.log(smallWords);
+
+// // Ignore Numbers
+// let ignoreNumbers = "Elz123er4o";
+
+// let ign = ignoreNumbers
+//   .split("")
+//   .filter(function (ele) {
+//     return isNaN(parseInt(ele))? ele : "";
+//   })
+//   .join("");
+
+// console.log(ign);
+
+// // Filter Strings + Multiply
+// let mix = "A13BS2ZX";
+
+// let multiMix = mix
+//   .split("")
+//   .filter(function(ele){
+//   return (!isNaN(ele));
+//   })
+//   .map(function(ele){
+//   return ele*ele;
+//   })
+//   .join("");
+
+// console.log(multiMix);
+
+// ? ---- Lesson 75 - Higher Order Functions - Reduce ----
+
+/*
+  - Reduce
+  --- method executes a reducer function on each element of the array,
+  --- resulting in a single output value.
+
+  Syntax
+  reduce(callBackFunc(Accumulator, Current Val, Current Index, Source Array) { }, initialValue)
+  - Accumulator => the accumulated value previously returned in the last invocation
+  - Current Val => The current element being processed in the array
+  - Index => The index of the current element being processed in the array.
+  ---------- Starts from index 0 if an initialValue is provided.
+  ---------- Otherwise, it starts from index 1.
+  - Array => The Current Array
+*/
+
+// let nums = [10, 20, 15, 30];
+
+// let add = nums.reduce(function (acc, current, index, arr) {
+//   console.log(`Acc => ${acc}`);
+//   console.log(`Current Element => ${current}`);
+//   console.log(`Current Element Index => ${index}`);
+//   console.log(`Array => ${arr}`);
+//   console.log(acc + current);
+//   console.log(`#############`);
+//   return acc + current;
+// }, 5);
+
+// console.log(add);
+
+// ? ---- Lesson 76 - Higher Order Functions - Reduce Practice ----
+
+/*
+  Reduce
+  - Longest Word
+  - Remove Characters + Use Reduce
+*/
+
+// let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test", "Propaganda_Two"];
+
+// let check = theBiggest.reduce(function(acc, current){
+//   console.log(`Acc => ${acc}`);
+//   console.log(`Currrent Element => ${current}`);
+//   console.log(acc.length > current.length ? acc : current);
+//   console.log(`##########################`);
+//   return acc.length > current.length ? acc : current;
+// });
+
+// console.log(check);
+
+// let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+
+// let finalString = removeChars.filter(function(ele){
+//   return !ele.startsWith("@");
+// })
+// .reduce(function(acc, current){
+//   return acc + "" + current;
+// });
+
+// console.log(finalString);
+
+// ? ---- Lesson 77 - Higher Order Functions - ForEach and Practice ----
+
+/*
+  - forEach
+  --- method executes a provided function once for each array element.
+
+  Syntax forEach(callBackFunction(Element, Index, Array) { }, thisArgs))
+  - Element => The Current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array => The current Array
+
+  Note
+  - Doesn't Return Anything [Undefined]
+  - Break Will Not Break the Loop
+*/
+
+// let allLis = document.querySelectorAll("ul li");
+// let allDivs = document.querySelectorAll(".content div");
+
+// allLis.forEach(function(ele){
+//     ele.onclick=function(){
+//       // Remove Active Class From All Elements
+//       allLis.forEach(function(ele){
+//         ele.classList.remove("active");
+//       });
+//       // Add Active Class To This Element
+//       this.classList.add("active");
+//       // Hide All Divs 
+//       allDivs.forEach(function(ele){
+//         ele.style.display="none";
+//       });
+//     };
+// });
+
+
+// ? ---- Lesson 78 - Higher Order Functions - Challenge ----
+
+/*
+  Higher Order Functions Challenges
+
+  You Can Use
+  - ,
+  - _
+  - Space
+  - True => 1 => One Time Only In The Code
+
+  You Cannot Use
+  - Numbers
+  - Letters
+
+  - You Must Use [Filter + Map + Reduce + Your Knowledge]
+  - Order Is Not Important
+  - All In One Chain
+
+*/
+
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+
+// let solution = myString.split(",").filter(function(e){
+//  // Return a string without any numbers 
+//   return isNaN(e);
+// }).map(function(e){
+// // Return a string without first Character
+//   return e[e.length-e.length][e.length-e.length];
+// })
+// .reduce(function(a, c, i, arr){
+//   return (a+c).split("_").join(" ").substr(arr.length-arr.length, arr.length-true);
+// });
+
+// console.log(solution); // Elzero Web School
+
+// AnotherSolution
+
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+
+// let solution = myString
+//   .split(",")
+//   .filter((ele) => isNaN(Number(ele)))
+//   .map((ele) => ele === "_" ? " " : ele)
+//   .reduce((acc, current) => `${acc}${current}`)
+//   .slice(true, -isNaN(myString));
+
+// console.log(solution); // Elzero Web School
+
+
+// ? ---- Lesson 79 - Object - Introduction ----
 
