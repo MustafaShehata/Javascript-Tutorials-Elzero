@@ -1,10 +1,14 @@
+  // ? ---- Lesson 005 Where To Put The Code ----
+
 // // Wait The Window To Load
 // window.onload = function () {
 //   // Single Line Comment
 //   document.querySelector("h1").style.color = "Blue"; // Single Line comment
 // };
 
-// ---- Lesson 6 ----
+// Note: best practice to put your javaScript Code at the end of the body of html file
+
+// ? ---- Lesson 006 Comments And Bad Practices ----
 
 // Single Line Comment
 // Single Line Comment
@@ -24,9 +28,11 @@
   5
 */
 
-// Ctrl + / - to comment and uncommet code
+// ( Ctrl + / ) => to comment and uncommet code
 
-// ---- Lesson 7 ----
+// Comment is made for prevent execution when write a code that want to make the interpreter to skip it
+
+// ? ---- Lesson 007 - Output To Screen ----
 
 /*
   Output To Screen
@@ -45,7 +51,7 @@
 
 // console.log("Hello From Js File"); // print out the string in console
 
-// ---- Lesson 8 ----
+// ? ---- Lesson 008 - Console Methods And Styling And WebAPI ----
 
 /*
   Console Methods
@@ -65,13 +71,18 @@
 
 // console.table(["Osama", "Ahmed", "Sayed"]);
 
+// /*
+//   Styling "Js File" red and font-size: 40px for first word "%cJs" 
+//   and blue color and font 40px for "%cFile"
+// */
+
 // console.log(
-//   "Hello From %cJs %cFile",
+//   "Hello From %cJS %cFile",
 //   "color: red; font-size: 40px",
 //   "color: blue; font-size: 40px"
-// ); // Styling "Js File" red and font-size: 40px for first word "%cJs" and blue color and font 40px for "%cFile"
+// );
 
-// ---- Lesson 9 ----
+// ? ---- Lesson 009 - What is ECMAScript ----
 
 /*
   ES6
@@ -82,7 +93,7 @@
 // console.log("Hello, " + myName);
 // console.log(`Hello, ${myName}`);
 
-// ---- Lesson 10 - DataTypes and typeof Operator ----s
+// ? ---- Lesson 010 - DataTypes and typeof Operator ----s
 
 /*
   Data Types Intro
@@ -98,17 +109,17 @@
 // console.log("Osama Mohamed");
 // console.log(typeof "Osama Mohamed");
 // console.log(typeof("Osama Mohamed"));
-// console.log(typeof 5000);
-// console.log(typeof 5000.99);
-// console.log(typeof [10, 15, 17]);
-// console.log(typeof ["Os", "Ah", "Sa"]);
-// console.log(typeof {name: 'Osama', age: 17, country: "Eg"});
-// console.log(typeof true);
-// console.log(typeof false);
-// console.log(typeof undefined);
-// console.log(typeof null);
+// console.log(typeof 5000); // number
+// console.log(typeof 5000.99); // number(Decimal)
+// console.log(typeof [10, 15, 17]); // object => array
+// console.log(typeof ["Os", "Ah", "Sa"]); // object => array
+// console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // object
+// console.log(typeof true); // boolean
+// console.log(typeof false); // boolean
+// console.log(typeof undefined); // undefined
+// console.log(typeof null); // object
 
-// ---- Lesson 11 - Variables Introduction ----
+// ? ---- Lesson 011 - Variables Introduction ----
 
 /*
   Variables Intro
@@ -119,8 +130,14 @@
   - Variable Without Var
   - Multiple Variables in The Same Line
   - Id And Global Variable
-  - Loosely Typed vs Strongly Typed - Search for 
+  - Loosely Typed vs Strongly Typed - "Search for them"
 */
+
+/*
+  If you use a variable before defining or declaring it, it will get an undefined
+*/
+
+// console.log(user); // undefined
 
 // var user = "Sayed", age = 37;
 
@@ -128,15 +145,17 @@
 // console.log(age);
 // console.log(hello);
 
-// hello.innerHTML = "Option";
+// hello.innerHTML = "Option"; // edit to the contenet of html element id = "hello"
 
-// ---- Lesson 12 - Identifiers Name Convetions And Rules ----
+// ? ---- Lesson 012 - Identifiers Name Convetions And Rules ----
 
 /*
   Identifiers
   - Name Conventions And Rules
-  - Reserved Words
+  - Reserved Words - searching for Identifiers
 */
+
+// var __userName__ = "MUstafa"; // valid Identifier
 
 // var _us_1er_1 = "Sayed"; // Valid Identifiers
 // var $us$1er$1 = "Sayed"; // Valid Name
@@ -145,27 +164,25 @@
 // var User = "Muhammed"; // Identifier is Case Sensitive
 // var userName = "Sayed"; // camelCase is used in JS
 
-// console.log(user);
-// console.log(User);
+// console.log(user); // javascript is case sensitive
+// console.log(User); // case sensitive => lowerCase and UpperCase is distinct
 // console.log(userName);
 
-// ---- Lesson 13 - var, let, cost Compare  ----
+// ? ---- Lesson 013 - Var, Let, Cost Compare  ----
 
 /*
   Var
   - Redeclare (Yes)
   - Access Before Declare (Undefined)
-  - Variable Scope Drama [Added To Window] ()
+  - Variable Scope Drama [Added To Window] () -- Search for it 
   - Block Or Function Scope
-
 
   Let
   - Redeclare (No => Error)
   - Access Before Declare (Error)
   - Variable Scope Drama [Added To Window] ()
   - Block Or Function Scope
-  
-  
+    
   Const
   - Redeclare (No => Error)
   - Access Before Declare (Error)
@@ -173,10 +190,14 @@
   - Block Or Function Scope  
 */
 
+// var a = 2;
+// var a = 2;
+// console.log(a); // doesn't get an Error
+
 /*
 var a = 1; // Declare and Initialization
 console.log(a); // 1
-var a = 2; // Redeclare and Reinitialization
+var a = 2; // Redeclare and Assignment
 console.log(a); // 2
 
 
@@ -192,10 +213,10 @@ console.log(c); // 1
 // console.log(a); // 2
 */
 
-// We can't declare the same name of an variable "Identifier"
+// We can't declare the same name of a variable "Identifier"
 
 // Access Before Declare A Variable -- With Var Not Given An Error
-// console.log(a);
+// console.log(a); // Undefined
 // var a = 1;
 
 // Access Before Declare A Variable -- With Let Gives An Error
@@ -214,13 +235,13 @@ console.log(c); // 1
 
 // Search For "javaScript Scope Drama"
 
-// ---- Lesson 14 - String Syntax And Character Escape Sequence  ----
+// ? ---- Lesson 014 - String Syntax And Character Escape Sequence  ----
 
 /*
   String Syntax + Character Escape Sequences - Searching for Character Escape Sequences
   Escape => Ignore
-  \ Escape + Line Continue - Next Line Continue
-  \n New Line put the cursor on The Next Line
+  \   Escape + Line Continue - Next Line Continue
+  \n  New Line put the cursor on The Next Line
   \b	Backspace
   \f	Form Feed
   \n	New Line
@@ -245,7 +266,7 @@ console.log(c); // 1
 // School"); // Elzero Web School
 // console.log("Elzero\nWeb\nSchool");
 
-// ---- Lesson 15 - Concatenation  ----
+// ? ---- Lesson 015 - Concatenation  ----
 
 /*
   Concatenation
@@ -258,9 +279,9 @@ console.log(c); // 1
 // document.write(a + b);
 // document.write(a + c + b);
 // document.write(a + " " + b);
-// console.log(a, b);
+// console.log(a, b); // seperate between a and b by a space
 
-// ---- Lesson 16 - Template Literals Template Strings  ----
+// ? ---- Lesson 016 - Template Literals Template Strings  ----
 
 /*
   Template Literals (Template Strings)
@@ -299,7 +320,7 @@ console.log(c); // 1
 
 // document.write(markUp);
 
-// ---- Lesson 17 - Variable And Concatenation Challenge ----
+// ? ---- Lesson 017 - Variable And Concatenation Challenge ----
 
 // camelCasing
 // let articleTitle = "Elzero", articleDesc = "Elzero Web School", articleDate="25/10";
@@ -2672,5 +2693,293 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(solution); // Elzero Web School
 
 
-// ? ---- Lesson 79 - Object - Introduction ----
+// ? ---- Lesson 079 - Object - Introduction ----
 
+/*
+  Object
+  - Intro And What Is Object?
+  - Testing Window Object
+  - Accessing Object
+*/
+
+// let user = {
+//   // Properties
+//   theName: "Osama",
+//   theAge: 38,
+//   // Methods
+//   sayHello: function() {
+//     return "Hello";
+//   }
+// };
+
+// console.log(user.theName); // "Osama"
+// console.log(user.theAge); // 38
+// console.log(user.sayHello()); // "Hello"
+
+
+// ? ---- Lesson 080 - Object - Dot Notation vs Bracket Notation ----
+
+
+/*
+  Object
+  - Dig Deeper
+  - Dot Notation vs Bracket Notation
+  - Dynamic Property Name
+*/
+
+// let myVar="country";
+
+// let user={
+//   theName: "Mustafa",
+//   country_of: "Egypt",
+//   "live in": "Berlin",
+//   100: "Number",
+//   country: "Egypt" 
+// };
+
+// console.log(user.theName); // Using period notation
+// console.log(user["theName"]); // Using Bracket Notation
+// console.log(user.country_of); // Using period Notation
+// console.log(user["country_of"]); // Using bracket Notation
+// console.log(user["100"]); // Using bracket notation with integer with a double quotes or without it
+// console.log(user["live in"]); // You should using bracket with invalid name like string has a space
+// // console.log(user.myVar); // user.country Here you can't use "dot notation" for accessing an value from "dynamic property name" OUTPUT: undefined
+// console.log(user[myVar]); // user[country]="Egypt" using bracket notation
+
+
+// ? ---- Lesson 081 - Nested Object And Advanced Trainings ----
+
+/*
+  Object
+  - Nested Object And Trainings
+*/
+
+// let available = true;
+
+// let user = {
+//   name: "Mustafa",
+//   age: 22,
+//   skills: ["HTML", "CSS", "JS"],
+//   available: false,
+//   addresses: {
+//     ksa: "Riyadh",
+//     egypt: {
+//       one: "Cairo",
+//       two: "Giza",
+//     },
+//   },
+//   checkAv: function () {
+//     if (user.available === true) {
+//       return `Free For Work`;
+//     } else {
+//       return `Not Free`;
+//     }
+//   },
+// };
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.skills);
+// console.log(user.skills.join(" | "));
+// console.log(user.skills[2]); // Access With Index
+// console.log(user.addresses.ksa);
+// console.log(user.addresses.egypt.one); // Cairo
+// console.log(user["addresses"].egypt.one); // Cairo
+// console.log(user["addresses"]["egypt"]); // Nested Object => {one: "Cairo", two: "Giza"}
+// console.log(user["addresses"]["egypt"]["one"]); // Cairo using bracket notation 
+
+// console.log(user.checkAv()); // Available is a local scope inside a user Object
+
+// ? ---- Lesson 082 - Create Object With New Keyword ----
+
+
+/*
+  Object
+  - Create With New Keyword new Object();
+*/
+
+// let user={
+//   age:20
+// };
+
+// let user = new Object({age: 20}); // new keyword Using ObjectConstructor
+
+// console.log(user);
+
+// user.age=22;
+// user["country"]="Egypt";
+
+// console.log(user);
+
+// user.sayHello=function(){
+//   return `Hello, Mustafa`;
+// };
+
+// console.log(user.age);
+// console.log(user["country"]);
+// console.log(user.sayHello());
+
+
+// ? ---- Lesson 083 - This Keyword - Important ----
+
+
+/*
+  Function this Keyword
+  - this Introduction
+  - this inside Object method
+  --- when a function is called as a method of an object, 
+  --- its this is set to the object the method is called on.
+  - Global Object
+  - Test Variables With window And This
+  - Global Context
+  - Function Context
+
+  Search - Important
+  - Strict Mode
+*/
+
+
+// console.log(this);
+// console.log(this === window); // true
+
+// myVar = 100;
+// console.log(window.myVar); // 100
+// console.log(this.myVar); // 100
+
+// function sayHello(){
+//   console.log(this);
+//   return this;
+// };
+// sayHello();
+
+// console.log(sayHello() === window);
+
+// document.getElementById("cl").onclick = function() {
+//   console.log(this);
+// };
+
+// let user = {
+//   age: 38,
+//   ageInDays: function() {
+//     console.log(this.age); // 38
+//     console.log(this); // {age: 38, ageInDays: f}
+//     return this.age * 365;
+//   }
+// };
+
+// console.log(user.age);
+// console.log(user.ageInDays());
+
+// ? ---- Lesson 084 - Create Object With Create Method ----
+
+
+/*
+  Object
+  - Create Object with Create Method
+*/
+
+
+// let user = {
+//   age: 40,
+//   doubleAge: function() {
+//     // return user.age * 2;
+//     return this.age * 2;
+//   }
+// };
+
+// console.log(user);
+// console.log(user.age);
+// console.log(user.doubleAge());
+
+// let obj = Object.create(user); // create an empty object
+
+// obj.a = 100;
+
+// console.log(obj);
+
+// let copyObj = Object.create(user);
+
+// // copyObj.age = 20;
+
+// // console.log(copyObj);
+// // console.log(copyObj.age); // 20
+// // console.log(copyObj.doubleAge()); // 80 because user use doubleAge that returns user.age not this.age * 2
+
+// copyObj.age = 50;
+
+// console.log(copyObj);
+// console.log(copyObj.age);
+// console.log(copyObj.doubleAge());
+
+
+// ? ---- Lesson 085 - Create Object With Assign Method ----
+
+
+/*
+  Object
+  - Create Object With assign Method
+*/
+
+
+// let obj1 = {
+//   prop1: 1,
+//   meth1: function(){
+//     return this.prop1; // 1
+//   }
+// };
+
+// let obj2 = {
+//   prop2: 2,
+//   meth2: function(){
+//     return this.prop2;
+//   }
+// };
+
+// let targetObject = {
+//   prop1: 100,
+//   prop3: 3
+// };
+
+// let finalObject = Object.assign(targetObject, obj1, obj2);
+
+// // finalObject.prop1 = 200; 
+// // finalObject.prop4 = 4;
+
+// console.log(finalObject);
+
+// let newObject = Object.assign({}, obj1, {prop5: 5, prop6: 6});
+
+// console.log(newObject);
+
+
+
+// Searching Topics to solve Any Object exercises:
+
+/**
+ * JavaScript Object
+ * JavaScript Has Own Property
+ * JavaScript Object Sorting
+ * JavaScript Object Length
+ * JavaScript Object Keys
+ * JavaScript Object Values
+ */
+
+
+// ? ---- Lesson 086 - What Is Dom? And Select Elements ----
+
+
+/*
+  DOM
+  - What Is DOM
+  - DOM Selectors
+  --- Find Element By ID
+  --- Find Element By Tag Name 
+  --- Find Element By Class Name
+  --- Find Element By CSS Selectors
+  --- Find Element By Collection
+  ------ title
+  ------ body
+  ------ images
+  ------ forms
+  ------ links
+*/
