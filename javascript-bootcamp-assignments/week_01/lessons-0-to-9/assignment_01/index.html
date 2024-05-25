@@ -9,7 +9,7 @@
       // Code One
       document.getElementById("el").style.color = "red";
       /*
-        This Code doesn't work because It loads before the HTML element, and 
+        This Code doesn't work because It loads before the HTML element was created, and 
         JavaScript code should not be executed before the HTML Element is loaded.
       */
     </script>
@@ -32,7 +32,7 @@
       /*
         This Code works well because It loads after The Content of
         Body executes and It is in the tail of body of html and all Content
-        Will Load and this line will Load after them.
+        Will be Loaded, and the script will be loaded after them.
       */
     </script>
   </body>

@@ -1,8 +1,11 @@
+
+// Video Tutorial: https://www.youtube.com/watch?v=PkZNo7MFNFg&t=24s
+
 // ? Comments: are lines of code that Javascript will intentionally ignore
 // They're just used to create notes for yourself and others about what the code does.
 // var number = 5; // in-line comment
 /*
-    this 
+    this
     is
     multi-line
     comment
@@ -15,7 +18,7 @@
 // undefined, null, boolean, string, symbol, number, and object
 
 /*
-    undefined: is something that hasn't been defined, 
+    undefined: is something that hasn't been defined,
     you may have a variable that you havn't set to be anything yet.
 
     null: nothing means that you does have value for this variable.
@@ -146,7 +149,7 @@
 
 // remainder = 11 % 3; // 2
 
-// if you remainder even number over 2 it will equals to 0 so it will be even otherwise Odd ==> n % 2 == 0 even number 
+// if you remainder even number over 2 it will equals to 0 so it will be even otherwise Odd ==> n % 2 == 0 even number
 
 // ? Compound Assignment with Augmented Addition
 
@@ -201,7 +204,7 @@
 // --------------------------------------------------------------------
 
 // ? Escaping Literal Quotes in Strings
-// There is no difference between "double quotes" and 'single quote' 
+// There is no difference between "double quotes" and 'single quote'
 // var myStr1 = "I am a \"double quoted\" string inside \"double quotes\"";
 // var myStr2 = 'I am a "double quoted" string inside "double quotes"';
 // console.log(myStr1);
@@ -223,7 +226,7 @@ CODE OUTPUT
 \'      single quote
 \"      double quote
 \\      backslash
-\n      new line 
+\n      new line
 \r      carriage return
 \t      tab
 \b      backspace
@@ -304,7 +307,7 @@ CODE OUTPUT
 
 // ? String Immutability
 // means they cannot be altered once created.
-// This doesn't maen that they can't be changed, 
+// This doesn't maen that they can't be changed,
 // just that the idividual character of a string literal cannot be changed.
 
 
@@ -332,7 +335,7 @@ CODE OUTPUT
 // var firstName = "Ada";
 // var lastLetterOfFirstName = firstName[firstName.length - 1]; // index = 3-1= 2 ==> a
 
-// setup 
+// setup
 // var lastName = "lovelace";
 // var lastLetterOfLastName = lastName[lastName.length - 1]; // index = 8 - 1 = 9 ==> e
 
@@ -373,7 +376,7 @@ CODE OUTPUT
 
 // Example
 // var ouArray = [
-//     ["the universe", 42], 
+//     ["the universe", 42],
 //     ["everything", 101010]
 // ];
 // Only change code below this line.
@@ -483,10 +486,10 @@ CODE OUTPUT
 
 // ? Shopping List
 // var mylist = [
-//     ["cereal", 3], 
-//     ["milk", 2], 
-//     ["bananas", 3], 
-//     ["juice", 2], 
+//     ["cereal", 3],
+//     ["milk", 2],
+//     ["bananas", 3],
+//     ["juice", 2],
 //     ["eggs", 12]
 // ]; // array of arrays which is our shopping list.
 
@@ -617,7 +620,7 @@ CODE OUTPUT
 // var changed = 0;
 
 // function change(num) {
-//     return (num + 5) / 3; 
+//     return (num + 5) / 3;
 // }
 
 // changed = change(10);
@@ -702,7 +705,7 @@ CODE OUTPUT
 
 /*
     3 === 3 -- true
-    3 === '3' -- false 
+    3 === '3' -- false
     3 == 3 -- true
     3 == '3' -- true
 */
@@ -827,7 +830,7 @@ CODE OUTPUT
 
 // function testLogicalAnd(val) {
     // Only Change Code below This Line
-    
+
     // if (val <= 50) {
     //     if (val >= 25) {
     //         return "Yes";
@@ -980,10 +983,10 @@ CODE OUTPUT
 // function caseInSwitch(val) {
 //     var answer = "";
 //     switch(val) {
-//         case 1: 
+//         case 1:
 //             answer = "alpha";
 //             break;
-//         case 2: 
+//         case 2:
 //             answer = "beta";
 //             break;
 //         case 3:
@@ -1020,7 +1023,7 @@ CODE OUTPUT
 //         case "c":
 //             answer = "cat";
 //             break;
-//         default: 
+//         default:
 //             answer = "stuff";
 //             break;
 //     }
@@ -1272,7 +1275,7 @@ CODE OUTPUT
 //     "friends": ["freeCodeCamp Campers"]
 // };
 
-// Only Change Code below this line 
+// Only Change Code below this line
 // myDog['bark'] = "woof!";
 
 // ? Delete Properties form an Object
@@ -1413,7 +1416,7 @@ CODE OUTPUT
 
 // // Only Change code below this line
 
-// var secondTree = myPlants[1].list[1]; 
+// var secondTree = myPlants[1].list[1];
 // console.log(secondTree); // "pine"
 
 // ? Record Collection -- Important
@@ -1454,7 +1457,7 @@ CODE OUTPUT
 //     else if (prop === "tracks") {
 //         collection[id][prop]  = collection[id][prop] || [];
 //         collection[id][prop].push(value);
-//     }    
+//     }
 //     else collection[id][prop] = value;
 //     return collection;
 // }
@@ -1562,8 +1565,8 @@ CODE OUTPUT
 // function multiplyAll(arr) {
 //     var product = 1;
 
-//     for (var i = 0; i < arr.length; i++) 
-//         for (var j = 0; j < arr[i].length; j++)  
+//     for (var i = 0; i < arr.length; i++)
+//         for (var j = 0; j < arr[i].length; j++)
 //             product *= arr[i][j];
 
 //     return product;
@@ -1669,7 +1672,7 @@ CODE OUTPUT
 // }
 
 // // Binary number 0, or 1 // convert this binary number to decimal to 19
-// console.log(convertToInteger("10011")); 
+// console.log(convertToInteger("10011"));
 
 
 // ? Use the Conditional (Ternary) Operator
@@ -1686,11 +1689,11 @@ CODE OUTPUT
 // ? Use Multiple Conditional (Ternary) Operators
 
 // function checkSign(num) {
-//     // if (num > 0) 
+//     // if (num > 0)
 //     //     return "positive";
-//     // else if (num < 0) 
+//     // else if (num < 0)
 //     //     return "Negative";
-//     // else 
+//     // else
 //     //     return "Zero";
 //     return num > 0 ? "positive": num < 0 ? "negative" : "zero";
 // }
@@ -1742,7 +1745,7 @@ CODE OUTPUT
 // function printManyTimes(str) {
 //     "use strict";
 
-//     const SENTENCE = str + " is cool!"; 
+//     const SENTENCE = str + " is cool!";
 //     // SENTENCE = str + " is amazing!"; // error read only /index:js:1 - TypeError Assignment to constant variable.
 
 //     for (let i = 0; i < str.length; i+=2)
@@ -1798,7 +1801,7 @@ console.log(myArray);  // Output: [1, 2, 3, 4]
 //     } catch (ex) {
 //         console.log(ex);
 //     }
-    
+
 //     return MATH_CONSTANTS.PI;
 // }
 
@@ -2138,7 +2141,7 @@ console.log(myArray);  // Output: [1, 2, 3, 4]
 // export const foo = "bar";
 // export const bar = "foo";
 
-// ? Use * to Import Everything from a File 
+// ? Use * to Import Everything from a File
 
 // import * as capitalizeStrings from "string_function";
 

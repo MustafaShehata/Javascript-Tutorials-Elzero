@@ -10,7 +10,7 @@ console.log(num * num - num); // 3 * 3 - 3 = 6
 console.log(num * --num); // 3 * 2 = 6
 
 // Soultion Four
-console.log(++num * num / num + num);  // 3 * 3 / 3 + 3 = 6 
+console.log(++num * num / num + num);  // 3 * 3 / 3 + 3 = 6
 
 // Solution Five
 console.log(num * ++num / --num + --num); // 3 * 4 / 3 + 2 = 6 

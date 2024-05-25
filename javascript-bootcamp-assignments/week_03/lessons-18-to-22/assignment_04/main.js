@@ -2,7 +2,7 @@ let points = 10;
 /* My Solution
 // Write Your Code Here
 // points += points/points + points/points + points/points;
-points += 3;s
+points += 3;
 console.log(points); // 13
 
 // Write Your Code Here

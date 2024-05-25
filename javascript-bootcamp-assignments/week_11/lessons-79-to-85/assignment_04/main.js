@@ -9,32 +9,31 @@
  * JavaScript Object Values
  */
 
-
 // The Object To Work With
 let myFavGames = {
-    // Doesn't contain game's version
-    "Trinity Universe": {
-        publisher: "NIS America",
-        price: 40,
+  // Doesn't contain game's version
+  "Trinity Universe": {
+    publisher: "NIS America",
+    price: 40,
+  },
+  "Titan Quest": {
+    publisher: "THQ",
+    bestThree: {
+      one: "Immortal Throne",
+      two: "Ragnarök",
+      three: "Atlantis",
     },
-    "Titan Quest": {
-        publisher: "THQ",
-        bestThree: {
-            one: "Immortal Throne",
-            two: "Ragnarök",
-            three: "Atlantis",
-        },
-        price: 50,
+    price: 50,
+  },
+  YS: {
+    publisher: "Falcom",
+    bestThree: {
+      one: "Oath in Felghana",
+      two: "Ark Of Napishtim",
+      three: "origin",
     },
-    YS: {
-        publisher: "Falcom",
-        bestThree: {
-            one: "Oath in Felghana",
-            two: "Ark Of Napishtim",
-            three: "origin",
-        },
-        price: 40,
-    },
+    price: 40,
+  },
 };
 
 // Returns an Array containing the values of all "enumerable string-keyed" properties of an giving object
@@ -44,19 +43,23 @@ let myFavGames = {
 let objectLength = Object.keys(myFavGames).length; // 3
 
 for (let i = 0; i < objectLength; i++) {
-    console.log(`The Game Name Is ${Object.keys(myFavGames)[i]}`);
-    console.log(`The Publisher Is ${Object.values(myFavGames)[i]["publisher"]}`);
-    console.log(`The Price Is ${Object.values(myFavGames)[i]["price"]}`);
+  console.log(`The Game Name Is ${Object.keys(myFavGames)[i]}`);
+  console.log(`The Publisher Is ${Object.values(myFavGames)[i]["publisher"]}`);
+  console.log(`The Price Is ${Object.values(myFavGames)[i]["price"]}`);
 
-    // Check If Nested Object Has Property (bestThree)
-    // if (myFavGames[Object.keys(myFavGames)[i]].hasOwnProperty("bestThree")
-    if (myFavGames[Object.keys(myFavGames)[i]]["bestThree"]) {
-        console.log("- Game Has Releases");
-        console.log(`First => ${Object.values(myFavGames)[i]["bestThree"]["one"]}`);
-        console.log(`Second => ${Object.values(myFavGames)[i]["bestThree"]["two"]}`);
-        console.log(`Third => ${Object.values(myFavGames)[i]["bestThree"]["three"]}`);
-    }
-    console.log("#".repeat(20));
+  // Check If Nested Object Has Property (bestThree)
+  // if (myFavGames[Object.keys(myFavGames)[i]].hasOwnProperty("bestThree")
+  if (myFavGames[Object.keys(myFavGames)[i]]["bestThree"]) {
+    console.log("- Game Has Releases");
+    console.log(`First => ${Object.values(myFavGames)[i]["bestThree"]["one"]}`);
+    console.log(
+      `Second => ${Object.values(myFavGames)[i]["bestThree"]["two"]}`
+    );
+    console.log(
+      `Third => ${Object.values(myFavGames)[i]["bestThree"]["three"]}`
+    );
+  }
+  console.log("#".repeat(20));
 }
 
 // Ouput

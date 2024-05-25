@@ -1,7 +1,10 @@
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     // Write Your Code Here
-    zName = `Hello ${zName.substring(0, zName.indexOf(" ") + 1) + zName.substr(zName.indexOf(" ") + 1, 1).toUpperCase()}., `;
+    zName = `Hello ${
+      zName.substring(0, zName.indexOf(" ") + 1) +
+      zName.substr(zName.indexOf(" ") + 1, 1).toUpperCase()
+    }., `;
     return zName;
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
@@ -23,7 +26,9 @@ function getDetails(zName, zAge, zCountry) {
   function fullDetails() {
     // Write Your Code Here
     // return `Hello, ${namePattern}, ${ageWithMessage}, ${countryTwoLetters}`;
-    return namePattern(zName) + ageWithMessage(zAge) + countryTwoLetters(zCountry);
+    return (
+      namePattern(zName) + ageWithMessage(zAge) + countryTwoLetters(zCountry)
+    );
   }
   return fullDetails(); // Do Not Edit This
 }

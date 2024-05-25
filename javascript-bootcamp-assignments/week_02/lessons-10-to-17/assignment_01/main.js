@@ -6,8 +6,8 @@ console.log(typeof(numOne + "" + numTwo)); // Normal Concatenate => String
 console.log(`${numOne}${numTwo}`); // Template Literals Way => 1020
 console.log(typeof (`${numOne}${numTwo}`)); // Template Literals Way => String
 
-console.log(numTwo
-    +"\n" + numOne);
+console.log(numTwo + "\n" + 
+numOne);
 /*
   Normal Concatenate
   20

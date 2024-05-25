@@ -1,12 +1,12 @@
 // Method One
 let objMethodOne = {
-    property: "Method One"
+  property: "Method One",
 };
 
 console.log(objMethodOne.property); // "Method One"
 
 // Method Two
-let objMethodTwo = new Object({property: "Method Two"});
+let objMethodTwo = new Object({ property: "Method Two" });
 
 console.log(objMethodTwo.property); // "Method Two"
 

@@ -1,4 +1,18 @@
-  // ? ---- Lesson 005 Where To Put The Code ----
+/*
+  Topic: JavaScript Bootcamp 2021
+  Date: 20/6/2023
+  Author: Mustafa Shehata
+*/
+
+/*
+  Searching For:
+  - JavaScript Problem Solving Websites?
+
+  Important Practice:
+  - Each Day Try To Solve Problems In JavaScript In The Start Of Day, Is The Must Every Day
+*/
+
+// ? ---- Lesson 005 - Where To Put The Code ----
 
 // // Wait The Window To Load
 // window.onload = function () {
@@ -6,17 +20,19 @@
 //   document.querySelector("h1").style.color = "Blue"; // Single Line comment
 // };
 
-// Note: best practice to put your javaScript Code at the end of the body of html file
+// Note: best practice to put your javaScript Code at the end of the body of HTML file
 
-// ? ---- Lesson 006 Comments And Bad Practices ----
+// ? ---- Lesson 006 - Comments And Bad Practices ----
 
 // Single Line Comment
 // Single Line Comment
 // Single Line Comment
+
+/* Single Line Inside Multiple Line Comment */
 
 /*
   Multiple
-  line 
+  line
   Comment
  */
 
@@ -28,7 +44,7 @@
   5
 */
 
-// ( Ctrl + / ) => to comment and uncommet code
+// Ctrl + / [Forward Slash] - To Comment And Uncommet Code
 
 // Comment is made for prevent execution when write a code that want to make the interpreter to skip it
 
@@ -45,11 +61,18 @@
 
 // window.alert("Hello From JS File"); // Bad Practice To Use
 
-// document.write("<h1>Hello <span>Page</span></h1>");
+// document.write("<h1>Hello <span>Page</span></h1>"); // Bad Practice
 
-// document.createElement(""); // DOM - Document Object Model
+// const x = document.createElement("h1"); // DOM - Document Object Model
 
-// console.log("Hello From Js File"); // print out the string in console
+// // Test using DOM In HTML File
+// x.innerHTML = "Hi!";
+// x.style.cssText = "margin: 20px auto;width: 10%";
+// x.style.color = "tomato";
+// x.style.backgroundColor = "black";
+// document.body.appendChild(x);
+
+// console.log("Hello From Js File"); // Logging The String In Console
 
 // ? ---- Lesson 008 - Console Methods And Styling And WebAPI ----
 
@@ -66,15 +89,32 @@
 */
 
 // console.log("Log"); // Logging An Message In The "console"
+// console.warn("Warning"); // Warning in the "console"
 
-// console.error("Error"); // Show an Error For this Line In The "console"
+// console.error("Alert"); // Show an Error For this Line In The "console"
 
-// console.table(["Osama", "Ahmed", "Sayed"]);
+// console.table(["Osama", "Ahmed", "Sayed"]); array in table format
+// console.table({ name: "Mustafa", email: "mustafa@gmail.com" }); object in table format
+
+// console.group("group-1");
+// console.group("child-1");
+// console.log("child-1-1");
+// console.group("grandChild-1");
+// console.log("grandChild-1");
+// console.groupEnd();
+// console.groupEnd();
+// console.groupEnd();
+// console.group("group-2");
+// console.log("group-2-e-1");
+// console.groupEnd();
 
 // /*
-//   Styling "Js File" red and font-size: 40px for first word "%cJs" 
+//   Styling "Js File" red and font-size: 40px for first word "%cJs"
 //   and blue color and font 40px for "%cFile"
 // */
+
+// const styles = "background-color:white;padding:10px;color:green";
+// console.log("%cHello, World!", styles);
 
 // console.log(
 //   "Hello From %cJS %cFile",
@@ -91,9 +131,21 @@
 // var myName = "Osama";
 
 // console.log("Hello, " + myName);
-// console.log(`Hello, ${myName}`);
+// console.log(`Hello, ${myName}`); // Using ES6
 
-// ? ---- Lesson 010 - DataTypes and typeof Operator ----s
+// * ---- Separator ----
+
+/* Searching Topics:
+  - Web API
+  - JavaScript Console
+  - ECMAScript
+  - Scripting Language
+  - Chrome Dev Tools
+*/
+
+// * ---- Separator ----
+
+// ? ---- Lesson 010 - DataTypes and typeof Operator ----
 
 /*
   Data Types Intro
@@ -111,83 +163,121 @@
 // console.log(typeof("Osama Mohamed"));
 // console.log(typeof 5000); // number
 // console.log(typeof 5000.99); // number(Decimal)
-// console.log(typeof [10, 15, 17]); // object => array
-// console.log(typeof ["Os", "Ah", "Sa"]); // object => array
-// console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // object
+// console.log(typeof [10, 15, 17]); // Object => Array of Numbers
+// console.log(typeof ["Os", "Ah", "Sa"]); // Object => Array of Strings
+// console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // Object
 // console.log(typeof true); // boolean
 // console.log(typeof false); // boolean
 // console.log(typeof undefined); // undefined
 // console.log(typeof null); // object
 
+/*
+  * Searching Topics:
+  - Differences between Null and Undefined
+  - More Data Types: symbol and BigInt in JavaScript
+*/
+
 // ? ---- Lesson 011 - Variables Introduction ----
 
 /*
   Variables Intro
-  - What is Variable ? 
-  - Why We Use Variables ? 
+  - What is Variable ?
+  - Why We Use Variables ?
   - Declare A Variable And Use
   - Syntax ( Keyword | Variable Name | Assignment Operator | Variable Value )
-  - Variable Without Var
-  - Multiple Variables in The Same Line
+  - Variable Without Var - Search
+  - Multiple Variables in The Same Line are Separated with comma ','
   - Id And Global Variable
-  - Loosely Typed vs Strongly Typed - "Search for them"
+  - Loosely Typed vs Strongly Typed - "Search for them" - Interview Questions
 */
 
 /*
   If you use a variable before defining or declaring it, it will get an undefined
 */
 
-// console.log(user); // undefined
+// console.log(user); // ReferenceError: user is not defined If You doesn't declare already.
+
+// console.log(user);
+// var user = "Mustafa";
+
+/*
+  NOTE:
+  Declare A Variable First Then Use It
+*/
+
+// Normal way and correct: Declare variable and then use it
+// var user = "Muhammed";
+// console.log(user);
 
 // var user = "Sayed", age = 37;
 
 // console.log(user);
 // console.log(age);
-// console.log(hello);
+// console.log(hello); // A Global Id Called "hello" In HTML File
 
-// hello.innerHTML = "Option"; // edit to the contenet of html element id = "hello"
+// hello.innerHTML = "Option"; // Edit Id in HTML File That id = "hello"
 
-// ? ---- Lesson 012 - Identifiers Name Convetions And Rules ----
+/* Notes
+  If You Created an Id in HTML File,
+  It Will Make This Id As A Global Variable,
+  And You Can Access It In JavaScript file as A Global Varialbe
+*/
+
+// ? ---- Lesson 012 - Identifiers Name Conventions And Rules ----
 
 /*
   Identifiers
   - Name Conventions And Rules
-  - Reserved Words - searching for Identifiers
+  - Reserved Words - searching for Identifiers And Name Conventions [camalCase]
 */
 
-// var __userName__ = "MUstafa"; // valid Identifier
+/*
+  Naming Conversions:
+  - Only letters, numbers, underscores, and dollar signs
+  - Can't start with a number
+*/
+
+/*
+  Multi-Word Formatting
+  - firstName = camelCase
+  - first_name = underscore
+  - FirstName = PascalCase
+  - firstname = lowercase
+*/
+
+// var __userName__ = "MUstafa"; // Valid Identifier
 
 // var _us_1er_1 = "Sayed"; // Valid Identifiers
 // var $us$1er$1 = "Sayed"; // Valid Name
-// var $us$1er$1 = "Sayed"; // Valid
+// var $us$1er$1 = "Sayed"; // Valid Name
 // var user = "Osama"; // Identifier is Case Sensitive user - User - USER - uSer - usEr - is different
 // var User = "Muhammed"; // Identifier is Case Sensitive
 // var userName = "Sayed"; // camelCase is used in JS
 
 // console.log(user); // javascript is case sensitive
 // console.log(User); // case sensitive => lowerCase and UpperCase is distinct
-// console.log(userName);
+// console.log(userName); // Identifier Name is Used in "camalCase"
 
-// ? ---- Lesson 013 - Var, Let, Cost Compare  ----
+// ? ---- Lesson 013 - Var, Let, Const Compare  ----
 
 /*
   Var
   - Redeclare (Yes)
   - Access Before Declare (Undefined)
-  - Variable Scope Drama [Added To Window] () -- Search for it 
+  - Variable Scope Drama [Added To Window] () -- Search for it
   - Block Or Function Scope
 
   Let
   - Redeclare (No => Error)
   - Access Before Declare (Error)
-  - Variable Scope Drama [Added To Window] ()
+  - Variable Scope Drama [Not Added To Window] ()
   - Block Or Function Scope
-    
+
   Const
   - Redeclare (No => Error)
   - Access Before Declare (Error)
-  - Variable Scope Drama ()
-  - Block Or Function Scope  
+  - Variable Scope Drama (Not Added To Window)
+  - Block Or Function Scope
 */
 
 // var a = 2;
@@ -203,19 +293,19 @@ console.log(a); // 2
 
 let b = 1; // Declare and Initialization
 console.log(b); // 1
-// let a = 2; // Redeclare and Reinitialization - Error - Identifier 'a' has already been declared 
+// let a = 2; // Redeclare and Reinitialization - Error - Identifier 'a' has already been declared
 // console.log(a); // 2
 
 
 const c = 1; // Declare and Initialization
 console.log(c); // 1
-// const a = 2; // Redeclare and Reinitialization - Identifier 'a' has already been declared 
+// const a = 2; // Redeclare and Reinitialization - Identifier 'a' has already been declared
 // console.log(a); // 2
 */
 
 // We can't declare the same name of a variable "Identifier"
 
-// Access Before Declare A Variable -- With Var Not Given An Error
+// Access Before Declare A Variable -- With Var Not Given An Error but it will be Undefined
 // console.log(a); // Undefined
 // var a = 1;
 
@@ -233,12 +323,12 @@ console.log(c); // 1
 
 // let aabb = 1; // It doesn't add To Window Object // Global Scope
 
-// Search For "javaScript Scope Drama"
+// Search For "javaScript Scope Drama" Important
 
 // ? ---- Lesson 014 - String Syntax And Character Escape Sequence  ----
 
 /*
-  String Syntax + Character Escape Sequences - Searching for Character Escape Sequences
+  String Syntax + Character Escape Sequences - Searching for "Character Escape Sequences"
   Escape => Ignore
   \   Escape + Line Continue - Next Line Continue
   \n  New Line put the cursor on The Next Line
@@ -295,6 +385,12 @@ console.log(c); // 1
 // console.log(a + " " + b + " " + c + " " + d);
 // console.log(a + " " + b +
 // "\n" + c + " " + d);
+// console.log(a + " " + b + "\n" + c + " " + d);
+
+// console.log(`${a} ${b} ${c} ${d}`);
+
+// console.log(`${a} ${b}
+// ${c} ${d}`);
 
 // console.log(a + " \"\" " + b +
 // "\n" + c + " " + d);
@@ -322,6 +418,26 @@ console.log(c); // 1
 
 // ? ---- Lesson 017 - Variable And Concatenation Challenge ----
 
+// ===========================================
+// == Variables And Concatenation Challenge ==
+// ===========================================
+
+// [1] Create 3 Variables [Title, Desctiption, Date]
+// -- All In One Statement
+// -- Variable Name Must Be Two Words
+// -- Title Content Is "Elzero"
+// -- Description Content Is "Elzero Web School"
+// -- Date Content Is "25/10"
+// [2] Create Variable Contains Div And This Div Contains
+// -- H3 For Title
+// -- P For Paragraph
+// -- Span For Time
+// [3] Add This Card To Page 4 Times
+// [4] Use Template Literals For Concatenate
+
+// Extra
+// - Use ES6 Repeat
+
 // camelCasing
 // let articleTitle = "Elzero", articleDesc = "Elzero Web School", articleDate="25/10";
 
@@ -343,7 +459,7 @@ console.log(c); // 1
 // </div>`;
 // document.write(card.repeat(4));
 
-// // Create three variables in one statement using object destructuring
+// // Create three variables in one statement using object destructuring - "Advanced Lesson"
 // let {titleContent, descriptionContent, dateContent} = {
 //   titleContent: 'Elzero',
 //   descriptionContent: 'Elzero Web School',
@@ -351,7 +467,7 @@ console.log(c); // 1
 // };
 
 // // Create a template literal for the markup of the card
-// let markup = `
+// let markUp = `
 //   <div class="card">
 //     <h3 class="title">${titleContent}</h3>
 //     <p class="description">${descriptionContent}</p>
@@ -360,9 +476,16 @@ console.log(c); // 1
 // `;
 
 // // Write the markup to the document four times using repeat method
-// document.write(markup.repeat(4));
+// document.write(markUp.repeat(4));
 
-// ---- Lesson 18 - Arithmetic Operators ----
+/*
+  Searching Topics:
+  - Loosely Typed Language
+  - Strongly Typed Language
+  - Character Escape Sequences
+*/
+
+// ? ---- Lesson 018 - Arithmetic Operators ----
 
 /*
   Arithmetic Operators
@@ -381,7 +504,7 @@ console.log(c); // 1
 
 // console.log(10 - 20); // -10
 // console.log(10 - "Osama"); // NaN
-// console.log(typeof NaN); // Number
+// console.log(typeof(NaN)); // Number
 
 // console.log(10 * 20); // 200
 // console.log(10 * -20); // -200
@@ -393,11 +516,14 @@ console.log(c); // 1
 // console.log(2 * 2 * 2 * 2);
 
 // console.log(10 / 2); // 5
-// console.log(11 % 2); // 1
+// console.log(11 % 2); // Remove 1
 
-// console.log("35 % 2"); // 1
+// console.log(35 / 2); // 17.5
+// console.log(35 % 2); // Remove 1
 
-// ---- Lesson 19 - Unary Plus And Negation Operators ----
+// * Search for Remainder or Modulus (Division Remainder)
+
+// ? ---- Lesson 019 - Unary Plus And Negation Operators ----
 
 /*
   - "+" Unary Plus [Return Number If Its Not Number]
@@ -418,7 +544,7 @@ console.log(c); // 1
 // console.log(+100); // 100
 // console.log(+"100"); // 100
 // console.log(+"-100"); // -100
-// console.log(+"Osama"); // NaN
+// console.log(+"Osama"); // NaN => Remember That NaN Is Type Of Number
 // console.log(+"15.5"); // 15.5
 // console.log(+0xff); // 255 in Hexadecimal Numeral System
 // console.log(+null); // 0
@@ -438,7 +564,7 @@ console.log(c); // 1
 
 // console.log(Number("100")); // Convert a String into a number
 
-// ---- Lesson 20 - Type Coercion ----
+// ? ---- Lesson 020 - Type Coercion ----
 
 /*
   Type Coercion (Type Casting)
@@ -452,8 +578,8 @@ console.log(c); // 1
 let b = 20;
 let c = true;
 
-console.log(a + b); // 1020
-console.log(+a + b); // 10 + 20 = 30
+console.log(a + b); // 1020 - Concatenation
+console.log(+a + b); // 10 + 20 = 30 - Addition As Numbers
 console.log(Number(a) + b); // 30 = Convert a by using Constructor Number() To Convert It Into a Number
 console.log(a - b); // -10 => a Is A String And The Interpreter Convert It Into A Number
 console.log(b - a); // 10 => as same as above
@@ -467,37 +593,34 @@ console.log(b + c); // 21
 console.log(a + b + c); // 10 + 20 + true => string => 1020true
 console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
-// ---- Lesson 21 - Assignment Operators ----
+// ? ---- Lesson 021 - Assignment Operators ----
 
-/* 
-  Assignment Operators
+/*
+  Assignment Operators && Augmanted Assignment Operator
 */
 
-/* let a = 10;
+//  let a = 10;
 
-a = 20;
-console.log(a); // 20
+// a = 20;
+// console.log(a); // 20
 
-a = 10; // reinitialize
-a = a + 20;
-console.log(a); // 20
+// a = 10; // reinitialize
+// a = a + 20; // (new-a) = 10 (old-a) + 20
+// console.log(a); // 30
 
-a = a + 70; // a += 70 -- The Same
-console.log(a); // 100
+// a = a + 70; // a += 70 -- The Same as In Line 579
+// console.log(a); // 100
 
-a += 100;
-console.log(a); // 200
+// a += 100;
+// console.log(a); // 200
 
-a -= 50; // a = a - 50
-console.log(a); // 150
+// a -= 50; // a = a - 50
+// console.log(a); // 150
 
-a /= 50; // a = a / 50
-console.log(a); // 3
- */
+// a /= 50; // a = a / 50
+// console.log(a); // 3
 
-// NOTE: To comment your Code in VsCode using ctrl + / or block comment Shift + Alt + A
-
-// ---- Lesson 22 - Operators Challenges ----
+// ? ---- Lesson 022 - Operators Challenges ----
 
 /*
   Challenge 1
@@ -507,9 +630,9 @@ console.log(a); // 3
 // let b = "20";
 // let c = 80;
 
-// console.log( ++a + +b++ + +c++ - +a++ ); // 100
-// console.log( ++a + -b + +c++ - -a++ + +a ); // 100
-// console.log( --c + +b + --a * +b++ - +b * a + --a - +true ); // 100
+// console.log( ++a + +b++ + +c++ - +a++ );
+// console.log( ++a + -b + +c++ - -a++ + +a );
+// console.log( --c + +b + --a * +b++ - +b * a + --a - +true );
 
 /*
   [++a] [+] +[]
@@ -532,12 +655,14 @@ console.log(a); // 3
 // Only Use Variable Value
 // Do Not Use Variable Twice
 
+// My Solution
+
 // console.log(-d * +e); // 2000
 // console.log(-d + ++f + ++e * ++g); // 173
 
-// codepen.io
+// codepen.io - Where You Can Write Your Solutions
 
-// Another Answer
+// My Solution
 
 /* Challenge 1 */
 // let a = 10;
@@ -555,7 +680,7 @@ console.log(a); // 3
   [+b++]
       Value = 20;
       Explain = first unary plus operator convert the value from string to number, then post-increment increase the value by 1 to be 21 but not used
-  
+
   [+] = "addition operater"
 
   [+c++]
@@ -579,7 +704,7 @@ console.log(a); // 3
   [++a]
       Value = 13
       Explain = pre-increment increase the value of a by 1 to be 13
-      
+
   [+] = addition operator
 
   [-b]
@@ -587,17 +712,17 @@ console.log(a); // 3
       Explain = Unary negation operator convent the data type from string to number with different sign
 
   [+] = addition operator
-  
+
   [+c++]
       Value = 81;
       Explain = Unary plus operator has not effect because the date type already number, then post-increment increase the value by 1 to be 82 but not used
-  
+
   [-] = subtraction operator
 
   [-a++]
       Value = -13
       Explain = post-increment increase the value by 1 to be 14 but not used
-  
+
   [+] = addition operator
 
   [+a]
@@ -606,7 +731,7 @@ console.log(a); // 3
 
 
   so, the total value = 13 -21 + 81 - -13 + 14 = 100
-  
+
 */
 
 // a = 14    b = 21     c = 82
@@ -615,43 +740,43 @@ console.log(a); // 3
   [--c]
       Value = 81
       Explain = pre-decrement decrease the value by 1 to be 81
-  
+
   [+] = addition operator
 
   [+b]
       Value = 21
       Explain = Unary plus operator has no effect because the date type is already number
-  
+
   [+] = addition operator
 
   [--a]
       Value = 13
       Explain = pre decrement decrease the value by 1 to be 13
-  
+
   [*] = multiplication operator
 
   [+b++]
       Value = 21
       Explain = Unary plus operator has no effect because the date type is already number, then post increment increase the value by 1 to be 22
-  
+
   [-] = subtraction operator
 
   [+b]
       Value = 22
       Explain = Unary plus operator has no effect effect
-  
+
   [*] = multiplication operator
 
   [a]
       Value = 13
       Explain = from the previous a
-  
+
   [+] = Addition operator
 
   [--a]
       Value = 12
       Explain = Pre-decrement decrease the value by 1 to be 12
-  
+
   [-] = subtraction operator
 
   [+true]
@@ -670,11 +795,18 @@ console.log(a); // 3
 // console.log(-d * +e); //2000
 // console.log(++e * ++g + -d + ++f); // 173
 
-// ---- Lesson 23 - Number ----
+/*
+  Searching Topics:
+  - JavaScript Defer Attribute
+  - JavaScript Constructor
+  - JavaScript Unary Use Cases
+*/
+
+// ? ---- Lesson 023 - Number ----
 
 /*
   Number
-  - Double Precision - Searching
+  - Double Precision - Searching - Always Search
   - Syntactic Sugar "_" - To ease reading
   - e
   - **
@@ -684,20 +816,21 @@ console.log(a); // 3
   - Number Max Value
 */
 
-/*
-console.log(1000000);
-console.log(1_000_000);
-console.log(1e6);
-console.log(10 ** 6);
-console.log(10 * 10 * 10 * 10 * 10 * 10);
-console.log(1000000.000000);
-console.log(1000000.0);
+// console.log(1000000);
+// console.log(1_000_000);
+// console.log(1e6);
+// console.log(10 ** 6);
+// console.log(10 * 10 * 10 * 10 * 10 * 10);
+// console.log(1000000.000000);
+// console.log(1000000.0);
 
-console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
-console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
-console.log(Number.MAX_VALUE + 23434343434); // 1.7976931348623157e+308 */
+// console.log(Number("100"));
+// console.log(typeof Number); // Function
+// console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+// console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+// console.log(Number.MAX_VALUE + 23434343434); // 1.7976931348623157e+308
 
-// ---- Lesson 24 - Number Methods ----
+// ? ---- Lesson 024 - Number Methods ----
 
 /*
   Number Methods
@@ -710,40 +843,39 @@ console.log(Number.MAX_VALUE + 23434343434); // 1.7976931348623157e+308 */
   - isNaN() [ES6]
 */
 
-/*
-console.log((100).toString());
-console.log(100..toString());
-console.log(100.0.toString());
-console.log(100.1.toString());
-console.log(100.10.toString());
+// console.log((100).toString());
+// console.log(100..toString());
+// console.log(100.0.toString());
+// console.log(100.1.toString());
+// console.log(100.10.toString());
 
-console.log(100.555555.toFixed(2));
-console.log(100.553555.toFixed(2));
+// console.log(100.555555.toFixed(2));
+// console.log(100.557555.toFixed(2));
+// console.log(100.554555.toFixed(2));
 
-console.log(parseInt("100"));
-console.log(+"100");
-console.log(Number("100"));
-console.log(+"Osama 100"); // NaN
-console.log(Number("Osama 100")); // NaN
-console.log(parseInt("100 Osama")); // 100 as a Number
-console.log(parseInt("Osama 100")); // NaN
-console.log(parseInt("Osama 100 Osama")); // NaN
+// console.log(parseInt("100"));
+// console.log(+"100");
+// console.log(Number("100"));
+// console.log(+"Osama 100"); // NaN
+// console.log(Number("Osama 100")); // NaN
+// console.log(parseInt("100 Osama")); // 100 as a Number - "parseInt" is the best choice to convert string to a number
+// console.log(parseInt("Osama 100")); // NaN
+// console.log(parseInt("Osama 100 Osama")); // NaN
 
-console.log(parseFloat("100 Osama")); // 100
-console.log(parseFloat("100.500 Osama")); // 100.5
-console.log(parseInt("100.500 Osama")); // 100 without rounding off the Number as 1.5 => 1 not 2
-console.log(parseInt("1.5")); // 1 not 2
+// console.log(parseFloat("100 Osama")); // 100
+// console.log(parseFloat("100.500 Osama")); // 100.5
+// console.log(parseInt("100.500 Osama")); // 100 without rounding off the Number as 1.5 => 1 not 2
+// console.log(parseInt("1.5")); // 1 not 2
 
-console.log(Number.isInteger("100")); // false ? Is he will convert string to a number then check isInteger() or Not? An: he will check only if he an integer or not
-console.log(Number.isInteger(100.500)); // false
-console.log(Number.isInteger(100)); // true
+// console.log(Number.isInteger("100")); // false ? Is he will convert string to a number then check isInteger() or Not? An: he will check only if he an integer or not
+// console.log(Number.isInteger(100.500)); // false
+// console.log(Number.isInteger(100)); // true
 
-console.log(Number.isNaN("Osama")); // false
-console.log(Number.isNaN(100)); // false
-console.log(Number.isNaN("Osama"/20)); // true
-*/
+// console.log(Number.isNaN("Osama")); // false
+// console.log(Number.isNaN(1)); // false
+// console.log(Number.isNaN("Osama"/20)); // true
 
-// ---- Lesson 25 - Math Object ----
+// ? ---- Lesson 025 - Math Object ----
 
 /*
   Math Object
@@ -759,27 +891,35 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(Math.round(99.2)); // 99
 // console.log(Math.round(99.5)); // 100
+// console.log(Math.round(-99.9)); // -100
+// console.log(Math.round(-99.3)); // -99
 
 // console.log(Math.ceil(99.2)); // 100
+// console.log(Math.ceil(-99.9)); // -99
+// console.log(Math.ceil(-99.2)); // -99
+
+// console.log(Math.floor(-99.2)); // -100
+// console.log(Math.floor(-99.9)); // -100
 // console.log(Math.floor(99.9)); // 99
 
-// console.log(Math.min(10, 20, 100, -100, 90)); // -100
-// console.log(Math.max(10, 20, 100, -100, 90)); // 100
+// console.log(Math.min(10, 20, 100, -100, 90)); // -100 - minimum value
+// console.log(Math.max(10, 20, 100, -100, 90)); // 100 - mazimum value
 
+// // Math.pow(base, powerOFbase)
 // console.log(Math.pow(2, 4)); // 16
 
 /*
-  Math.random(): \
-  This function returns a floating-point number between 0 and 1 (exclusive), 
-  which means it generates a random decimal value greater than or equal to 0 
+  Math.random():
+  This function returns a floating-point number between 0 and 1 (exclusive),
+  which means it generates a random decimal value greater than or equal to 0
   and less than 1. 0 >= num < 1
 */
 
 /*
-  Math.random() * 10: Multiplying the random number generated by 10 
-  gives us a random decimal value between 0 and 10 (exclusive). 
-  This means the result can be any decimal number greater than or equal to 0 
-  and less than 10. 0>= num < 10 exclusive for all decimal numbers 
+  Math.random() * 10: Multiplying the random number generated by 10
+  gives us a random decimal value between 0 and 10 (exclusive).
+  This means the result can be any decimal number greater than or equal to 0
+  and less than 10. 0>= num < 10 exclusive for all decimal numbers
 */
 
 /*
@@ -787,24 +927,25 @@ console.log(Number.isNaN("Osama"/20)); // true
 */
 
 /*
-  parseInt(Math.random() * 10) + 6: Adding 6 to the result obtained in step 3 
-  shifts the range of possible values. Now we have an integer between 6 and 15 (inclusive) 
-  because the smallest value the previous expression can produce is 6 (0 + 6), 
+  parseInt(Math.random() * 10) + 6: Adding 6 to the result obtained in step 3
+  shifts the range of possible values. Now we have an integer between 6 and 15 (inclusive)
+  because the smallest value the previous expression can produce is 6 (0 + 6),
   and the largest value is 15 (9 + 6).
 */
 
 /*
-  To summarize, the code generates a random integer between 6 and 15 and 
+  To summarize, the code generates a random integer between 6 and 15 and
   displays it in the console.
 */
 
 // console.log(parseInt(Math.random()*10) + 6); // 6 -> 15
 
+// truncate = cutting
 // console.log(Math.trunc(99.5)); // 99
 
-// ! Note: search for "floor and trunc" -- your Task "24-6-2023"
+// * Note: search for "floor and trunc" -- your Task "24-6-2023"
 
-// ---- Lesson 26 - Number Challenge ----
+// ? ---- Lesson 026 - Number Challenge ----
 
 /*
   Number Challenge
@@ -823,6 +964,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 // // Use Variables a + d One Time To Get The Needed Output
 // console.log(a ** Math.trunc(d)); // 100^2 = 10000
 // console.log(Math.pow(a, Math.trunc(d))); // 100^2 = 10000
+// console.log(Math.pow(a, Math.round(d))); // 100^6 = 10000
 
 // // Get Integer "2" From d Variable With 4 Methods
 // console.log(Math.round(d));
@@ -834,7 +976,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log((Math.floor(b) / Math.ceil(d)).toFixed(2).toString()); // 66.67 => String
 // console.log(Math.round(b) / Math.ceil(d)); // 67 => Number
 
-// ---- Lesson 27 - String Methods Part 1 ----
+// ? ---- Lesson 27 - String Methods Part 1 ----
 
 /*
   String Methods
@@ -844,12 +986,13 @@ console.log(Number.isNaN("Osama"/20)); // true
   - trim()
   - toUpperCase()
   - toLowerCase()
-  - Chain Methods
+  - Chain Methods - Searching
 */
 
 // let theName = "Ahmed";
 // let theList = [1, 2, 3, 4, 5]; // Array
 
+// // * Search for difference between Index[] and CharAt()
 // console.log(theName); // Ahmed
 // console.log(theName[1]); // h
 // console.log(theName[5]); // undefined
@@ -857,15 +1000,16 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(theName.charAt(1)); // h
 // console.log(theName.charAt(5)); // null or empty
 
-// console.log(theName.toUpperCase()); // Capital Letters
-// console.log(theName.toLowerCase()); // Small Letter
+// console.log(theName.toUpperCase()); // Capital Letters "AHMED"
+// console.log(theName.toLowerCase()); // Small Letter "ahmed"
 
-// console.log(theName.length); // 5 count form 1 to last element
+// // Use length without ()
+// console.log(theName.length); // 5 count form 1 to last element [length-1]
 
 // let theName2 = "  Ahmed  ";
 
 // console.log(theName2[1]);
-// console.log(theName2[5]);
+// console.log(theName2[5]); // e
 
 // console.log(theName2.length); // 9
 
@@ -879,10 +1023,10 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(theName2.replace("m", "M").trim()); // ahMed -- review it
 
-// ---- Lesson 28 - String Methods Part 2 ----
+// ? ---- Lesson 028 - String Methods Part 2 ----
 
 /*
-  String Methods
+  * String Methods - Searching
   - indexOf(value [Mand], Start [Opt] Length)
   - lastIndexOf(value [Mand], Start [Opt] Length)
   - slice(Start [Mand], End [Opt] Not Include End)
@@ -894,14 +1038,15 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // // while you don't specify the index the should start search from it will search
 // // from index "zero"
-// console.log(a.indexOf("Web"));
-// console.log(a.indexOf("Web", 8)); // It Starts From 8 and Not Found Web then returns -1
+// console.log(a.indexOf("Web")); // 7
+// console.log(a.indexOf("Web", 8)); // -1 (Not Found)
 
-// console.log(a.lastIndexOf("Web")); // Search for last to First index // 7 // counting from zero from last index
+// console.log(a.lastIndexOf("Web")); // 7
 
 // console.log(a.lastIndexOf("o")); // 15
 // console.log(a.indexOf("o")); // 5
 
+// console.log(a.slice(0)); // "Elzero Web School" - (Start = 0, end not specified so it will be the end)
 // console.log(a.slice(11)); // Take (Start, to the last element if you don't write it) // "School"
 // console.log(a.slice(2, 7)); // Take (Start, End But It Is Not Included) // "zero "
 // console.log(a.slice(2, 8)); // "zero w"
@@ -909,22 +1054,27 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(a.slice(-6)); // "School"
 // console.log(a.slice(-1)); // "l"
-// console.log(a.slice(-5, -3)); // "ch"
+// console.log(a.slice(-5, -3)); // "ch" [Not included the end]
 // console.log(a.slice(-13, -7)); // start = "r" index: -13, end = " " index: -7 but it is not included so it takes "b"
 
 // console.log(a.repeat(3));
 
-// console.log(a.split());
-// console.log(a.split(""));
-// console.log(a.split(" ", 2));
-// console.log(a.split("", 6));
+// console.log(a.split()); // ["Elzero Web School"]
+// console.log(a.split("")); // ["E", "l", "z", "e", "r", "o", " ", "W", "e", "b", " ", "S", "c", "h", "o", "o", "l"]
+// console.log(a.split(" ")); // ["Elzero", "Web", "School"]
+// console.log(a.split(" ", 2)); // ["Elzero", "Web"]
+// console.log(a.split("", 6)); // ["E", "l", "z", "e", "r", "o"]
 
-// ---- Lesson 29 - String Methods Part 3 ----
+// let b = "Elzero|Web|School";
+
+// console.log(b.split("|")); // ["Elzero", "Web", "School"]
+
+// ? ---- Lesson 029 - String Methods Part 3 ----
 
 /*
   String Methods
   - Substring(Start [Mand], End [Opt] Not Including End)
-  --- Start > End Will Swap
+  --- [Start > End] Will Swap Arguments [End, Start] instead of [Start, End]
   --- Start < 0 It Start From 0
   --- Use Length To Get Last Character
   - Substr(Start [Mand], Characters To Extract)
@@ -940,19 +1090,21 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(a.length);
 
 // console.log(a.substring(2)); // Starts form index 0 so 2 - a.length (17)
-// console.log(a.substring(2, 6));
+// console.log(a.substring(2, 6)); // zero
 // console.log(a.substring(6, 2)); // same as 2 - 6 (Swaping)
-// console.log(a.substring(-10, 6)); // 0 - 6
-// console.log(a.substring(17)); // out of scope (string)
+// console.log(a.substring(-10, 6)); // Any number less than 0 will start from 0 such as -10 or -1
+// console.log(a.substring(17)); // out of scope (string) will return empty string
 // console.log(a.substring(a.length)); // 17
 // console.log(a.substring(a.length - 1)); // "l"
 // console.log(a.substring(a.length - 5, a.length - 3)); // "ch" 12 - 14 (end not included 14 - 1 = 13)
 
-// console.log(a.substr(0)); // from 0 to the length of String a
+// console.log(a.substr(0)); // from 0 to the length of String "a"
 // console.log(a.substr(0, 6)); // Elzero
-// console.log(a.substr(17)); // "" empty string because 17 is the Start Position from 0
+// console.log(a.substr(17)); // "" empty string because 17 (Out Of Range)
 // console.log(a.substr(-3)); // "ool"
 // console.log(a.substr(-5, 2)); // "ch"
+
+// Note: includes(), startsWith() and endsWith() return true or false
 
 // console.log(a.includes("Web")); // true
 // console.log(a.includes("web", 8)); // false
@@ -961,12 +1113,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(a.startsWith("E", 2)); // false
 // console.log(a.startsWith("zero", 2)); // true
 
-// console.log(a.endsWith("o", 6)); // Elzer"o" // true
-// console.log(a.endsWith("o")); // false // l
-// console.log(a.endsWith("ro", 6)); // true // Elze"ro"
-// console.log(a.endsWith("l"));
+// console.log(a.endsWith("o", 6)); // true - Elzer"o"
+// console.log(a.endsWith("o")); // false - "a" ends with 'l'
+// console.log(a.endsWith("ro", 6)); // true - Elze"ro"
+// console.log(a.endsWith("l")); // true - "a" ends with l without specifing the length of the string
 
-// ---- Lesson 30 - String Challenge ----
+// ? ---- Lesson 030 - String Challenge ----
 
 /*
   String Challenge
@@ -987,11 +1139,27 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // // Use Only "substr" Method + Template Leterals In Your Solution
 // console.log(`${a.substr(0, 6)} ${a.substr(11, 6)}`); // Elzero School
+// console.log(`${a.substr(0, 6)} ${a.substr(11)}`); // Elzero School
 
 // // Solution Must Be Dynamic And String May Change
-// console.log(a.charAt(0).toLowerCase() + a.substring(1, a.length-1).toUpperCase() + a.charAt(a.length-1).toLowerCase()); // eLZERO WEB SCHOOl
+// console.log(
+//   a.charAt(0).toLowerCase() +
+//     a.substring(1, a.length - 1).toUpperCase() +
+//     a.charAt(a.length - 1).toLowerCase()
+// ); // eLZERO WEB SCHOOl
 
-// ---- Lesson 31 - Comparison Operators ----
+// console.log(
+//   a.charAt(0).toLowerCase() +
+//     a.substr(1, a.length - 2).toUpperCase() +
+//     a.charAt(a.length - 1).toLowerCase()
+// ); // eLZERO WEB SCHOOl
+
+/*
+  Searching Topics
+  - Double Precision
+*/
+
+// ? ---- Lesson 31 - Comparison Operators ----
 
 /*
   Comparison Operator
@@ -1008,29 +1176,30 @@ console.log(Number.isNaN("Osama"/20)); // true
   - <= Smaller Than Or Equal
 */
 
-// console.log(10 == "10"); // Compare Value Only
-// console.log(-100 == "-100"); // Compare Value Only
-// console.log(10 != "10"); // Compare Value Only
+// console.log(10 == "10"); // true - Compare Value Only
+// console.log(-100 == "-100"); // true - Compare Value Only
+// console.log(10 != "10"); // false - Compare Value Only
 
-// console.log(10 === "10"); // Compare Value + Type
-// console.log(10 !== "10"); // Compare Value + Type
-// console.log(10 !== 10); // Compare Value + Type
+// TODO: === Most Used In JS (Recommended)
+// console.log(10 === "10"); // false - Compare Value + Type
+// console.log(10 !== "10"); // true - Compare Value + Type
+// console.log(10 !== 10); // false - Compare Value + Type
 
-// console.log(10 > 20);
-// console.log(10 > 10);
-// console.log(10 >= 10);
+// console.log(10 > 20); // true
+// console.log(10 > 10); // false
+// console.log(10 >= 10); // true
 
-// console.log(10 < 20);
-// console.log(10 < 10);
-// console.log(10 <= 10);
+// console.log(10 < 20); // true
+// console.log(10 < 10); // false
+// console.log(10 <= 10); // true - Two Condition Must Be True
 
-// console.log("Osama" === "Ahmed");
-// console.log("Osama" == "Ahmed");
-// console.log("Osama" !== "Ahmed");
-// console.log("Osama" != "Ahmed");
-// console.log(typeof("Osama") === typeof("Ahmed")); // String === String
+// console.log("Osama" === "Ahmed"); // false - Not the Same Value but the same Type
+// console.log("Osama" == "Ahmed"); // false
+// console.log("Osama" !== "Ahmed"); // true
+// console.log("Osama" != "Ahmed"); // true
+// console.log(typeof("Osama") === typeof("Ahmed")); // String === String - true
 
-// ---- Lesson 32 - Logical Operators ----
+// ? ---- Lesson 032 - Logical Operators ----
 
 /*
   Logical Operators
@@ -1044,17 +1213,17 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(!false); // false
 
-// console.log(!(10 == "10")); // !(true) => false
+// console.log(!(10 == "10")); // Guess the answer
 
-// console.log(10 == "10" && 10 > 8); // true
+// console.log(10 == "10" && 10 > 8); // true && true
 
-// console.log(10 == "10" && 10 > 8 && 10 >= 10); // true
+// console.log(10 == "10" && 10 > 8 && 10 >= 10); // true && true && true = true
 
 // console.log(10 == "10" && 10 > 8 && 10 > 50); // true && true && false = false
 
-// console.log(10 == "10" || 10 > 80 || 10 > 50); // true || true || false = true
+// console.log(10 == "10" || 10 > 80 || 10 > 50); // (true || true || false) = true - Any Condition can be true will be true
 
-// ---- Lesson 33 - If Conditions ----
+// ? ---- Lesson 033 - If Conditions ----
 
 /*
   Control Flow
@@ -1065,18 +1234,19 @@ console.log(Number.isNaN("Osama"/20)); // true
   if (Condition) {
     // Block Of Code
   }
-
 */
 
 // let price = 100;
-// let discount = false;
+// let discount = true;
 // let discountAmount = 30;
-// let country = "KSA";
+// // let country = "KSA";
+// // let country = "Syria";
+// let country = "Egypt";
 
 // if (discount === true) {
-//   price -= discountAmount; // price = price - 30; ==> price = price - discountAmount
+//   price -= discountAmount; // price = price - 30; => price = price - discountAmount;
 // } else if (country === "Egypt") {
-//   // price -= discountAmount; // price = price - discountAmount
+//   // price -= discountAmount; // price = price - discountAmount;
 //   price -= 40; // price = price - discountAmount
 // } else if (country === "Syria") {
 //   price -= 50;
@@ -1086,7 +1256,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(price);
 
-// ---- Lesson 34 - Nested If Conditions ----
+// ? ---- Lesson 034 - Nested If Conditions ----
 
 /*
   Nested If
@@ -1112,7 +1282,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(price);
 
-// ---- Lesson 35 - Conditional Ternary Operator ----
+// ? ---- Lesson 035 - Conditional Ternary Operator ----
 
 /*
   Conditional (Ternary) Operator
@@ -1128,9 +1298,9 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   console.log("Mrs");
 // }
 
-// Condition ? If True : If False
+// // Condition ? If True : If False
 
-// theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+// // theGender === "Male" ? console.log("Mr") : console.log("Mrs");
 
 // let result = theGender === "Male" ? "Mr" : "Mrs";
 
@@ -1142,48 +1312,51 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(`Hello ${result} ${theName}`);
 
 // theAge < 20
-//   ? console.log(20)
+//   ? console.log("less Than 20")
 //   : theAge > 20 && theAge < 60
 //   ? console.log("20 To 60")
 //   : theAge > 60
-//   ? console.log("Larger Than 60")
+//   ? console.log("Greater Than 60")
 //   : console.log("Unknown");
 
-// ---- Lesson 36 - Nullish Coalescing Operator And Logical Or ---- Try To Search For This Lesson Again
+// ? ---- Lesson 036 - Nullish Coalescing Operator And Logical Or ----
+// * Try To Search For This Lesson Again
 
 /*
   Logical Or ||
   -- Null + Undefined + Any Falsy Value
 
-  falsy values 
-    1-false 
+  falsy values
+    1-false
     2-null
-    3-undefined 
+    3-undefined
     4-"" (empty string)
     5-0
     6-NaN
 
-  all other values including all objects  are truthy
+  all other values including all objects are truthy
     "0"  "false "
 
-  Nullish Coalescing Operator ??
-  -- Null + Undefined
+  Nullish Coalescing Operator [??]
+  -- [Null + Undefined] Skipped like [|| - or]
+  -- [0, "", false, NaN] Not Skipped and get This Value
 */
 
-// let price1;
+// let price1 = "";
 // console.log(`The Price Is ${price1}`); // Price Is Undefined
 
-// let price2 = undefined;
+// // let price2 = undefined;
+// let price2;
 // console.log(`The Price Is ${price2}`);
 
 // let price3 = null;
-// console.log(`The Price Is ${price3}`);
+// console.log(`The Price Is ${price3 || 200}`);
 
 // let price4 = "";
 // console.log(`The Price Is ${price4 || 200}`); // 200
 
 // let price5 = 0;
-// console.log(`The Price Is ${price3 || 200}`); // 200
+// console.log(`The Price Is ${price5 || 200}`); // 200
 
 // let price6 = undefined;
 // console.log(`The Price Is ${price6 || 200}`); // 200
@@ -1194,16 +1367,24 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(Boolean(""));
 // console.log(Boolean(null));
 
-// let price; // Undefined
-// console.log(`The Price Is ${price ?? 200}`); // 200
-// price = null;
+/*
+ * falsy values => 0, "", false, NaN - nullish coalescing operator ?? will return the first truthy value
+ * null and undefined will return after nullish coalescing operator ??
+*/
+
+// Nullish Coalescing Operator
+// let price = null;
 // console.log(`The Price Is ${price ?? 200}`); // 200
 // price = undefined;
 // console.log(`The Price Is ${price ?? 200}`); // 200
-// price = "";
-// console.log(`The Price Is ${price ?? 200}`); // empty
-// price = 0;
+// price = NaN;
+// console.log(`The Price Is ${price ?? 200}`); // NaN
+// price = ""; // Falsy Value
+// console.log(`The Price Is ${price ?? 200}`); // empty ""
+// price = 0; // Falsy Value
 // console.log(`The Price Is ${price ?? 200}`); // 0
+// price = false;
+// console.log(`The Price Is ${price ?? 200}`); // false
 
 // Logical And &&
 // let p = 10;
@@ -1211,7 +1392,23 @@ console.log(Number.isNaN("Osama"/20)); // true
 // p = 0;
 // console.log(`${p && "Good"}`); // 0
 
-// ---- Lesson 37 - If Condition Challenge ----
+// function getUserDefinedSettings() {
+//   return {
+//     difficulty: "easy",
+//     startingCash: 0
+//   }
+// }
+
+// const cashTest = getUserDefinedSettings().startingCash || 500;
+// console.log(cashTest);
+// // const cash = getUserDefinedSettings().startingCash === undefined ? 500 : getUserDefinedSettings().startingCash;
+// // const cash = getUserDefinedSettings().startingCash === null ? 500 : getUserDefinedSettings().startingCash;
+// const cash = getUserDefinedSettings().startingCash ?? 500;
+
+// console.log(cash);
+
+
+// ? ---- Lesson 037 - If Condition Challenge ----
 
 /*
   If Challenge
@@ -1241,17 +1438,28 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   : console.log("Unknown");
 
 // let st = "Elzero Web School";
-// // console.log(st.length); // 17
+// console.log(st.length); // 17
 
 // if ( st.repeat(2).length.toFixed() === "34" ) {
 //   console.log("Good");
 // }
 
+// console.log(st.repeat(2).length.toFixed(2)); // 34.00
+
 // if ( (st.length * 2).toString() === "34" ) {
 //   console.log("Good");
 // }
 
-// // W Position May Change - Dynamic Position
+// // // W Position May Change - Dynamic Position
+// if (st.charAt(st.lastIndexOf("W")).toLowerCase() === "w") {
+//   console.log("Good");
+// }
+
+// Steps:
+// console.log(st.lastIndexOf("W")); // 7
+// console.log(st[st.lastIndexOf("W")]); // W
+// console.log(st[st.lastIndexOf("W")].toLowerCase()); // w
+
 // if (st.charAt(st.indexOf("W")).toLowerCase() === "w") {
 //   console.log("Good");
 // }
@@ -1274,7 +1482,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // CodePen.io
 
-// ---- Lesson 38 - Switch Statemnent ----
+// ? ---- Lesson 038 - Switch Statemnent ----
 
 /*
   Switch Statement
@@ -1311,10 +1519,13 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   case 3:
 //     console.log("Tuesday");
 //     break;
-//   default: // You Can Put it in First But Should
-//   // Write break After Block Code
+//   default:
 //     console.log("Unknown Day");
 // }
+
+/*
+  You can put Default in Any Place in Switch-case But Should write break after block of code
+*/
 
 // day = 6;
 
@@ -1336,7 +1547,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 //     break;
 // }
 
-// ---- Lesson 39 - Switch And If Condition Challenge ----
+// ? ---- Lesson 039 - Switch And If Condition Challenge ----
 
 /*
   Switch Challenge
@@ -1376,9 +1587,9 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(salary);
 
-// /*
-//   If Challenge
-// */
+/*
+  If Challenge
+*/
 
 // let holidays = 0;
 // let money = 0;
@@ -1433,7 +1644,13 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // codepen.io
 
-// ---- Lesson 40 - Array Big Introduction ----
+/*
+  Searching Topics
+  - JavaScript Logical Or
+  - JavaScript Operators
+*/
+
+// ? ---- Lesson 040 - Array Big Introduction ----
 
 /*
   Arrays
@@ -1451,24 +1668,24 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(`${myFriends[1].charAt(2)}`);
 // console.log(`${myFriends[1][2]}`);
 // console.log(`Hello ${myFriends[3][1]}`);
-// console.log(`${myFriends[3][1][2]}`);
+// console.log(`${myFriends[3][1][2]}`); // i
 
-// console.log(myFriends);
+// console.log(myFriends); // Old Array
 // myFriends[1] = "Gamal";
-// console.log(myFriends);
+// console.log(myFriends); // ["Ahemd", "Gamal", "Sayed", ["Marwan", "Ali"]]
 // myFriends[3] = "Sameh";
 // console.log(myFriends);
 // myFriends[3] = ["Sameh", "Ameer"];
 // console.log(myFriends);
 
-// console.log(typeof myFriends); // Object
+// console.log(typeof myFriends); // Object - The Correct Name Is - Array
 
 // console.log(Array.isArray(myFriends)); // true
 
-// let str = "Mustafa";
+// let str = "Osama";
 // console.log(Array.isArray(str)); // false
 
-// ---- Lesson 41 - Using Length With Array ----
+// ? ---- Lesson 041 - Using Length With Array ----
 
 /*
   Arrays Methods
@@ -1477,19 +1694,29 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // Index Starts From 0 [ 0, 1, 2, 3, 4 ]
 
-// let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
+// let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa", "Osama"];
 
-// console.log(myFriends.length); // 4
+// console.log(myFriends.length);
 
-// myFriends[myFriends.length - 1] = "Gamal";
+// myFriends[6] = "Gamal";
+// console.log(myFriends);
+// console.log(myFriends.length); // 7
 
+// myFriends[myFriends.length] = "Gamal";
 // console.log(myFriends);
 
+// myFriends[myFriends.length - 1] = "Gamal";
+// console.log(myFriends);
+
+// myFriends[myFriends.length] = "Gamal";
+// console.log(myFriends);
+
+// myFriends.length = 3;
 // myFriends.length = 2;
 
 // console.log(myFriends); // index [0, 1]
 
-// ---- Lesson 42 - Add And Remove From Array ----
+// ? ---- Lesson 042 - Add And Remove From Array ---- [IMPORTANT]
 
 /*
   Array Methods [Adding And Removing]
@@ -1523,7 +1750,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(`Last Name Is ${last}`);
 
-// ---- Lesson 43 - Searching Array ----
+// ? ---- Lesson 043 - Searching Array ----
 
 /*
   Arrays Mehtods [Search]
@@ -1536,14 +1763,18 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(myFriends);
 
-// console.log(myFriends.indexOf("Ahmed")); // 0
-// console.log(myFriends.indexOf("Ahmed", 2)); // 4
+// console.log(myFriends.indexOf("Ahmed"));
+// console.log(myFriends.indexOf("Ahmed", 2));
 
-// console.log(myFriends.lastIndexOf("Ahmed")); // 4
-// console.log(myFriends.lastIndexOf("Ahmed", -2)); // 0
+// console.log(myFriends.lastIndexOf("Ahmed"));
+// console.log(myFriends.lastIndexOf("Ahmed", -2));
 
-// console.log(myFriends.includes("Ahmed")); // true
-// console.log(myFriends.includes("Ahmed", 2)); // true
+// console.log(myFriends.includes("Ahmed")); // true - from index 0
+// console.log(myFriends.includes("Ahmed", 2)); // true - from index 2
+
+// if (myFriends.indexOf("Mustafa") === -1) {
+//   console.log("Not Found");
+// }
 
 // if (myFriends.lastIndexOf("Osama") == -1) {
 //   console.log("Not Found");
@@ -1552,25 +1783,23 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(myFriends.indexOf("Osama"));
 // console.log(myFriends.lastIndexOf("Osama"));
 
-// ---- Lesson 44 - Sorting Arrays ----
+// ? ---- Lesson 44 - Sorting Arrays ----
 
 /*
   Arrays Methods [Sort]
-  - Sort(Function [Opt])
+  - sort(Function [Opt])
   - reverse
 */
 
-// let myFriends = [10, "Sayed", "Mohamed", "90", 1000, 100, 20, "10", -20, -10];
+// let elements = [10, "Sayed", "Mohamed", "90", 1000, 100, 20, "10", -20, -10];
 
-// console.log(myFriends);
+// console.log(elements);
+// console.log(elements.sort());
+// // console.log(elements.sort(/*compareFn*/))
+// console.log(elements.reverse());
+// console.log(elements.sort().reverse()); // Chaining methods
 
-// console.log(myFriends.sort());
-
-// console.log(myFriends.reverse());
-
-// console.log(myFriends.sort().reverse());
-
-// ---- Lesson 45 - Slicing Array ----
+// ? ---- Lesson 045 - Slicing Array ----
 
 /*
   Array Methods [Slicing]
@@ -1579,13 +1808,15 @@ console.log(Number.isNaN("Osama"/20)); // true
   --- If Start Is Undefined => 0
   --- Negative Count From End
   --- If End Is Undefined || > Indexes => Slice To The End Array.length
-  --- Return New Array
+  --- Return New Array doesn't affect the original array
   - splice(start [Mand], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
   --- If Negative => Start From The End
 */
 
 // let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
+
 // console.log(myFriends);
+
 // console.log(myFriends.slice()); // Return All Array
 // console.log(myFriends.slice(1)); // Start From Index 1
 // console.log(myFriends.slice(1, 3)); // Start From Index 1 and End Not Included Is 3 Means Index = 2
@@ -1593,30 +1824,35 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(myFriends.slice(1, -2)); // Sayed , Ali , Osama , Not Included Gamal
 // console.log(myFriends.slice(-4, -1)); // Ali , Osama , Gamal
 // console.log(myFriends.slice(-4, -2)); // Ali , Osama
-// console.log(myFriends);
+// console.log(myFriends); // Array doesn't affect of the slice() and return the same array.
 
-// // myFriends.splice(0, 0, "Sameer","Samara"); // Add "Sameer" and "Samara" to the Index Zero
-// // console.log(myFriends);
-// // myFriends.splice(0, 1, "Sameer","Samara"); // Add "Sameer" and "Samara" to the Index Zero
-// // console.log(myFriends);
-// // myFriends.splice(0, 2, "Sameer", "Samara");
-// // console.log(myFriends);
+// myFriends.splice(0, 0, "Sameer", "Samara"); // Add "Sameer" and "Samara" to the Index Zero
+// console.log(myFriends); // return new array
+// myFriends.splice(0, 1, "Sameer", "Samara"); // Add "Sameer" and "Samara" to the Index Zero and remvoe "Ahmed"
+// console.log(myFriends);
+// myFriends.splice(0, 2, "Sameer", "Samara"); // Remove from index zero 2 elements from the basic array
+// console.log(myFriends);
 // myFriends.splice(1, 2, "Sameer", "Samara"); // Ahmed , Sameer , Samara , Osama , Gamal , Ameer
 // console.log(myFriends);
 
-// ---- Lesson 46 - Joining Arrays ----
+// ? ---- Lesson 046 - Joining Arrays ----
 
 /*
   Arrays Methods [Joining]
   - concat(array, array) => Return A New Array
-  - join(Seperator)
+  - join(Seperator) => Return a string
 */
 
 // let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
 // let myNewFriends = ["Samar", "Sameh"];
 // let schoolFriends = ["Haytham", "Shady"];
 
-// let allFriends = myFriends.concat(myNewFriends, schoolFriends, "Gameel", [1, 2]);
+// let allFriends = myFriends.concat(
+//   myNewFriends,
+//   schoolFriends,
+//   "Gameel",
+//   [1, 2]
+// );
 
 // console.log(allFriends);
 
@@ -1626,63 +1862,105 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(allFriends.join("|"));
 // console.log(allFriends.join("|").toUpperCase());
 
-// ---- Lesson 47 - Array Challenge ----
+// ? ---- Lesson 047 - Array Challenge ----
 
 /*
   Array Challenge
 */
 
 // let zero = 0;
-
 // let counter = 3;
-
 // let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
 
-// /* First Solution */
+// console.log(my);
+
+// First output
 // my.reverse().splice(zero, --counter);
 
 // console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"]
 
-// /* Second Solution */
+// Second output */
 // console.log(my.slice(++zero, ++counter)); // ["Elham", "Mazero"]
 
-// /* Third Solution */
-// console.log(my[--counter][--zero, counter] = "El" + my[counter].slice(counter)); // "Elzero"
+// Third output
+// console.log(
+//   (my[--counter][(--zero, counter)] = "El" + my[counter].slice(counter))
+// ); // "Elzero"
 
-// /* Fourth Solution */
+// Another output
+// console.log(my); // ['Osama', 'Elham', 'Mazero', 'Ahmed']
+// console.log(my[zero].slice(--zero, --counter) + my[counter].substr(counter)); // Elzero
+
+// Fourth output
 // console.log(my[counter].slice(-counter, --zero) + my[counter][--my[counter].length].toUpperCase()); // "rO"
 
-// ---- Lesson 48 - Loop - For And Concept Of Loop ----
+/*
+  Revision Date: 19/4/2024
+  name: Mustafa Ramadan
+*/
+
+// let zero = 0;
+// let cnt = 3;
+
+// let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// console.log(my.slice(zero, cnt + !zero).reverse()); // ["Osama", "Elham", "Mazero", "Ahmed"]
+
+// console.log(my.slice(!zero, cnt).reverse()); // ["Elham", "Mazero"]
+
+// console.log("El" + my[++zero].substring(--cnt)); // "Elzero"
+
+// console.log(my[zero].charAt(cnt + cnt) + my[zero].charAt(my.length - zero).toUpperCase()); // "rO"
+
+// ? ---- Lesson 048 - Loop - For And Concept Of Loop ----
 
 /*
+  [ Control Flow ]
   Loop
   - For
   for ([1] [2] [3]) {
     // Block Of Code
   }
+  - You should use forLoop if you know the numbers of ITERATIONS you loop for
 */
 
+// Loop iterate from 0 to 9 means 10 times
 // for (let i = 0; i < 10; i += 1) {
 //   console.log(i);
 // }
 
-// ---- Lesson 49 - Looping On Sequences ----
+// ? ---- Lesson 049 - Looping On Sequences ----
 
 /*
   Loop
   - Loop On Sequence
 */
 
-// let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 5 ,"Ali", "Amira"];
-
+// let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 5, "Ali", "Amira"];
 // let onlyNames = [];
 
+// if (typeof myFriends[0] === "string") {
+//   onlyNames.push(myFriends[0]);
+// }
+// if (typeof myFriends[1] === "string") {
+//   onlyNames.push(myFriends[1]);
+// }
+// if (typeof myFriends[2] === "string") {
+//   onlyNames.push(myFriends[2]);
+// }
+// if (typeof myFriends[3] === "string") {
+//   onlyNames.push(myFriends[3]);
+// }
+
+// todo: refactor the code above using for loop and if statement to minimize the code
+
 // for (let i = 0; i < myFriends.length; i++) {
-//   if (typeof myFriends[i] === "string")
-//     onlyNames.push(myFriends[i]);
+//   // Add only names or string to the onlyNames array
+//   if (typeof myFriends[i] === "string") onlyNames.push(myFriends[i]);
 // }
 // console.log(onlyNames);
 
+// Access the Elements of array without Looping
 // console.log(myFriends[0]);
 // console.log(myFriends[1]);
 // console.log(myFriends[2]);
@@ -1690,11 +1968,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(myFriends[4]);
 
 // for (let i = 0; i < myFriends.length; i++) {
-//   // console.log(i); // 0 1 2 3 4
+//   // console.log(i);
+//   // console.log(myFriends[0]);
 //   console.log(myFriends[i]);
 // }
 
-// ---- Lesson 50 - Nested Loops And Trainings ----
+// ? ---- Lesson 050 - Nested Loops And Trainings ----
 
 /*
   Loop
@@ -1702,9 +1981,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
-
 // let colors = ["Red", "Green", "Black"];
-
 // let models = [2020, 2021];
 
 // for (let i = 0; i < products.length; i++) {
@@ -1721,19 +1998,17 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   }
 // }
 
-// ---- Lesson 51 - Loop Control - Break, Continue, Label ----
+// ? ---- Lesson 051 - Loop Control - Break, Continue, Label ----
 
 /*
   Loop Control
   - Break
   - Continue
-  - Label
+  - Label - Not so common but should you use if you need
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
-
 // let colors = ["Red", "Green", "Black"];
-
 // mainLoop: for (let i = 0; i < products.length; i++) {
 //   // if (typeof products[i] === "number") {
 //   //   continue;
@@ -1747,24 +2022,23 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   }
 // }
 
-// ---- Lesson 52 - Loop - For Advanced Example ----
+// ? ---- Lesson 052 - Loop - For Advanced Example ----
 
 /*
   Loop For Advanced Example
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iphone"];
-
 // let i = 0;
 
 // for (;;) {
 //   console.log(products[i]);
-//   i += 2;
-//   if (i == products.length)
-//     break;
+//   // i += 2;
+//   i++;
+//   if (i === products.length) break;
 // }
 
-// ---- Lesson 53 - Practice - Add Products To Page ----
+// ? ---- Lesson 053 - Practice - Add Products To Page ----
 
 /*
   Products Practice
@@ -1772,10 +2046,10 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
 // let colors = ["Red", "Green", "Blue"];
-// let showCount = 5;
+// let count = 5;
 
-// document.write(`<h1>Show ${showCount} Products</h1>`);
-// for (let i = 0; i < showCount; i++) {
+// document.write(`<h1>Show ${count} Products</h1>`);
+// for (let i = 0; i < count; i++) {
 //   document.write(`<div>`);
 //   document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
 //   for (let j = 0; j < colors.length; j++) {
@@ -1785,11 +2059,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   document.write(`</div>`);
 // }
 
-// ---- Lesson 54 - Loop - While ----
+// ? ---- Lesson 054 - Loop - While ----
 
 /*
   Loop
   - While
+      - I am NOT SURE how many ITERATIONS I might need to carry out.
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
@@ -1799,13 +2074,25 @@ console.log(Number.isNaN("Osama"/20)); // true
 // while (index < products.length) {
 //   console.log(products[index]);
 //   index++;
+//   if ( index === 3 ) {
+//     break;
+//   }
 // }
 
-// ---- Lesson 55 - Loop - Do-While ----
+/*
+  What is the difference between forLoop and WhileLoop in JS?
+    Links:
+      1. https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/
+      2. https://www.geeksforgeeks.org/difference-between-for-loop-and-while-loop-in-programming/
+      3. https://medium.com/swlh/understanding-javascripts-for-loop-while-loop-43d034faae89
+*/
+
+// ? ---- Lesson 055 - Loop - Do-While ----
 
 /*
   Loop
   - Do-While
+    - Do-While is executed at least one
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
@@ -1825,14 +2112,15 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(i);
 
-// ---- Lesson 56 - Loop - Challenge ----
+// ? ---- Lesson 056 - Loop - Challenge ----
 
 /*
   Loop Challenge
 */
 
 // let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samara"];
-// let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
+// let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia", "Anwar"];
+
 // let cnt = 0;
 // document.write(`<div>We Have X Admins</div>`);
 // document.write(`<div>We Have ${myAdmins.indexOf("Stop")} Admins</div>`); // No Of Admins Before Stop
@@ -1851,10 +2139,35 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   cnt = 0;
 // }
 
-// ---- Lesson 57 - Function Intro And Basic Usage ----
+/*
+  Modified Date: 5/20/2024
+*/
+
+// let c = 0
+// document.write("<div>We have X Admins</div>");
+
+// document.write(`<div>We have ${myAdmins.lastIndexOf("Stop")} Admins</div>`);
+
+// document.write(`<hr>`);
+
+// for (let i = 0; i < myAdmins.lastIndexOf("Stop"); i++){
+//   document.write(`<div>`);
+//   document.write(`The Admin for team ${i+1} ${myAdmins[i]}`);
+//   document.write(`<h3>Team memebers: </h3>`);
+//   for(let j = 0; j < myEmployees.length; j++){
+//     if(myAdmins[i].charAt(0) === myEmployees[j].charAt(0)){
+//       document.write(`<p>- ${++c} ${myEmployees[j]}</p>`);
+//     }
+//   }
+//   document.write(`</div>`);
+//   c = 0;
+//   document.write(`<hr>`);
+// }
+
+// ? ---- Lesson 057 - Function Intro And Basic Usage ----
 
 /*
-  Function
+  Function => DRY : Don't Repeat Yourself
   - What Is Function ?
   - User-Defined vs Built-In Functions
   - Syntax + Basic Usage
@@ -1876,17 +2189,20 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   console.log(`Hi, ${userName}!`);
 // }
 
-// sayHello("Mustafa"); // With Arguments
+// // With Arguments
+// sayHello("Osama");
 // sayHello("Sayed");
 // sayHello("Ali");
+// sayHello("Sama");
+// sayHello("Uswa");
 
-// ---- Lesson 58 - Function Advanced Examples ----
+// ? ---- Lesson 058 - Function Advanced Examples ----
 
 // function sayHello(userName, age) {
 //   if (age < 20) {
-//     console.log("App Is Not Suitable For You!");
+//     console.log("App is Not Suitable For You!");
 //   } else {
-//     console.log(`Hello, ${userName}!, You Age Is ${age}`);
+//     console.log(`Hello, ${userName}!, You Age is ${age}`);
 //   }
 // }
 
@@ -1905,7 +2221,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // generateYears(1982, 2021, 2020);
 
-// ---- Lesson 59 - Function Return And Use Cases ----
+// ? ---- Lesson 059 - Function Return And Use Cases ----
 
 /*
   Function
@@ -1928,18 +2244,29 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(result + 100);
 
+// function calc(num1, num2) {
+//   return;
+//   num1 + num2;
+// }
+
+// let res = calc(10, 20);
+
+// console.log(res + 100); // Undefined + 100 = NaN
+
+// console.log(res); // Undefined
+
 // function generate(start, end) {
 //   for (let i = start; i <= end; i++) {
-//     console.log(i);
 //     if (i === 15) {
 //       return `Interrruptting`;
 //     }
+//     console.log(i);
 //   }
 // }
 
 // generate(10, 20);
 
-// ---- Lesson 60 - Function Default Parameters ----
+// ? ---- Lesson 060 - Function Default Parameters ----
 
 /*
   Function
@@ -1957,31 +2284,32 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   return `Hello, ${userName}! Your Age Is ${age}.`;
 // }
 
-// console.log(sayHello());
+// console.log(sayHello("Osama"));
 
-// ---- Lesson 61 - Function Rest Parameters ----
+// ? ---- Lesson 061 - Function Rest Parameters ----
 
 /*
   Function
-  - Rest Parameters
+  - Rest Parameters [Array of Arguments] Or [typeof (array) > Object]
   - Only One Allowed
   - Must Be Last Element
 */
 
 // function calc(...numbers) { // Array of Arguments
-//   // console.log(Array.isArray(numbers));
+//   // console.log(Array.isArray(numbers)); // true
+//   // console.log(typeof(numbers)); // Object >> Array
 //   // return num1 + num2 + num3;
 
 //   let result = 0;
 //   for (let i = 0; i < numbers.length; i++) {
-//     result += numbers[i];
+//     result += numbers[i]; // result = result + numbers[i]
 //   }
 //   return `Final Result Is ${result}`;
 // }
 
 // console.log(calc(10, 20, 10, 30, 50, 30));
 
-// ---- Lesson 62 - Function Ultimate Practice ----
+// ? ---- Lesson 062 - Function Ultimate Practice ----
 
 /*
   Function Advanced Practice
@@ -1998,20 +2326,22 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   document.write(`<p>Age: ${ag}</p>`);
 //   document.write(`<p>Hour Rate: $${rt}</p>`);
 //   if (show === "Yes") {
-//     if (sk.length > 0) {
+//     if (sk.length > 0) { // skills is existed and > 0
 //       document.write(`<p>Skills: ${sk.join(" | ")}</p>`);
-//     } else {
+//     } else { // sk.length === 0 [skills doesn't existed]
 //       document.write(`<p>Skills: No Skills</p>`)
 //     }
 //   } else {
-//     document.write(`<p>Skills Is Hidden</p>`);
+//     if (sk.length === 0) {
+//       document.write(`<p>Skills: No Skills and is Hidden</p>`);
+//     }
 //   }
 //   document.write(`</div>`);
 // }
 
-// showInfo("Mustafa", 22, 20, "No", "Html", "CSS");
+// showInfo("Osama", 38, 20, "No");
 
-// ---- Lesson 63 - Random Arguments Function Challenge ----
+// ? ---- Lesson 063 - Random Arguments Function Challenge ----
 
 /*
   Function - Random Argument Challenges
@@ -2080,6 +2410,22 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   console.log(`Hello ${name}, Your Age Is ${age}, You ${availableOrNot}`);
 // }
 
+
+// ---- MySolution 3 ----
+
+
+// function showDetails(a, b, c) {
+//   const name = typeof a === "string" ? a : typeof b === "string" ? b : c;
+//   const age = typeof a === "number" ? a : typeof b === "number" ? b : c;
+//   const isAvailable = typeof a === "boolean" ? a : typeof b === "boolean" ? b : c;
+
+//   const availabilityMessage = isAvailable ? "You are Available for Hire": "You aren't Available for Hire";
+
+//   console.log(`Hello ${name}, Your Age Is ${age}, ${availabilityMessage}`);
+// }
+
+
+
 // showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
@@ -2087,7 +2433,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 // showDetails(true, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(38, false, "Osama"); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
 
-// ---- Lesson 64 - Anonymous Function And Practice ----
+// ? ---- Lesson 064 - Anonymous Function And Practice ----
 
 /*
   Function
@@ -2106,23 +2452,31 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(calc(10, 5)); // calling function calc
 
+// Runtime Anonymous function - Error when calling function before intialization
 // let calculator = function (num1, num2) {
 //   return num1 + num2;
 // };
 
 // console.log(calculator(10, 20));
 
-// function sayHello() {
-//   console.log("Hello, Mustafa");
-// }
+// DOM >> Document Object Model
+
+// document.getElementById("show").onclick = function () {
+//   console.log("Show");
+// };
 
 // document.getElementById("show").onclick = sayHello;
 
+// function sayHello() {
+//   console.log("Hello Osama");
+// }
+
+// Anonymous function
 // setTimeout( function () {
 //   console.log("Good");
 // }, 2000);
 
-// ---- Lesson 65 - Return Nested Function ----
+// ? ---- Lesson 065 - Return Nested Function ----
 
 /*
   Function
@@ -2131,6 +2485,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 */
 
 // Example 1
+
 // function sayMessage(fName, lName) {
 //   let message = "Hello";
 //   // Nested Function
@@ -2141,11 +2496,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   return message;
 // }
 
-// console.log(sayMessage("Osama", "Muhammed"));
-
+// console.log(sayMessage("Osama", "Muhammad"));
+// =================================================================================================
 // Example 2
+
 // function sayMessage(fName, lName) {
-//   let message = "Hello";
+//     let message = "Hello";
 //   // Nested Function
 //   function concatMsg() {
 //     return `${message} ${fName} ${lName}`;
@@ -2153,24 +2509,32 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   return concatMsg();
 // }
 
-// console.log(sayMessage("Osama", "Muhammed"));
-
+// console.log(sayMessage("Osama", "Muhammad"));
+// =================================================================================================
 // Example 3
+
 // function sayMessage(fName, lName) {
 //   let message = "Hello";
-//   // Nested Function
+
+//  // Nested Function
 //   function concatMsg() {
+//
 //     function getFullName() {
+//
 //       return `${fName} ${lName}`;
+//
 //     }
+//
 //     return `${message} ${getFullName()}`;
+//
 //   }
+
 //   return concatMsg();
 // }
 
-// console.log(sayMessage("Osama", "Muhammed"));
+// console.log(sayMessage("Osama", "Muhammad"));
 
-// ---- Lesson 66 - Arrow Function Syntax ----
+// ? ---- Lesson 066 - Arrow Function Syntax ----
 
 /*
   Function
@@ -2179,14 +2543,21 @@ console.log(Number.isNaN("Osama"/20)); // true
   - Multiple Lines
 */
 
+// function print() {
+//   return 10;
+// }
+
+// console.log(printNum());
+
 // let print = function () {
 //   return 10;
 // };
 
-// let print = () => {
+// let print = _ => {
 //   // let a  = 10;
 //   return 10;
 // };
+
 
 // let print = () => 10;
 // let print = _ => 10;
@@ -2195,56 +2566,86 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   return num;
 // };
 
+
 // let print = (num) => num;
 // let print = num => num; // In Case One Parameter You Can Remove braces
 
-// let print = function (num1, num2) {
+// console.log(print(100));
+
+
+// let print = function(num1, num2) {
 //   return num1 + num2;
 // };
 
 // let print = (num1, num2) => num1 + num2;
 
+// Error when using these parameters without braces
+// let print = num1, num2 => num1 + num2;
+
 // console.log(print(100, 50));
 
-// ? ---- Lesson 67 - Scope - Global And Local ----
+// ? ---- Lesson 067 - Scope - Global And Local ---- /** Interview Questions */ =>
+
+// todo: Need to search for each piece of info
 
 /*
   Scope
   - Global And Local Scope
+  - Definition: Scope determines the accessibility (visibility) of variables.
+    - Block scope [let, const]
+    - Funtion scope [var, let, const]
+    - Global scope [var, let, const]
+
+    link tutorial: https://www.w3schools.com/js/js_scope.asp
+*/
+
+/* NOTE:
+  - Local variables have Function Scope:
+    - They can only be accessed from within the function.
+  - Local variables are created when a function starts, and deleted when the function is completed.
 */
 
 // Global Scope
 // var a = 1;
-// let b = 2;
+// let b = 2; // Global Variable defined with the let keyword do not belong to the window object
 
+// Variables declared within a JavaScript function, are LOCAL to the function
 // function showText() {
 //   // Local Scope
 //   var a = 10;
 //   let b = 20;
 //   console.log(`Function - From Local ${a}`);
 //   console.log(`Function - From Local ${b}`);
+//   // var a = 100;
+//   // let b = 200;
 // }
+
+// showText();
 
 // console.log(`From Global ${a}`);
 // console.log(`From Global ${b}`);
 
 // showText();
 
-// ? ---- Lesson 68 - Scope - Block ----
+// ? ---- Lesson 068 - Scope - Block ----
 
 /*
   Scope
   - Block Scope [If, Switch, For]
+  NOTE: var is not block scope
 */
 
-// var x = 10;
+// var x = 10; // Global Scope
 
 // if (10 === 10) {
+//   console.log(`From If Block ${x}`); // with let ReferenceError: Cannot access 'x' before initialization
 //   let x = 50;
-//   console.log(`From If Block ${x}`);
+//   // var x = 50; // Not a block scope
 // }
 
-// console.log(x);
+// console.log(`From Global ${x}`); // Global Scope
+
+// console.log(x); // var is not a block scope - note that the value of x has been overwritten by the value of x inside the if block scope - 50
 
 // var a = 1;
 // let b = 2;
@@ -2261,13 +2662,14 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // showText();
 
-// ? ---- Lesson 69 - Scope - Lexical (Static) ----
+// ? ---- Lesson 069 - Scope - Lexical (Static) ---- /* Interview Questions */
 
 /* Searching Topics Important
 
   JavaScript Function
   JavaScript Function Currying
   JavaScript Function Arrow Function
+  JavaScript IIFE - Immediately Invoked Function Expression
   JavaScript Scope
 
 */
@@ -2284,29 +2686,31 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // More Notes
 
-
-
-
-
-
-
-
 // let a = 10;
+
 // function parent() {
 //   let a = 10;
+
 //   function child() {
 //     // let a = 10;
 //     console.log(a);
+//     console.log(`From Child ${b}`);
+
 //     function grand() {
+//       let b = 100;
 //       console.log(`From Grand ${a}`);
+//       console.log(`From Grand ${b}`);
 //     }
+
 //     grand();
 //   }
+
 //   child();
 // }
+
 // parent();
 
-// ? ---- Lesson 70 - Arrow Function challenge ----
+// ? ---- Lesson 070 - Arrow Function challenge ----
 
 /*
   Function Arrow Challenge
@@ -2316,12 +2720,24 @@ console.log(Number.isNaN("Osama"/20)); // true
 // [2] Convert To Arrow Function
 // [3] Print The Output [Arguments May Change]
 
+
+// ======== Sol 24/5/2024 ========
+
+// let names = function (...name) {
+//   // parameter ?
+//   return `String [${name.join("], [")}] => Done !`;
+// }
+
+// let names = (...name) => `String [${name.join("], [")}] => Done !`;
+
+/* =============================================== */
+
 // let names = function (...n) {
 //   // Parameter ?
 //   return `String [${n.join("], [")}] => Done !`;
 // };
 
-// MySolution
+// ======== My_Solution ========
 // Arrow Function In One Line
 // let names = (...n) => `String [${n.join("], [")}] => Done !`;
 
@@ -2334,16 +2750,37 @@ console.log(Number.isNaN("Osama"/20)); // true
 // [2] Create The Same Function With Regular Syntax
 // [3] Use Array Inside The Arguments To Get The Output
 
-// let myNumbers = [20, 50, 10, 60]; // Array
+// let myNumbers = [20, 50, 10, 60];
 
-// My Solution
+/* =============================================== */
+
+// ======== Sol 24/5/2024 ========
+
+// let myNumbers = [20, 50, 10, 60];
+
+// let calc = (one, two, ...nums) => one + two + nums[one - one];
+//              10 + 20 + 50 = 80
+
+// Regular Syntax
+
+// let calc = function (one, two, ...nums) {
+//   return one + two + nums[one - one];
+// }
+
+// console.log(calc(10, myNumbers[+false], myNumbers[+true])); // 80
+
+/* =============================================== */
 
 // let calc = (one, two, ...nums) => one * two + nums[one- one][two-one/one] - nums[one - one][one - one]; // 10 * 4 + 40 = 80
+
 // let calc = function (one, two, ...nums) {
 //   return  one * two + nums[one- one][two-one/one] - nums[one - one][one - one]; // 10 * 4 + 40 = 80
 // }
 
 // console.log(calc(10, myNumbers.length, myNumbers)); // 80
+
+/* =============================================== */
+
 // Another_Solution
 
 // let calc = function (one, two, ...nums) {
@@ -2352,15 +2789,15 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(calc(10, myNumbers.shift(), myNumbers.shift()));  // 80
 
-// ? ---- Lesson 71 - Higher Order Functions - Map ----
+// ? ---- Lesson 071 - Higher Order Functions - Map ---- /** Interview Questions and Projects is used monstly */
 
 /*
-  Higher Order Functions 
+  Higher Order Functions
   ---> Is a function that accepts function as parameter and/or returns a function.
 
   - Map
   --- Method creates a new array
-  --- populated with the results of calling a provided function on every element 
+  --- populated with the results of calling a provided function on every element
   --- in the calling array.
 
   Syntax map(callBackFunction(Element, Index, Array) { }, thisArg)
@@ -2635,13 +3072,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 //       });
 //       // Add Active Class To This Element
 //       this.classList.add("active");
-//       // Hide All Divs 
+//       // Hide All Divs
 //       allDivs.forEach(function(ele){
 //         ele.style.display="none";
 //       });
 //     };
 // });
-
 
 // ? ---- Lesson 78 - Higher Order Functions - Challenge ----
 
@@ -2667,7 +3103,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 // let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
 // let solution = myString.split(",").filter(function(e){
-//  // Return a string without any numbers 
+//  // Return a string without any numbers
 //   return isNaN(e);
 // }).map(function(e){
 // // Return a string without first Character
@@ -2692,7 +3128,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // console.log(solution); // Elzero Web School
 
-
 // ? ---- Lesson 079 - Object - Introduction ----
 
 /*
@@ -2716,9 +3151,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(user.theAge); // 38
 // console.log(user.sayHello()); // "Hello"
 
-
 // ? ---- Lesson 080 - Object - Dot Notation vs Bracket Notation ----
-
 
 /*
   Object
@@ -2734,7 +3167,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 //   country_of: "Egypt",
 //   "live in": "Berlin",
 //   100: "Number",
-//   country: "Egypt" 
+//   country: "Egypt"
 // };
 
 // console.log(user.theName); // Using period notation
@@ -2745,7 +3178,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(user["live in"]); // You should using bracket with invalid name like string has a space
 // // console.log(user.myVar); // user.country Here you can't use "dot notation" for accessing an value from "dynamic property name" OUTPUT: undefined
 // console.log(user[myVar]); // user[country]="Egypt" using bracket notation
-
 
 // ? ---- Lesson 081 - Nested Object And Advanced Trainings ----
 
@@ -2786,12 +3218,11 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(user.addresses.egypt.one); // Cairo
 // console.log(user["addresses"].egypt.one); // Cairo
 // console.log(user["addresses"]["egypt"]); // Nested Object => {one: "Cairo", two: "Giza"}
-// console.log(user["addresses"]["egypt"]["one"]); // Cairo using bracket notation 
+// console.log(user["addresses"]["egypt"]["one"]); // Cairo using bracket notation
 
 // console.log(user.checkAv()); // Available is a local scope inside a user Object
 
 // ? ---- Lesson 082 - Create Object With New Keyword ----
-
 
 /*
   Object
@@ -2819,15 +3250,13 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(user["country"]);
 // console.log(user.sayHello());
 
-
 // ? ---- Lesson 083 - This Keyword - Important ----
-
 
 /*
   Function this Keyword
   - this Introduction
   - this inside Object method
-  --- when a function is called as a method of an object, 
+  --- when a function is called as a method of an object,
   --- its this is set to the object the method is called on.
   - Global Object
   - Test Variables With window And This
@@ -2837,7 +3266,6 @@ console.log(Number.isNaN("Osama"/20)); // true
   Search - Important
   - Strict Mode
 */
-
 
 // console.log(this);
 // console.log(this === window); // true
@@ -2872,12 +3300,10 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // ? ---- Lesson 084 - Create Object With Create Method ----
 
-
 /*
   Object
   - Create Object with Create Method
 */
-
 
 // let user = {
 //   age: 40,
@@ -2911,15 +3337,12 @@ console.log(Number.isNaN("Osama"/20)); // true
 // console.log(copyObj.age);
 // console.log(copyObj.doubleAge());
 
-
 // ? ---- Lesson 085 - Create Object With Assign Method ----
-
 
 /*
   Object
   - Create Object With assign Method
 */
-
 
 // let obj1 = {
 //   prop1: 1,
@@ -2942,7 +3365,7 @@ console.log(Number.isNaN("Osama"/20)); // true
 
 // let finalObject = Object.assign(targetObject, obj1, obj2);
 
-// // finalObject.prop1 = 200; 
+// // finalObject.prop1 = 200;
 // // finalObject.prop4 = 4;
 
 // console.log(finalObject);
@@ -2950,8 +3373,6 @@ console.log(Number.isNaN("Osama"/20)); // true
 // let newObject = Object.assign({}, obj1, {prop5: 5, prop6: 6});
 
 // console.log(newObject);
-
-
 
 // Searching Topics to solve Any Object exercises:
 
@@ -2964,16 +3385,14 @@ console.log(Number.isNaN("Osama"/20)); // true
  * JavaScript Object Values
  */
 
-
 // ? ---- Lesson 086 - What Is Dom? And Select Elements ----
-
 
 /*
   DOM
-  - What Is DOM
+  - What Is DOM?
   - DOM Selectors
   --- Find Element By ID
-  --- Find Element By Tag Name 
+  --- Find Element By Tag Name
   --- Find Element By Class Name
   --- Find Element By CSS Selectors
   --- Find Element By Collection
@@ -2983,3 +3402,504 @@ console.log(Number.isNaN("Osama"/20)); // true
   ------ forms
   ------ links
 */
+
+// let myIdElement = document.getElementById("my-div");
+// let myTagElements = document.getElementsByTagName("p");
+// let myClassElement = document.getElementsByClassName("my-span");
+// let myQueryElement1 = document.querySelector(".special"); // Class
+// let myQueryElement2 = document.querySelector("#my-div"); // Id
+// let myQueryElement3 = document.querySelector(".my-span"); // Class - First Element of an Object is met of all my-span Classes
+// let myQueryAllElement = document.querySelectorAll(".my-span"); // Class
+
+// console.log(myIdElement);
+// console.log(myTagElements);
+// console.log(myTagElements[1]);
+// myTagElements[1].innerHTML = "Test";
+// console.log(myTagElements[1].innerHTML);
+// console.log(myClassElement);
+// console.log(myClassElement[1]);
+// console.log(myQueryElement1);
+// console.log(myQueryElement2);
+// console.log(myQueryElement3);
+// console.log(myQueryAllElement);
+// console.log(myQueryAllElement[1]); // Get the second one of all .my-span
+
+// console.log(document.title); // Learn-JS
+// console.log(document.body); // Important
+// console.log(document.forms);
+// console.log(document.forms[1]);
+// // Manipulation in DOM
+// console.log(document.forms[0].one); // input ==> value
+// console.log(document.forms[1].two.value); // Get the Value
+// console.log(document.links);
+// console.log(document.links[1]);
+// console.log(document.links[1].href); // Get the Addresses
+
+// ? ---- Lesson 087 - Get Set Elements Content And Attributes ----
+
+/*
+  Dom [Get / Set Elements Content And Attributes]
+  - innerHTML
+  - textContent
+  - Change Attributes Directly
+  - Change Attributes With Methods
+  --- getAttribute
+  --- setAttribute
+
+
+  *Search
+  - innerText
+*/
+
+// let myElement = document.querySelector(".js"); // Select first element of class="js"
+
+// console.log("innerHTML - " + myElement.innerHTML); // Getting all text plus all elements or tags of innerHTML of this elements
+// console.log("textContent - " + myElement.textContent); // Getting all Text with spaces without any inner tags or elements
+// console.log("innerText - " + myElement.innerText); // Getting all Text without any spaces or any Tags or any Elements - Pure text
+
+// myElement.innerHTML = "Text From <span>Main.js<span> File";
+// myElement.textContent = "Text From <span>Main.js<span> File";
+
+// document.images[0].src = "https://google.com";
+// document.images[0].alt = "Alternate";
+// document.images[0].title = "Picture";
+// document.images[0].id = "pic";
+// document.images[0].className = "img";
+
+// let myLink = document.querySelector(".link");
+
+// console.log(myLink);
+
+// myLink.textContent = "Twitter";
+
+// console.log(myLink.getAttribute("class"));
+// console.log(myLink.getAttribute("href"));
+
+// myLink.setAttribute("href", "https://twitter.com");
+// myLink.setAttribute("title", "Twitter");
+
+// ? ---- Lesson 088 - Check Attributes And Examples ----
+
+/*
+  DOM [Check Attributes]
+  - Element.attributes
+  - Element.hasAttribute
+  - Element.hasAttributes
+  - Element.removeAttribute
+*/
+
+// console.log(document.getElementsByTagName("p")[0].attributes);
+
+// let myP = document.getElementsByTagName("p")[0];
+
+// if(myP.hasAttribute("data-src")){
+//   if(myP.getAttribute("data-src")===""){
+//     // console.log("Found And Removed");
+//     myP.removeAttribute("data-src");
+//   } else {
+//     myP.setAttribute("data-src", "New Value");
+//   }
+// } else {
+//   console.log(`Not Found`);
+// }
+
+// if(myP.hasAttributes()){
+//   console.log(`Paragraph Has Attributes`);
+// }
+
+// if(document.getElementsByTagName("div")[0].hasAttributes()){ // False Div doesn't have attributes
+//   console.log(`Div Has Attributes`);
+// } else {
+//   console.log(`Div Has No Attributes`);
+// }
+
+// ? ---- Lesson 089 - Create And Append Elements ----
+
+/*
+  DOM [Create Element]
+  - createElement
+  - createComment
+  - createTextNode
+  - crateAttribute vs SetAttribute
+  - appendChild
+*/
+
+// let myElement = document.createElement("div");
+// let myAttr = document.createAttribute("data-custom");
+// let myText = document.createTextNode("product One");
+// let myComment = document.createComment("This Is Div");
+
+// myElement.className = "product";
+// myElement.setAttributeNode(myAttr); // Create attribute node not exist and it will be empty
+// myElement.setAttribute("data-test", "Testing");
+
+// // Append Comment To Element
+// myElement.appendChild(myComment);
+
+// // Append Text To Element
+// myElement.appendChild(myText);
+
+// // Append Element to Body
+// document.body.appendChild(myElement);
+
+// // console.log(myElement);
+
+// ? ---- Lesson 090 - Product With Title And Description Practice ----
+
+/*
+  Dom [Create Elements]
+  - Practice Product With Heading And Paragraph
+*/
+
+// for(let i=0;i<100;i++){
+//   let myDiv = document.createElement("div");
+//   let myHeading = document.createElement("h2");
+//   let myParagraph = document.createElement("p");
+
+//   let myHText = document.createTextNode(`Product Title ${i+1}`);
+//   let myPText = document.createTextNode(`Product Description ${i+1}`);
+
+//   myDiv.className = "product";
+
+//   // Add Heading Text
+//   myHeading.appendChild(myHText);
+
+//   // Add Heading To Main Element
+//   myDiv.appendChild(myHeading);
+
+//   // Add Paragraph Text
+//   myParagraph.appendChild(myPText);
+
+//   // Add Paragraph To Main Element
+//   myDiv.appendChild(myParagraph);
+
+//   document.body.appendChild(myDiv);
+// }
+
+// ? ---- Lesson 091 - Deal With Children's ----
+
+/*
+  DOM [Deal With Childrens]
+  - children
+  - childNodes
+  - firstChild
+  - lastChild
+  - firstElementChild
+  - lastElementChild
+*/
+
+// let myElement = document.querySelector("div");
+
+// console.log(myElement);
+// console.log(myElement.children);
+// console.log(myElement.children[0]);
+// console.log(myElement.childNodes);
+// console.log(myElement.childNodes[0]);
+
+// console.log(myElement.firstChild);
+// console.log(myElement.lastChild);
+
+// console.log(myElement.firstElementChild);
+// console.log(myElement.lastElementChild);
+
+// ? ---- Lesson 092 - DOM Events ----
+
+/*
+  DOM [Events]
+  - Use Events On HTML
+  - Use Events On JS
+  --- onclick
+  --- oncontextmenu
+  --- onmouseenter
+  --- onmouseleave
+
+  --- onload
+  --- onscroll
+  --- onresize
+
+  --- onfocus
+  --- onblur
+  --- onsubmit
+*/
+
+// let myBtn = document.getElementById("btn");
+
+// myBtn.onclick = function () {
+//   console.log("Clicked");
+// };
+
+// myBtn.oncontextmenu = function () {
+//   console.log("Context Menu");
+// };
+
+// myBtn.onmouseenter = function () {
+//   console.log("Mouse Enter")
+// };
+
+// myBtn.onmouseleave = function () {
+//   console.log("Mouse Leave");
+// };
+
+// window.onscroll = function () {
+//   console.log("scroll");
+// };
+
+// window.onresize = function () {
+//   console.log("resize");
+// };
+
+// ? ---- Lesson 093 - Validate Form And Prevent Default ----
+
+/*
+  DOM [Events]
+  - Validate Form Pratice
+  - Prevent Default
+*/
+
+// userInput = document.querySelector("[name=\"username\"");
+// AgeInput = document.querySelector("[name=\"age\"]");
+
+// document.forms[0].onsubmit = function(e){
+//   let userValid = false;
+//   let ageValid = false;
+
+//   // console.log(userInput.value);
+//   // console.log(userInput.value.length);
+
+//   if(userInput.value !== "" && userInput.value.length <= 10) {
+//     userValid = true;
+//   }
+
+//   if(AgeInput.value !== "") {
+//     ageValid = true;
+//   }
+
+//   if(userValid === false || ageValid===false){
+//     e.preventDefault();
+//   }
+// };
+
+// document.links[0].onclick = function(event){
+//   console.log(event);
+//   event.preventDefault();
+// };
+
+// ? ---- Lesson 094 - Event Simulation - Click Focus Blur ----
+
+/*
+  DOM [Event Simulation]
+  - click
+  - focus
+  - blur
+*/
+
+// let one = document.querySelector(".one");
+// let two = document.querySelector(".two");
+
+// window.onload = function(){
+//   two.focus();
+// }
+
+// one.onblur = function(){
+//   document.links[0].click();
+// }
+
+// ? ---- Lesson 095 - Class List Object And Methods ----
+
+/*
+  DOM [Class List]
+  - classlist
+  --- length
+  --- contains
+  --- items(index)
+  --- add
+  --- remove
+  --- toggle (add, remove)
+*/
+
+// let element = document.getElementById("my-div");
+
+// console.log(element.classList);
+// console.log(typeof element.classList); // Object
+// console.log(element.classList.contains("mustafa")); // Not Found => False
+// console.log(element.classList.contains("show"));
+// console.log(element.classList.item(3)); // class: test
+// console.log(element.classList.item(2)); // class: show
+
+// element.onclick = function(){
+//   element.classList.add("add-one", "add-two");
+// };
+
+// element.onlick = function(){
+//   element.classList.remove("add-one", "add-two");
+// };
+
+// element.onclick = function(){
+//   // element.classList.toggle("Osama"); // Not Exits so toggle will put in the ClassList
+//   element.classList.toggle("show"); // It Exits so it will remove it
+// };
+
+// ? ---- Lesson 096 - CSS Styling And Stylesheets ----
+
+/*
+  DOM [CSS]
+  - style
+  - cssText
+  - removeProperty(propertyName) [Inline, Stylesheet]
+  - setProperty(propertyName, Value, priority)
+*/
+
+// let element = document.getElementById("my-div");
+
+// // An Inline CSS Styles And Property Using "CamalCase" Name Conversion
+// element.style.color = "dodgerBlue";
+// element.style.fontWeight = "bold";
+// // element.style.backgroundColor = "Tomato";
+
+// // An Inline All In "cssText" CSS Styles
+// element.style.cssText = "font-size: 30px; font-weight:bold; color:green; opacity:0.9"; // Override on last css style
+
+// element.style.removeProperty("color"); // Remove From Inline Style
+// element.style.setProperty("font-size", "40px", "important");
+
+// // Changes In StyleSheet Files -- Errors - Searching For it: rules and cssRules
+// console.log(document.styleSheets[0].rules[0].style.removeProperty("line-height"));
+// document.styleSheets[0].rules[0].style.setProperty("background-color", "Tomato", "important");
+
+// ? ---- Lesson 097 - Before, After, Prepend, Append, Remove ----
+
+/*
+  DOM [Deal With Elements]
+  - before [Element || String]
+  - after [Element || String]
+  - append [Element || String]
+  - prepend [Element || String]
+  - remove
+*/
+
+// let element = document.getElementById("my-div");
+// let createdP = document.createElement("p");
+
+// element.after("Hello From JS");
+// element.before("Hello From JS");
+// element.after(createdP);
+// element.before(createdP);
+
+// element.append("Hello From JS");
+// element.prepend("Hello From JS");
+// element.prepend(createdP);
+// element.prepend(createdP);
+
+// element.remove(); // instead of display: none
+
+// ? ---- Lesson 098 - DOM Traversing ----
+
+/*
+  DOM [Traversing]
+  - nextSibling
+  - previousSibling
+  - nextElementSibling
+  - previousElementSibling
+  - parentElement
+*/
+
+// let span = document.querySelector(".two");
+
+// console.log(span.nextSibling);
+// console.log(span.nextElementSibling.remove()); // undefined
+// console.log(span.previousElementSibling);
+// console.log(span.previousSibling);
+// console.log(span.parentElement);
+
+// span.onclick = function(){ // When Click on span that has class="two"
+//   span.parentElement.remove();
+//   // span.parentElement.style.opacity = "0";
+// }
+
+// ? ---- Lesson 099 - DOM Cloning ----
+
+/*
+  DOM [Cloning]
+  - CloneNode(Deep) - Deep if true takes the elements and text and its children. if Deep is false, it takes only the element with its attributes without any children or inner text or elements
+*/
+
+// let myP = document.querySelector("p").cloneNode(true);
+// // let myP = document.querySelector("p").cloneNode(false);
+// let myDiv = document.querySelector("div");
+
+// myP.id = `${myP.id}-clone`;
+// console.log(myP);
+// myDiv.appendChild(myP); // Append child node to document element after cloning it, without any children added to it
+
+// ? ---- Lesson 100 - AddEventListener ---- * Very Important *
+
+/*
+  DOM [Add Event Listener]
+  - AddEventListener
+  - Use Without On
+  - Attach Multiple Events
+  - Error Test
+
+  Search
+  - Capture & Bubbling JavaScript
+  - removeEventListener
+*/
+
+// let myP = document.querySelector("p");
+
+// myP.onclick = function(){
+//   console.log("Message From OnClick"); // onclick Event when clicked on left mouse button
+// }
+
+// myP.onclick = one;
+// myP.onclick = two; // Override - like a variable
+
+// function one(){
+//   console.log("Message From OnClick 1");
+// }
+
+// function two(){
+//   console.log("Message From OnClick 2");
+// }
+
+// window.onload = "Mustafa";
+
+// myP.addEventListener("click", function () {
+//   console.log("Message From OnClick - addEventListener");
+// });
+
+// myP.addEventListener("click", one);
+// myP.addEventListener("click", two);
+
+// myP.addEventListener("click", "String"); // Error
+
+// myP.onclick = function(){
+//   let newP = myP.cloneNode(true);
+//   newP.className = "clone";
+//   // newP.classList.add("clone");
+//   document.body.appendChild(newP);
+// };
+
+// let cloned = document.querySelector(".clone"); // Error
+
+// cloned.onclick = function(){ // Error
+//   console.log("Iam Cloned");
+// };
+
+// document.addEventListener("click", function(e){
+//   // if(e.target){
+//   //   console.log(e.target);
+//   // }
+
+//   if(e.target.className === "clone"){
+//     console.log("Iam Cloned");
+//   }
+// });
+
+// ? ---- Lesson 101 - DOM Challenge ----
+
+// * Review The last videos from 86 to 100 in Elzero Bootcamp 2021 and read more about these topics in MDN
+
+// Challenge - My Solution:- In folder DOM-Challenge
+
+// ? ---- Lesson 102 - bla bla bla ----

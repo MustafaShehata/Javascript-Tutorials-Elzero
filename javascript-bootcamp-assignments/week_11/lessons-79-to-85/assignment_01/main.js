@@ -1,11 +1,11 @@
 // Create Your Object Here
 let member = {
-    name: "Elzero",
-    age: 38,
-    country: "Egypt",
-    fullDetails() {
-        return `My Name Is ${member.name}, My Age Is ${member.age}, I Live In ${member.country}`;
-    }
+  name: "Elzero",
+  age: 38,
+  country: "Egypt",
+  fullDetails() {
+    return `My Name Is ${member.name}, My Age Is ${member.age}, I Live In ${member.country}`;
+  },
 };
 
 console.log(member.name); // Elzero

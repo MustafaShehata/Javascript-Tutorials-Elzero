@@ -2,7 +2,7 @@
 == Variables And Concatenation Challenge ==
 ===========================================
 
-[1] Create 3 Variables [Title, Desctiption, Date]
+[1] Create 3 Variables [Title, Description, Date]
 -- All In One Statement
 -- Variable Name Must Be Two Words
 -- Title Content Is "Elzero"

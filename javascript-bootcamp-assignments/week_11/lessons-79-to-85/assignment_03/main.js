@@ -12,7 +12,7 @@ let twoNums = {
 };
 
 // Create Your Object Here in One Line
-let finalObject = Object.assign({a}, threeNums, twoNums);
+let finalObject = Object.assign({ a }, threeNums, twoNums);
 
 console.log(finalObject);
 
