@@ -2800,7 +2800,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
   --- populated with the results of calling a provided function on every element
   --- in the calling array.
 
-  Syntax map(callBackFunction(Element, Index, Array) { }, thisArg)
+  Syntax map(callBackFunction(Element (obligatory), Index (optional), Array (optional)) { }, thisArg)
   - Element => The Current element being processed in the array.
   - Index => The index of the current element being processed in the array.
   - Array -> The current Array
@@ -2811,12 +2811,16 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
   Examples
   - Anonymous Function
   - Named Function
+
+  Searching Topics
+  - CallBackFunction
+  - thisArgument in Higher Order Fucntion
 */
 
-// let myNums = [1, 2, 3, 4, 5, 6];
+let myNums = [1, 2, 3, 4, 5, 6];
 // let newArray = [];
 
-// for(let i=0; i<myNums.length; ++i) {
+// for(let i = 0; i < myNums.length; ++i) {
 //   newArray.push(myNums[i]+myNums[i]);
 // }
 
@@ -2825,19 +2829,21 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // Same Idea With Map
 
 // let addSelf = myNums.map(function(element, index, arr) {
-//   // console.log(`Current Element => ${element}`);
-//   // console.log(`Current Index => ${index}`);
-//   // console.log(`Array => ${arr}`);
-//   // console.log(`This => ${this}`);
-//   return element + element;
+//   console.log(`Current Element => ${element}`);
+//   console.log(`Current Index => ${index}`);
+//   console.log(`Array => ${arr}`);
+//   console.log(`This => ${this}`);
+//   // return element + element;
 // }, 10)
 
-// let addSelf = myNums.map((el) => el + el);
+// let addSelf = myNums.map((e) => e + e);
 // console.log(addSelf);
 
 // function addition(ele) {
 //   return ele + ele;
 // }
+
+// let addition = (e) => e + e;
 
 // let add = myNums.map(addition);
 
