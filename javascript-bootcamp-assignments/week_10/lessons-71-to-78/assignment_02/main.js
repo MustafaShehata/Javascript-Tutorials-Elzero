@@ -21,3 +21,12 @@ let myString = "EElllzzzzzzzeroo";
 // console.log(newArry);
 
 // console.log(elzero); // Elzero
+
+
+// my Solution - Rating:5 stars
+const test = myString.split("").filter((e,i,a)=>{
+  return !e.includes(a[i+1]);
+}).join("");
+console.log(test);
+
+/** Review the String Functions or Methods */

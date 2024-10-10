@@ -1,15 +1,15 @@
 /*
-  Topic: JavaScript Bootcamp 2021
-  Date: 20/6/2023
-  Author: Mustafa Shehata
+	Topic: JavaScript Bootcamp 2021
+	Date: 20/6/2023
+	Author: Mustafa Shehata
 */
 
 /*
-  Searching For:
-  - JavaScript Problem Solving Websites?
+	Searching For:
+	- JavaScript Problem Solving Websites?
 
-  Important Practice:
-  - Each Day Try To Solve Problems In JavaScript In The Start Of Day, Is The Must Every Day
+	Important Practice:
+	- Each Day Try To Solve Problems In JavaScript In The Start Of Day, Is The Must Every Day
 */
 
 // ? ---- Lesson 005 - Where To Put The Code ----
@@ -31,32 +31,32 @@
 /* Single Line Inside Multiple Line Comment */
 
 /*
-  Multiple
-  line
-  Comment
+	Multiple
+	line
+	Comment
  */
 
 /*
-  1
-  2
-  3
-  4
-  5
+	1
+	2
+	3
+	4
+	5
 */
 
-// Ctrl + / [Forward Slash] - To Comment And Uncommet Code
+// Ctrl + / [Forward Slash] - To Comment And uncomment Code
 
 // Comment is made for prevent execution when write a code that want to make the interpreter to skip it
 
 // ? ---- Lesson 007 - Output To Screen ----
 
 /*
-  Output To Screen
-  - Window.alert()
-  - document.write()
-  - console.log()
+	Output To Screen
+	- Window.alert()
+	- document.write()
+	- console.log()
 
-  Syntax
+	Syntax
 */
 
 // window.alert("Hello From JS File"); // Bad Practice To Use
@@ -77,15 +77,15 @@
 // ? ---- Lesson 008 - Console Methods And Styling And WebAPI ----
 
 /*
-  Console Methods
-  - log
-  - Error
-  - table
+	Console Methods
+	- log
+	- Error
+	- table
 
-  Web API
+	Web API
 
-  Styling Console
-  - Directive %c
+	Styling Console
+	- Directive %c
 */
 
 // console.log("Log"); // Logging An Message In The "console"
@@ -125,7 +125,7 @@
 // ? ---- Lesson 009 - What is ECMAScript ----
 
 /*
-  ES6
+	ES6
 */
 
 // var myName = "Osama";
@@ -136,11 +136,11 @@
 // * ---- Separator ----
 
 /* Searching Topics:
-  - Web API
-  - JavaScript Console
-  - ECMAScript
-  - Scripting Language
-  - Chrome Dev Tools
+	- Web API
+	- JavaScript Console
+	- ECMAScript
+	- Scripting Language
+	- Chrome Dev Tools
 */
 
 // * ---- Separator ----
@@ -148,13 +148,13 @@
 // ? ---- Lesson 010 - DataTypes and typeof Operator ----
 
 /*
-  Data Types Intro
-  - String
-  - Number
-  - Number (Decimal)
-  - Array => Object
-  - Object
-  - Boolean (true or false)
+	Data Types Intro
+	- String
+	- Number
+	- Number (Decimal)
+	- Array => Object
+	- Object
+	- Boolean (true or false)
 */
 
 // console.log('Osama Mohamed');
@@ -172,27 +172,27 @@
 // console.log(typeof null); // object
 
 /*
-  * Searching Topics:
-  - Differences between Null and Undefined
-  - More Data Types: symbol and BigInt in JavaScript
+	* Searching Topics:
+	- Differences between Null and Undefined
+	- More Data Types: symbol and BigInt in JavaScript
 */
 
 // ? ---- Lesson 011 - Variables Introduction ----
 
 /*
-  Variables Intro
-  - What is Variable ?
-  - Why We Use Variables ?
-  - Declare A Variable And Use
-  - Syntax ( Keyword | Variable Name | Assignment Operator | Variable Value )
-  - Variable Without Var - Search
-  - Multiple Variables in The Same Line are Separated with comma ','
-  - Id And Global Variable
-  - Loosely Typed vs Strongly Typed - "Search for them" - Interview Questions
+	Variables Intro
+	- What is Variable ?
+	- Why We Use Variables ?
+	- Declare A Variable And Use
+	- Syntax ( Keyword | Variable Name | Assignment Operator | Variable Value )
+	- Variable Without Var - Search
+	- Multiple Variables in The Same Line are Separated with comma ','
+	- Id And Global Variable
+	- Loosely Typed vs Strongly Typed - "Search for them" - Interview Questions
 */
 
 /*
-  If you use a variable before defining or declaring it, it will get an undefined
+	If you use a variable before defining or declaring it, it will get an undefined
 */
 
 // console.log(user); // ReferenceError: user is not defined If You doesn't declare already.
@@ -201,8 +201,8 @@
 // var user = "Mustafa";
 
 /*
-  NOTE:
-  Declare A Variable First Then Use It
+	NOTE:
+	Declare A Variable First Then Use It
 */
 
 // Normal way and correct: Declare variable and then use it
@@ -218,31 +218,31 @@
 // hello.innerHTML = "Option"; // Edit Id in HTML File That id = "hello"
 
 /* Notes
-  If You Created an Id in HTML File,
-  It Will Make This Id As A Global Variable,
-  And You Can Access It In JavaScript file as A Global Varialbe
+	If You Created an Id in HTML File,
+	It Will Make This Id As A Global Variable,
+	And You Can Access It In JavaScript file as A Global Varialbe
 */
 
 // ? ---- Lesson 012 - Identifiers Name Conventions And Rules ----
 
 /*
-  Identifiers
-  - Name Conventions And Rules
-  - Reserved Words - searching for Identifiers And Name Conventions [camalCase]
+	Identifiers
+	- Name Conventions And Rules
+	- Reserved Words - searching for Identifiers And Name Conventions [camalCase]
 */
 
 /*
-  Naming Conversions:
-  - Only letters, numbers, underscores, and dollar signs
-  - Can't start with a number
+	Naming Conversions:
+	- Only letters, numbers, underscores, and dollar signs
+	- Can't start with a number
 */
 
 /*
-  Multi-Word Formatting
-  - firstName = camelCase
-  - first_name = underscore
-  - FirstName = PascalCase
-  - firstname = lowercase
+	Multi-Word Formatting
+	- firstName = camelCase
+	- first_name = underscore
+	- FirstName = PascalCase
+	- firstname = lowercase
 */
 
 // var __userName__ = "MUstafa"; // Valid Identifier
@@ -261,23 +261,23 @@
 // ? ---- Lesson 013 - Var, Let, Const Compare  ----
 
 /*
-  Var
-  - Redeclare (Yes)
-  - Access Before Declare (Undefined)
-  - Variable Scope Drama [Added To Window] () -- Search for it
-  - Block Or Function Scope
+	Var
+	- Redeclare (Yes)
+	- Access Before Declare (Undefined)
+	- Variable Scope Drama [Added To Window] () -- Search for it
+	- Block Or Function Scope
 
-  Let
-  - Redeclare (No => Error)
-  - Access Before Declare (Error)
-  - Variable Scope Drama [Not Added To Window] ()
-  - Block Or Function Scope
+	Let
+	- Redeclare (No => Error)
+	- Access Before Declare (Error)
+	- Variable Scope Drama [Not Added To Window] ()
+	- Block Or Function Scope
 
-  Const
-  - Redeclare (No => Error)
-  - Access Before Declare (Error)
-  - Variable Scope Drama (Not Added To Window)
-  - Block Or Function Scope
+	Const
+	- Redeclare (No => Error)
+	- Access Before Declare (Error)
+	- Variable Scope Drama (Not Added To Window)
+	- Block Or Function Scope
 */
 
 // var a = 2;
@@ -328,19 +328,19 @@ console.log(c); // 1
 // ? ---- Lesson 014 - String Syntax And Character Escape Sequence  ----
 
 /*
-  String Syntax + Character Escape Sequences - Searching for "Character Escape Sequences"
-  Escape => Ignore
-  \   Escape + Line Continue - Next Line Continue
-  \n  New Line put the cursor on The Next Line
-  \b	Backspace
-  \f	Form Feed
-  \n	New Line
-  \r	Carriage Return
-  \t	Horizontal Tabulator
-  \v	Vertical Tabulator
-  \'	Single quote
-  \"	Double quote
-  \\	Backslash
+	String Syntax + Character Escape Sequences - Searching for "Character Escape Sequences"
+	Escape => Ignore
+	\   Escape + Line Continue - Next Line Continue
+	\n  New Line put the cursor on The Next Line
+	\b	Backspace
+	\f	Form Feed
+	\n	New Line
+	\r	Carriage Return
+	\t	Horizontal Tabulator
+	\v	Vertical Tabulator
+	\'	Single quote
+	\"	Double quote
+	\\	Backslash
 */
 
 // console.log('Elzero Web "School"'); // You can put "" inside a '' single quote It's Normal
@@ -359,7 +359,7 @@ console.log(c); // 1
 // ? ---- Lesson 015 - Concatenation  ----
 
 /*
-  Concatenation
+	Concatenation
 */
 
 // let a = "We Love";
@@ -374,7 +374,7 @@ console.log(c); // 1
 // ? ---- Lesson 016 - Template Literals Template Strings  ----
 
 /*
-  Template Literals (Template Strings)
+	Template Literals (Template Strings)
 */
 
 // let a = "We Love";
@@ -479,24 +479,24 @@ console.log(c); // 1
 // document.write(markUp.repeat(4));
 
 /*
-  Searching Topics:
-  - Loosely Typed Language
-  - Strongly Typed Language
-  - Character Escape Sequences
+	Searching Topics:
+	- Loosely Typed Language
+	- Strongly Typed Language
+	- Character Escape Sequences
 */
 
 // ? ---- Lesson 018 - Arithmetic Operators ----
 
 /*
-  Arithmetic Operators
-  + Addition
-  - Subtraction
-  * Multiplication
-  / Division
-  ** Exponentiation
-  % Modulus (Division Remainder)
-  ++ Increment [ Post / Pre ]
-  -- Decrement [ Post / Pre ]
+	Arithmetic Operators
+	+ Addition
+	- Subtraction
+	* Multiplication
+	/ Division
+	** Exponentiation
+	% Modulus (Division Remainder)
+	++ Increment [ Post / Pre ]
+	-- Decrement [ Post / Pre ]
 */
 
 // console.log(10 + 20); // 30
@@ -526,18 +526,18 @@ console.log(c); // 1
 // ? ---- Lesson 019 - Unary Plus And Negation Operators ----
 
 /*
-  - "+" Unary Plus [Return Number If Its Not Number]
-  - "-" Unary Negation [Return Number If Its Not Number + Negates It]
-  Tests
-  - Normal Number
-  - String Number
-  - String Negative Number
-  - String Text
-  - Float
-  - Hexadecimal Numeral System => 0xFF
-  - null
-  - false
-  - true
+	- "+" Unary Plus [Return Number If Its Not Number]
+	- "-" Unary Negation [Return Number If Its Not Number + Negates It]
+	Tests
+	- Normal Number
+	- String Number
+	- String Negative Number
+	- String Text
+	- Float
+	- Hexadecimal Numeral System => 0xFF
+	- null
+	- false
+	- true
 */
 
 // // Unary - Plus Operator/Positive
@@ -567,11 +567,11 @@ console.log(c); // 1
 // ? ---- Lesson 020 - Type Coercion ----
 
 /*
-  Type Coercion (Type Casting)
-  - +
-  - -
-  - "" - 2
-  - false - true
+	Type Coercion (Type Casting)
+	- +
+	- -
+	- "" - 2
+	- false - true
 */
 
 /* let a = "10";
@@ -596,7 +596,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 021 - Assignment Operators ----
 
 /*
-  Assignment Operators && Augmanted Assignment Operator
+	Assignment Operators && Augmanted Assignment Operator
 */
 
 //  let a = 10;
@@ -623,7 +623,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 022 - Operators Challenges ----
 
 /*
-  Challenge 1
+	Challenge 1
 */
 
 // let a = 10;
@@ -635,16 +635,16 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log( --c + +b + --a * +b++ - +b * a + --a - +true );
 
 /*
-  [++a] [+] +[]
-  [++a]
-  - Value:
-  - Explain:
-  [+]
-  - Explain:
+	[++a] [+] +[]
+	[++a]
+	- Value:
+	- Explain:
+	[+]
+	- Explain:
 */
 
 /*
-  Challenge 2
+	Challenge 2
 */
 
 // let d = "-100";
@@ -671,119 +671,119 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 // console.log(++a + +b++ + +c++ - +a++);
 /*
-  [++a]
-      Value = 11
-      Explain = pre-increment operator
+	[++a]
+			Value = 11
+			Explain = pre-increment operator
 
-  [+] = "addition operater"
+	[+] = "addition operater"
 
-  [+b++]
-      Value = 20;
-      Explain = first unary plus operator convert the value from string to number, then post-increment increase the value by 1 to be 21 but not used
+	[+b++]
+			Value = 20;
+			Explain = first unary plus operator convert the value from string to number, then post-increment increase the value by 1 to be 21 but not used
 
-  [+] = "addition operater"
+	[+] = "addition operater"
 
-  [+c++]
-      Value = 80;
-      Explain = unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 81 but not used
+	[+c++]
+			Value = 80;
+			Explain = unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 81 but not used
 
-  [-] = subtraction operater
+	[-] = subtraction operater
 
-  [+a++]
-      Value = 11;
-      Explain = Unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 12 but not used
+	[+a++]
+			Value = 11;
+			Explain = Unary plus operator has not effect becuase the date type already number, then post-increment increase the value by 1 to be 12 but not used
 
 
-  so, the total value = 11 + 20 + 80 - 11 = 100
+	so, the total value = 11 + 20 + 80 - 11 = 100
 
 */
 
 // a = 12    b = 21    c = 81
 // console.log(++a + -b + +c++ + a++ + +a);
 /*
-  [++a]
-      Value = 13
-      Explain = pre-increment increase the value of a by 1 to be 13
+	[++a]
+			Value = 13
+			Explain = pre-increment increase the value of a by 1 to be 13
 
-  [+] = addition operator
+	[+] = addition operator
 
-  [-b]
-      Value = -21
-      Explain = Unary negation operator convent the data type from string to number with different sign
+	[-b]
+			Value = -21
+			Explain = Unary negation operator convent the data type from string to number with different sign
 
-  [+] = addition operator
+	[+] = addition operator
 
-  [+c++]
-      Value = 81;
-      Explain = Unary plus operator has not effect because the date type already number, then post-increment increase the value by 1 to be 82 but not used
+	[+c++]
+			Value = 81;
+			Explain = Unary plus operator has not effect because the date type already number, then post-increment increase the value by 1 to be 82 but not used
 
-  [-] = subtraction operator
+	[-] = subtraction operator
 
-  [-a++]
-      Value = -13
-      Explain = post-increment increase the value by 1 to be 14 but not used
+	[-a++]
+			Value = -13
+			Explain = post-increment increase the value by 1 to be 14 but not used
 
-  [+] = addition operator
+	[+] = addition operator
 
-  [+a]
-      Value = 14
-      Explain = Unary plus operator has not effect because the date type already number
+	[+a]
+			Value = 14
+			Explain = Unary plus operator has not effect because the date type already number
 
 
-  so, the total value = 13 -21 + 81 - -13 + 14 = 100
+	so, the total value = 13 -21 + 81 - -13 + 14 = 100
 
 */
 
 // a = 14    b = 21     c = 82
 // console.log(--c + +b + --a * +b++ - +b * a + --a - +true);
 /*
-  [--c]
-      Value = 81
-      Explain = pre-decrement decrease the value by 1 to be 81
+	[--c]
+			Value = 81
+			Explain = pre-decrement decrease the value by 1 to be 81
 
-  [+] = addition operator
+	[+] = addition operator
 
-  [+b]
-      Value = 21
-      Explain = Unary plus operator has no effect because the date type is already number
+	[+b]
+			Value = 21
+			Explain = Unary plus operator has no effect because the date type is already number
 
-  [+] = addition operator
+	[+] = addition operator
 
-  [--a]
-      Value = 13
-      Explain = pre decrement decrease the value by 1 to be 13
+	[--a]
+			Value = 13
+			Explain = pre decrement decrease the value by 1 to be 13
 
-  [*] = multiplication operator
+	[*] = multiplication operator
 
-  [+b++]
-      Value = 21
-      Explain = Unary plus operator has no effect because the date type is already number, then post increment increase the value by 1 to be 22
+	[+b++]
+			Value = 21
+			Explain = Unary plus operator has no effect because the date type is already number, then post increment increase the value by 1 to be 22
 
-  [-] = subtraction operator
+	[-] = subtraction operator
 
-  [+b]
-      Value = 22
-      Explain = Unary plus operator has no effect effect
+	[+b]
+			Value = 22
+			Explain = Unary plus operator has no effect effect
 
-  [*] = multiplication operator
+	[*] = multiplication operator
 
-  [a]
-      Value = 13
-      Explain = from the previous a
+	[a]
+			Value = 13
+			Explain = from the previous a
 
-  [+] = Addition operator
+	[+] = Addition operator
 
-  [--a]
-      Value = 12
-      Explain = Pre-decrement decrease the value by 1 to be 12
+	[--a]
+			Value = 12
+			Explain = Pre-decrement decrease the value by 1 to be 12
 
-  [-] = subtraction operator
+	[-] = subtraction operator
 
-  [+true]
-      Value = 1
-      Explain = unary plus Operator change the date type from boolean to be number
+	[+true]
+			Value = 1
+			Explain = unary plus Operator change the date type from boolean to be number
 
-      so, the total value = 81 + 21 + (13 * 21) - (22 * 13) + 12 - 1 = 100
+			so, the total value = 81 + 21 + (13 * 21) - (22 * 13) + 12 - 1 = 100
 */
 
 /* Challenge 2 */
@@ -796,24 +796,24 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(++e * ++g + -d + ++f); // 173
 
 /*
-  Searching Topics:
-  - JavaScript Defer Attribute
-  - JavaScript Constructor
-  - JavaScript Unary Use Cases
+	Searching Topics:
+	- JavaScript Defer Attribute
+	- JavaScript Constructor
+	- JavaScript Unary Use Cases
 */
 
 // ? ---- Lesson 023 - Number ----
 
 /*
-  Number
-  - Double Precision - Searching - Always Search
-  - Syntactic Sugar "_" - To ease reading
-  - e
-  - **
-  - With Decimal
-  - Number + BigInt
-  - Number Min Value
-  - Number Max Value
+	Number
+	- Double Precision - Searching - Always Search
+	- Syntactic Sugar "_" - To ease reading
+	- e
+	- **
+	- With Decimal
+	- Number + BigInt
+	- Number Min Value
+	- Number Max Value
 */
 
 // console.log(1000000);
@@ -833,14 +833,14 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 024 - Number Methods ----
 
 /*
-  Number Methods
-  - Two Dots To Call A Methods
-  - toString()
-  - toFixed(number)
-  - parseInt()
-  - parseFloat()
-  - isInteger() [ES6]
-  - isNaN() [ES6]
+	Number Methods
+	- Two Dots To Call A Methods
+	- toString()
+	- toFixed(number)
+	- parseInt()
+	- parseFloat()
+	- isInteger() [ES6]
+	- isNaN() [ES6]
 */
 
 // console.log((100).toString());
@@ -878,15 +878,15 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 025 - Math Object ----
 
 /*
-  Math Object
-  - round()
-  - ceil()
-  - floor()
-  - min()
-  - max()
-  - pow()
-  - random()
-  - trunc() [ES6]
+	Math Object
+	- round()
+	- ceil()
+	- floor()
+	- min()
+	- max()
+	- pow()
+	- random()
+	- trunc() [ES6]
 */
 
 // console.log(Math.round(99.2)); // 99
@@ -909,33 +909,33 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(Math.pow(2, 4)); // 16
 
 /*
-  Math.random():
-  This function returns a floating-point number between 0 and 1 (exclusive),
-  which means it generates a random decimal value greater than or equal to 0
-  and less than 1. 0 >= num < 1
+	Math.random():
+	This function returns a floating-point number between 0 and 1 (exclusive),
+	which means it generates a random decimal value greater than or equal to 0
+	and less than 1. 0 >= num < 1
 */
 
 /*
-  Math.random() * 10: Multiplying the random number generated by 10
-  gives us a random decimal value between 0 and 10 (exclusive).
-  This means the result can be any decimal number greater than or equal to 0
-  and less than 10. 0>= num < 10 exclusive for all decimal numbers
+	Math.random() * 10: Multiplying the random number generated by 10
+	gives us a random decimal value between 0 and 10 (exclusive).
+	This means the result can be any decimal number greater than or equal to 0
+	and less than 10. 0>= num < 10 exclusive for all decimal numbers
 */
 
 /*
-  0 >= num < 9 for only Integer numbers
+	0 >= num < 9 for only Integer numbers
 */
 
 /*
-  parseInt(Math.random() * 10) + 6: Adding 6 to the result obtained in step 3
-  shifts the range of possible values. Now we have an integer between 6 and 15 (inclusive)
-  because the smallest value the previous expression can produce is 6 (0 + 6),
-  and the largest value is 15 (9 + 6).
+	parseInt(Math.random() * 10) + 6: Adding 6 to the result obtained in step 3
+	shifts the range of possible values. Now we have an integer between 6 and 15 (inclusive)
+	because the smallest value the previous expression can produce is 6 (0 + 6),
+	and the largest value is 15 (9 + 6).
 */
 
 /*
-  To summarize, the code generates a random integer between 6 and 15 and
-  displays it in the console.
+	To summarize, the code generates a random integer between 6 and 15 and
+	displays it in the console.
 */
 
 // console.log(parseInt(Math.random()*10) + 6); // 6 -> 15
@@ -948,7 +948,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 026 - Number Challenge ----
 
 /*
-  Number Challenge
+	Number Challenge
 */
 
 // let a = 1_00;
@@ -979,14 +979,14 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 27 - String Methods Part 1 ----
 
 /*
-  String Methods
-  - Access With Index
-  - Access With charAt()
-  - length
-  - trim()
-  - toUpperCase()
-  - toLowerCase()
-  - Chain Methods - Searching
+	String Methods
+	- Access With Index
+	- Access With charAt()
+	- length
+	- trim()
+	- toUpperCase()
+	- toLowerCase()
+	- Chain Methods - Searching
 */
 
 // let theName = "Ahmed";
@@ -1026,12 +1026,12 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 028 - String Methods Part 2 ----
 
 /*
-  * String Methods - Searching
-  - indexOf(value [Mand], Start [Opt] Length)
-  - lastIndexOf(value [Mand], Start [Opt] Length)
-  - slice(Start [Mand], End [Opt] Not Include End)
-  - repeat(Times) [ES6]
-  - split(Separator [Opt], Limit [Opt])
+	* String Methods - Searching
+	- indexOf(value [Mand], Start [Opt] Length)
+	- lastIndexOf(value [Mand], Start [Opt] Length)
+	- slice(Start [Mand], End [Opt] Not Include End)
+	- repeat(Times) [ES6]
+	- split(Separator [Opt], Limit [Opt])
 */
 
 // let a = "Elzero Web School";
@@ -1072,17 +1072,17 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 029 - String Methods Part 3 ----
 
 /*
-  String Methods
-  - Substring(Start [Mand], End [Opt] Not Including End)
-  --- [Start > End] Will Swap Arguments [End, Start] instead of [Start, End]
-  --- Start < 0 It Start From 0
-  --- Use Length To Get Last Character
-  - Substr(Start [Mand], Characters To Extract)
-  --- Start >= Length = ""
-  --- Negative Start From End
-  - includes(Value [Mand], Start [Opt] Default 0) [ES6]
-  - startsWith(Value [Mand], Start [Opt] Default 0) [ES6]
-  - endsWith(Value [Mand], length [Opt] Default Full Length) [ES6]
+	String Methods
+	- Substring(Start [Mand], End [Opt] Not Including End)
+	--- [Start > End] Will Swap Arguments [End, Start] instead of [Start, End]
+	--- Start < 0 It Start From 0
+	--- Use Length To Get Last Character
+	- Substr(Start [Mand], Characters To Extract)
+	--- Start >= Length = ""
+	--- Negative Start From End
+	- includes(Value [Mand], Start [Opt] Default 0) [ES6]
+	- startsWith(Value [Mand], Start [Opt] Default 0) [ES6]
+	- endsWith(Value [Mand], length [Opt] Default Full Length) [ES6]
 */
 
 // let a = "Elzero Web School"; // length = 17 starts from 1
@@ -1121,9 +1121,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 030 - String Challenge ----
 
 /*
-  String Challenge
-  All Solutions Must Be In One Chain
-  You Can Use Concatenate
+	String Challenge
+	All Solutions Must Be In One Chain
+	You Can Use Concatenate
 */
 
 // let a = "Elzero Web School";
@@ -1155,25 +1155,25 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ); // eLZERO WEB SCHOOl
 
 /*
-  Searching Topics
-  - Double Precision
+	Searching Topics
+	- Double Precision
 */
 
 // ? ---- Lesson 31 - Comparison Operators ----
 
 /*
-  Comparison Operator
-  - == Equal
-  - != Not Equal
+	Comparison Operator
+	- == Equal
+	- != Not Equal
 
-  - === Identical
-  - !== Not Identical
+	- === Identical
+	- !== Not Identical
 
-  - > Larger Than
-  - >= Larger Than Or Equal
+	- > Larger Than
+	- >= Larger Than Or Equal
 
-  - < Smaller Than
-  - <= Smaller Than Or Equal
+	- < Smaller Than
+	- <= Smaller Than Or Equal
 */
 
 // console.log(10 == "10"); // true - Compare Value Only
@@ -1202,10 +1202,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 032 - Logical Operators ----
 
 /*
-  Logical Operators
-  - ! Not
-  - && And
-  - || Or
+	Logical Operators
+	- ! Not
+	- && And
+	- || Or
 */
 
 // console.log(true); // true
@@ -1226,14 +1226,14 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 033 - If Conditions ----
 
 /*
-  Control Flow
-  - if
-  - else if
-  - else
+	Control Flow
+	- if
+	- else if
+	- else
 
-  if (Condition) {
-    // Block Of Code
-  }
+	if (Condition) {
+		// Block Of Code
+	}
 */
 
 // let price = 100;
@@ -1259,7 +1259,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 034 - Nested If Conditions ----
 
 /*
-  Nested If
+	Nested If
 */
 
 // let price = 100;
@@ -1285,7 +1285,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 035 - Conditional Ternary Operator ----
 
 /*
-  Conditional (Ternary) Operator
+	Conditional (Ternary) Operator
 */
 
 // let theName = "Mona";
@@ -1323,23 +1323,23 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // * Try To Search For This Lesson Again
 
 /*
-  Logical Or ||
-  -- Null + Undefined + Any Falsy Value
+	Logical Or ||
+	-- Null + Undefined + Any Falsy Value
 
-  falsy values
-    1-false
-    2-null
-    3-undefined
-    4-"" (empty string)
-    5-0
-    6-NaN
+	falsy values
+		1-false
+		2-null
+		3-undefined
+		4-"" (empty string)
+		5-0
+		6-NaN
 
-  all other values including all objects are truthy
-    "0"  "false "
+	all other values including all objects are truthy
+		"0"  "false "
 
-  Nullish Coalescing Operator [??]
-  -- [Null + Undefined] Skipped like [|| - or]
-  -- [0, "", false, NaN] Not Skipped and get This Value
+	Nullish Coalescing Operator [??]
+	-- [Null + Undefined] Skipped like [|| - or]
+	-- [0, "", false, NaN] Not Skipped and get This Value
 */
 
 // let price1 = "";
@@ -1411,7 +1411,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 037 - If Condition Challenge ----
 
 /*
-  If Challenge
+	If Challenge
 */
 
 // let a = 10;
@@ -1485,20 +1485,20 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 038 - Switch Statemnent ----
 
 /*
-  Switch Statement
-  Switch(expression) {
-    Case 1:
-      // Code Block
-      break;
-    Case 2:
-      // Code Block
-      break;
-    Default:
-      // Code Block
-  }
-  - Default Ordering
-  - Multiple Match
-  - ===
+	Switch Statement
+	Switch(expression) {
+		Case 1:
+			// Code Block
+			break;
+		Case 2:
+			// Code Block
+			break;
+		Default:
+			// Code Block
+	}
+	- Default Ordering
+	- Multiple Match
+	- ===
 */
 
 // Note: Try to Search for differneces between
@@ -1524,7 +1524,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // }
 
 /*
-  You can put Default in Any Place in Switch-case But Should write break after block of code
+	You can put Default in Any Place in Switch-case But Should write break after block of code
 */
 
 // day = 6;
@@ -1550,7 +1550,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 039 - Switch And If Condition Challenge ----
 
 /*
-  Switch Challenge
+	Switch Challenge
 */
 
 // let job = "Support";
@@ -1588,7 +1588,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(salary);
 
 /*
-  If Challenge
+	If Challenge
 */
 
 // let holidays = 0;
@@ -1645,20 +1645,20 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // codepen.io
 
 /*
-  Searching Topics
-  - JavaScript Logical Or
-  - JavaScript Operators
+	Searching Topics
+	- JavaScript Logical Or
+	- JavaScript Operators
 */
 
 // ? ---- Lesson 040 - Array Big Introduction ----
 
 /*
-  Arrays
-  - Create Arrays [Two Methods] new Array() + []
-  - Access Arrays Elements
-  - Nested Arrays
-  - Change Arrays Elements
-  - Check For Array Array.isArray(arr);
+	Arrays
+	- Create Arrays [Two Methods] new Array() + []
+	- Access Arrays Elements
+	- Nested Arrays
+	- Change Arrays Elements
+	- Check For Array Array.isArray(arr);
 */
 
 // let myFriends = ["Ahmed", "Mohamed", "Sayed", ["Marwan", "Ali"]];
@@ -1688,8 +1688,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 041 - Using Length With Array ----
 
 /*
-  Arrays Methods
-  - Length
+	Arrays Methods
+	- Length
 */
 
 // Index Starts From 0 [ 0, 1, 2, 3, 4 ]
@@ -1719,11 +1719,11 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 042 - Add And Remove From Array ---- [IMPORTANT]
 
 /*
-  Array Methods [Adding And Removing]
-  - unshift("", "") Add Element To The First
-  - push("", "") Add Element To The End
-  - shift() Remove First Element From Array
-  - pop() Remove Last Element From Array
+	Array Methods [Adding And Removing]
+	- unshift("", "") Add Element To The First
+	- push("", "") Add Element To The End
+	- shift() Remove First Element From Array
+	- pop() Remove Last Element From Array
 */
 
 // let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
@@ -1753,10 +1753,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 043 - Searching Array ----
 
 /*
-  Arrays Mehtods [Search]
-  - indexOf(Search Elemnet, From Index [Opt])
-  - lastIndexOf(Search Element, From Index [Opt])
-  - includes(valueToFind, fromIndex [Opt]) [ES7]
+	Arrays Mehtods [Search]
+	- indexOf(Search Elemnet, From Index [Opt])
+	- lastIndexOf(Search Element, From Index [Opt])
+	- includes(valueToFind, fromIndex [Opt]) [ES7]
 */
 
 // let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa", "Ahmed"];
@@ -1786,9 +1786,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 44 - Sorting Arrays ----
 
 /*
-  Arrays Methods [Sort]
-  - sort(Function [Opt])
-  - reverse
+	Arrays Methods [Sort]
+	- sort(Function [Opt])
+	- reverse
 */
 
 // let elements = [10, "Sayed", "Mohamed", "90", 1000, 100, 20, "10", -20, -10];
@@ -1802,15 +1802,15 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 045 - Slicing Array ----
 
 /*
-  Array Methods [Slicing]
-  - slice(start [Opt], End [Opt] Not Including End)
-  --- slice() => All Array
-  --- If Start Is Undefined => 0
-  --- Negative Count From End
-  --- If End Is Undefined || > Indexes => Slice To The End Array.length
-  --- Return New Array doesn't affect the original array
-  - splice(start [Mand], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
-  --- If Negative => Start From The End
+	Array Methods [Slicing]
+	- slice(start [Opt], End [Opt] Not Including End)
+	--- slice() => All Array
+	--- If Start Is Undefined => 0
+	--- Negative Count From End
+	--- If End Is Undefined || > Indexes => Slice To The End Array.length
+	--- Return New Array doesn't affect the original array
+	- splice(start [Mand], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
+	--- If Negative => Start From The End
 */
 
 // let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
@@ -1838,9 +1838,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 046 - Joining Arrays ----
 
 /*
-  Arrays Methods [Joining]
-  - concat(array, array) => Return A New Array
-  - join(Seperator) => Return a string
+	Arrays Methods [Joining]
+	- concat(array, array) => Return A New Array
+	- join(Seperator) => Return a string
 */
 
 // let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
@@ -1865,7 +1865,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 047 - Array Challenge ----
 
 /*
-  Array Challenge
+	Array Challenge
 */
 
 // let zero = 0;
@@ -1895,8 +1895,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(my[counter].slice(-counter, --zero) + my[counter][--my[counter].length].toUpperCase()); // "rO"
 
 /*
-  Revision Date: 19/4/2024
-  name: Mustafa Ramadan
+	Revision Date: 19/4/2024
+	name: Mustafa Ramadan
 */
 
 // let zero = 0;
@@ -1915,13 +1915,13 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 048 - Loop - For And Concept Of Loop ----
 
 /*
-  [ Control Flow ]
-  Loop
-  - For
-  for ([1] [2] [3]) {
-    // Block Of Code
-  }
-  - You should use forLoop if you know the numbers of ITERATIONS you loop for
+	[ Control Flow ]
+	Loop
+	- For
+	for ([1] [2] [3]) {
+		// Block Of Code
+	}
+	- You should use forLoop if you know the numbers of ITERATIONS you loop for
 */
 
 // Loop iterate from 0 to 9 means 10 times
@@ -1932,8 +1932,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 049 - Looping On Sequences ----
 
 /*
-  Loop
-  - Loop On Sequence
+	Loop
+	- Loop On Sequence
 */
 
 // let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 5, "Ali", "Amira"];
@@ -1976,8 +1976,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 050 - Nested Loops And Trainings ----
 
 /*
-  Loop
-  - Nested Loops
+	Loop
+	- Nested Loops
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
@@ -2001,10 +2001,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 051 - Loop Control - Break, Continue, Label ----
 
 /*
-  Loop Control
-  - Break
-  - Continue
-  - Label - Not so common but should you use if you need
+	Loop Control
+	- Break
+	- Continue
+	- Label - Not so common but should you use if you need
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
@@ -2025,7 +2025,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 052 - Loop - For Advanced Example ----
 
 /*
-  Loop For Advanced Example
+	Loop For Advanced Example
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iphone"];
@@ -2041,7 +2041,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 053 - Practice - Add Products To Page ----
 
 /*
-  Products Practice
+	Products Practice
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
@@ -2062,9 +2062,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 054 - Loop - While ----
 
 /*
-  Loop
-  - While
-      - I am NOT SURE how many ITERATIONS I might need to carry out.
+	Loop
+	- While
+			- I am NOT SURE how many ITERATIONS I might need to carry out.
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
@@ -2080,19 +2080,19 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // }
 
 /*
-  What is the difference between forLoop and WhileLoop in JS?
-    Links:
-      1. https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/
-      2. https://www.geeksforgeeks.org/difference-between-for-loop-and-while-loop-in-programming/
-      3. https://medium.com/swlh/understanding-javascripts-for-loop-while-loop-43d034faae89
+	What is the difference between forLoop and WhileLoop in JS?
+		Links:
+			1. https://stackoverflow.com/questions/39969145/while-loops-vs-for-loops-in-javascript/
+			2. https://www.geeksforgeeks.org/difference-between-for-loop-and-while-loop-in-programming/
+			3. https://medium.com/swlh/understanding-javascripts-for-loop-while-loop-43d034faae89
 */
 
 // ? ---- Lesson 055 - Loop - Do-While ----
 
 /*
-  Loop
-  - Do-While
-    - Do-While is executed at least one
+	Loop
+	- Do-While
+		- Do-While is executed at least one
 */
 
 // let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "Iphone"];
@@ -2115,7 +2115,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 056 - Loop - Challenge ----
 
 /*
-  Loop Challenge
+	Loop Challenge
 */
 
 // let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samara"];
@@ -2140,7 +2140,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // }
 
 /*
-  Modified Date: 5/20/2024
+	Modified Date: 5/20/2024
 */
 
 // let c = 0
@@ -2167,13 +2167,13 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 057 - Function Intro And Basic Usage ----
 
 /*
-  Function => DRY : Don't Repeat Yourself
-  - What Is Function ?
-  - User-Defined vs Built-In Functions
-  - Syntax + Basic Usage
-  - Example From Real Life
-  - Parameter + Argument
-  - Practical Example
+	Function => DRY : Don't Repeat Yourself
+	- What Is Function ?
+	- User-Defined vs Built-In Functions
+	- Syntax + Basic Usage
+	- Example From Real Life
+	- Parameter + Argument
+	- Practical Example
 */
 
 // console.log(typeof console); // Object
@@ -2224,10 +2224,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 059 - Function Return And Use Cases ----
 
 /*
-  Function
-  - Return
-  - Automatic Semicolon Insertion [No Line Terminator Allowed]
-  - Interruptting
+	Function
+	- Return
+	- Automatic Semicolon Insertion [No Line Terminator Allowed]
+	- Interruptting
 */
 
 // function sayHello(userName) {
@@ -2269,11 +2269,11 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 060 - Function Default Parameters ----
 
 /*
-  Function
-  - Default Function Parameters
-  - Function Parameters Default [Undefined]
-  - Old Strategies [Condition + Logical Or]
-  - ES6 Method
+	Function
+	- Default Function Parameters
+	- Function Parameters Default [Undefined]
+	- Old Strategies [Condition + Logical Or]
+	- ES6 Method
 */
 
 // function sayHello(userName= "Unknown", age="Unknown") {
@@ -2289,10 +2289,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 061 - Function Rest Parameters ----
 
 /*
-  Function
-  - Rest Parameters [Array of Arguments] Or [typeof (array) > Object]
-  - Only One Allowed
-  - Must Be Last Element
+	Function
+	- Rest Parameters [Array of Arguments] Or [typeof (array) > Object]
+	- Only One Allowed
+	- Must Be Last Element
 */
 
 // function calc(...numbers) { // Array of Arguments
@@ -2312,12 +2312,12 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 062 - Function Ultimate Practice ----
 
 /*
-  Function Advanced Practice
-  - Parameters
-  - Default
-  - Rest
-  - Loop
-  - Condition
+	Function Advanced Practice
+	- Parameters
+	- Default
+	- Rest
+	- Loop
+	- Condition
 */
 
 // function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) {
@@ -2344,17 +2344,17 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 063 - Random Arguments Function Challenge ----
 
 /*
-  Function - Random Argument Challenges
-  =====================================
-  Create Function showDetails()
-  Function Accept 3 Parameters [a, b, c]
-  Data Types For Info Is
-  - String => Name
-  - Number => Age
-  - Boolean => Status
-  Argument Is Random
-  Data Is Not Sorted Output Depend On Data Types
-  - Use Ternary Conditional Operator
+	Function - Random Argument Challenges
+	=====================================
+	Create Function showDetails()
+	Function Accept 3 Parameters [a, b, c]
+	Data Types For Info Is
+	- String => Name
+	- Number => Age
+	- Boolean => Status
+	Argument Is Random
+	Data Is Not Sorted Output Depend On Data Types
+	- Use Ternary Conditional Operator
 */
 
 // showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
@@ -2436,12 +2436,12 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 064 - Anonymous Function And Practice ----
 
 /*
-  Function
-  - Anonymous Function
-  - Calling Named Function Vs Anonymous Function
-  - Argument To Other Function
-  - Task Without Name
-  - SetTimeout
+	Function
+	- Anonymous Function
+	- Calling Named Function Vs Anonymous Function
+	- Argument To Other Function
+	- Task Without Name
+	- SetTimeout
 */
 
 // console.log(calc(10, 5)); // calling function calc that hase been already created
@@ -2479,9 +2479,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 065 - Return Nested Function ----
 
 /*
-  Function
-  - Function Inside Function
-  - Return Function
+	Function
+	- Function Inside Function
+	- Return Function
 */
 
 // Example 1
@@ -2537,10 +2537,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 066 - Arrow Function Syntax ----
 
 /*
-  Function
-  - Arrow Function
-  - Regular Vs Arrow [Param + No Param]
-  - Multiple Lines
+	Function
+	- Arrow Function
+	- Regular Vs Arrow [Param + No Param]
+	- Multiple Lines
 */
 
 // function print() {
@@ -2589,20 +2589,20 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // todo: Need to search for each piece of info
 
 /*
-  Scope
-  - Global And Local Scope
-  - Definition: Scope determines the accessibility (visibility) of variables.
-    - Block scope [let, const]
-    - Funtion scope [var, let, const]
-    - Global scope [var, let, const]
+	Scope
+	- Global And Local Scope
+	- Definition: Scope determines the accessibility (visibility) of variables.
+		- Block scope [let, const]
+		- Funtion scope [var, let, const]
+		- Global scope [var, let, const]
 
-    link tutorial: https://www.w3schools.com/js/js_scope.asp
+		link tutorial: https://www.w3schools.com/js/js_scope.asp
 */
 
 /* NOTE:
-  - Local variables have Function Scope:
-    - They can only be accessed from within the function.
-  - Local variables are created when a function starts, and deleted when the function is completed.
+	- Local variables have Function Scope:
+		- They can only be accessed from within the function.
+	- Local variables are created when a function starts, and deleted when the function is completed.
 */
 
 // Global Scope
@@ -2630,9 +2630,9 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 068 - Scope - Block ----
 
 /*
-  Scope
-  - Block Scope [If, Switch, For]
-  NOTE: var is not block scope
+	Scope
+	- Block Scope [If, Switch, For]
+	NOTE: var is not block scope
 */
 
 // var x = 10; // Global Scope
@@ -2666,22 +2666,22 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 /* Searching Topics Important
 
-  JavaScript Function
-  JavaScript Function Currying
-  JavaScript Function Arrow Function
-  JavaScript IIFE - Immediately Invoked Function Expression
-  JavaScript Scope
+	JavaScript Function
+	JavaScript Function Currying
+	JavaScript Function Arrow Function
+	JavaScript IIFE - Immediately Invoked Function Expression
+	JavaScript Scope
 
 */
 
 /*
-  Scope
-  - Lexical Scope
+	Scope
+	- Lexical Scope
 
-  Search
-  - Execution Context
-  - Lexical Environment
-  - Namaste JavaScript - Searching On YouTube
+	Search
+	- Execution Context
+	- Lexical Environment
+	- Namaste JavaScript - Searching On YouTube
 */
 
 // More Notes
@@ -2713,7 +2713,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 070 - Arrow Function challenge ----
 
 /*
-  Function Arrow Challenge
+	Function Arrow Challenge
 */
 
 // [1] One Statement In Function
@@ -2792,32 +2792,32 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // ? ---- Lesson 071 - Higher Order Functions - Map ---- /** Interview Questions and Projects is used monstly */
 
 /*
-  Higher Order Functions
-  ---> Is a function that accepts function as parameter and/or returns a function.
+	Higher Order Functions
+	---> Is a function that accepts function as parameter and/or returns a function.
 
-  - Map
-  --- Method creates a new array
-  --- populated with the results of calling a provided function on every element
-  --- in the calling array.
+	- Map
+	--- Method creates a new array
+	--- populated with the results of calling a provided function on every element
+	--- in the calling array.
 
-  Syntax map(callBackFunction(Element (obligatory), Index (optional), Array (optional)) { }, thisArg)
-  - Element => The Current element being processed in the array.
-  - Index => The index of the current element being processed in the array.
-  - Array -> The current Array
+	Syntax map(callBackFunction(Element (obligatory), Index (optional), Array (optional)) { }, thisArg)
+	- Element => The Current element being processed in the array.
+	- Index => The index of the current element being processed in the array.
+	- Array -> The current Array
 
-  Notes:
-  - Map Returns A New Array
+	Notes:
+	- Map Returns A New Array
 
-  Examples
-  - Anonymous Function
-  - Named Function
+	Examples
+	- Anonymous Function
+	- Named Function
 
-  Searching Topics
-  - CallBackFunction
-  - thisArgument in Higher Order Fucntion
+	Searching Topics
+	- CallBackFunction
+	- thisArgument in Higher Order Fucntion
 */
 
-let myNums = [1, 2, 3, 4, 5, 6];
+// let myNums = [1, 2, 3, 4, 5, 6];
 // let newArray = [];
 
 // for(let i = 0; i < myNums.length; ++i) {
@@ -2834,7 +2834,7 @@ let myNums = [1, 2, 3, 4, 5, 6];
 //   console.log(`Array => ${arr}`);
 //   console.log(`This => ${this}`);
 //   // return element + element;
-// }, 10)
+// }, 10);
 
 // let addSelf = myNums.map((e) => e + e);
 // console.log(addSelf);
@@ -2849,18 +2849,26 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(add);
 
-// ? ---- Lesson 72 - Higher Order Functions - Map Practice ----
+// ? ---- Lesson 072 - Higher Order Functions - Map Practice ----
 
 /*
-  Map
-  - Swap Cases
-  - Inverted Numbers
-  - Ignore Boolean Value
+	Map
+	- Swap Cases
+	- Inverted Numbers
+	- Ignore Boolean Value
 */
 
 // let swappingCases = "elZERo";
 // let invertedNumbers = [1, -10, -20, 15, 100, -30];
-// let ignoreNumbers = "Elz123er4o";
+
+// Problem 1 - 25/5/2024
+// let swap = swappingCases.split("").map((e) => {
+//   if (e === e.toLowerCase()) e = e.toUpperCase();
+//   else e = e.toLowerCase();
+//   return e;
+// }).join(""); // ELzerO
+
+// console.log(swap);
 
 // Problem 1:
 // let sw = swappingCases.split("").map(function(ele) {
@@ -2885,9 +2893,42 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(inv);
 
+
+// ================== My-Sol - 5/26/2024 ==================
+// console.log(typeof(5));
+// console.log(typeof(parseInt("H")));
+// console.log(parseInt("H"));
+// console.log(typeof(parseInt("5")));
+// console.log(typeof(parseInt("H5")));
+// console.log(parseInt("H5"));
+// console.log(typeof(NaN)); // Number
+// console.log(typeof(parseInt("5H")));
+
+// console.log( typeof parseInt( "E123" ) );
+// console.log(  parseInt( "E123" ) );
+// console.log( typeof NaN );
+// console.log( typeof parseInt( "123" ) );
+// console.log( Number( "123" ) ); // 123
+// console.log( typeof Number( "123" ) ); // number
+// console.log( Number( "Hi" ) ); // NaN
+
+// console.log( isNaN (parseInt( "123" )) );
+// console.log( isNaN (parseInt( "Hi" )) );
+// console.log( isNaN (NaN) ); // true
+
+// isNaN("A"); // true
+// isNaN(10); // false
+// parseInt("A"); // NaN
+// parseInt(10); // true
+// isNaN(NaN); // true
+
+// let ignoreNumbers = "Elz123er4o";
+// const strOnly = ignoreNumbers.split("").map((e) => isNaN(Number(e)) ? e : "").join(""); // * IMPORTANT TRICK Using NaN
+// console.log(strOnly);
+
 // Problem 3:
 // let ign = ignoreNumbers.split("").map(function (ele) {
-//   return isNaN(parseInt(ele)) ? ele: "";
+//   return isNaN((ele)) ? ele: "";
 // })
 // .join("");
 
@@ -2897,17 +2938,17 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(ign);
 
-// ? ---- Lesson 73 - Higher Order Functions - Filter ----
+// ? ---- Lesson 073 - Higher Order Functions - Filter ---- /** Important Interview Questions and widely used in many Porjects */
 
 /*
-  - Filter
-  --- method creates a new array
-  --- with all elements that pass the test implemented by the provided function.
+	- Filter
+	--- method creates a new array
+	--- with all elements that pass the test implemented by the provided function.
 
-  Syntax filter(callBackFunction(Element, Index, Array) { }, thisArg)
-  - Element => The Current element being processed in the array.
-  - Index => The index of the current element being processed in the array.
-  - Array => The Current Array
+	Syntax filter(callBackFunction(Element, Index, Array) { }, thisArg)
+	- Element => The Current element being processed in the array.
+	- Index => The index of the current element being processed in the array.
+	- Array => The Current Array
 */
 
 // Get Friends With Name Starts With A
@@ -2937,17 +2978,17 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(addMap);
 
-// let addFilter = numbers.filter(function(el) {
-//   return el + el;
+// let addFilter = numbers.filter(function(el, i) {
+//   return (el + el) === addMap[i];
 // });
 
 // console.log(addFilter);
 
-// ? ---- Lesson 74 - Higher Order Functions - Filter Pratice ----
+// ? ---- Lesson 074 - Higher Order Functions - Filter Pratice ----
 
 /*
-  Filter
-  - Filter Longest Word By Number
+	Filter
+	- Filter Longest Word By Number
 */
 
 // Filter Words More Than 4 Characters
@@ -2956,31 +2997,40 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // let smallWords = sentence
 //   .split(" ")
 //   .filter(function (ele) {
-//     return ele.length <= 4;
+//     // return ele.length <= 4;
+//     return ! (ele.length > 4);
 //   })
 //   .join(" ");
 
 // console.log(smallWords);
 
-// // Ignore Numbers
+// Ignore Numbers
 // let ignoreNumbers = "Elz123er4o";
 
 // let ign = ignoreNumbers
 //   .split("")
 //   .filter(function (ele) {
-//     return isNaN(parseInt(ele))? ele : "";
+//     return isNaN((ele));
 //   })
 //   .join("");
 
 // console.log(ign);
 
-// // Filter Strings + Multiply
+// Filter Strings + Multiply
 // let mix = "A13BS2ZX";
+
+// let multiNum = mix.split("").filter( (e) => {
+//   return !(isNaN(e)); // [1, 3, 2]
+// }).map( (e) => {
+//   return e * e;
+// }).join("");
+
+// console.log( multiNum );
 
 // let multiMix = mix
 //   .split("")
 //   .filter(function(ele){
-//   return (!isNaN(ele));
+//   return (!isNaN(ele)); // Number(ele) // parseInt(ele)
 //   })
 //   .map(function(ele){
 //   return ele*ele;
@@ -2989,43 +3039,43 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(multiMix);
 
-// ? ---- Lesson 75 - Higher Order Functions - Reduce ----
+// ? ---- Lesson 075 - Higher Order Functions - Reduce ---- /** Important Interview Questions */
 
 /*
-  - Reduce
-  --- method executes a reducer function on each element of the array,
-  --- resulting in a single output value.
+	- Reduce
+	--- method executes a reducer function on each element of the array,
+	--- resulting in a single output value.
 
-  Syntax
-  reduce(callBackFunc(Accumulator, Current Val, Current Index, Source Array) { }, initialValue)
-  - Accumulator => the accumulated value previously returned in the last invocation
-  - Current Val => The current element being processed in the array
-  - Index => The index of the current element being processed in the array.
-  ---------- Starts from index 0 if an initialValue is provided.
-  ---------- Otherwise, it starts from index 1.
-  - Array => The Current Array
+	Syntax
+	reduce(callBackFunc(Accumulator, Current Val, Current Index, Source Array) { }, initialValue)
+	- Accumulator => the accumulated value previously returned in the last invocation
+	- Current Val => The current element being processed in the array
+	- Index => The index of the current element being processed in the array.
+	---------- Starts from index 0 if an initialValue is provided.
+	---------- Otherwise, it starts from index 1.
+	- Array => The Current Array
 */
 
 // let nums = [10, 20, 15, 30];
 
 // let add = nums.reduce(function (acc, current, index, arr) {
-//   console.log(`Acc => ${acc}`);
-//   console.log(`Current Element => ${current}`);
-//   console.log(`Current Element Index => ${index}`);
-//   console.log(`Array => ${arr}`);
-//   console.log(acc + current);
-//   console.log(`#############`);
+//   // console.log(`Acc => ${acc}`);
+//   // console.log(`Current Element => ${current}`);
+//   // console.log(`Current Element Index => ${index}`);
+//   // console.log(`Array => ${arr}`);
+//   // console.log(acc + current);
+//   // console.log(`#############`);
 //   return acc + current;
-// }, 5);
+// }, /* Initial Value */ 5);
 
 // console.log(add);
 
-// ? ---- Lesson 76 - Higher Order Functions - Reduce Practice ----
+// ? ---- Lesson 076 - Higher Order Functions - Reduce Practice ----
 
 /*
-  Reduce
-  - Longest Word
-  - Remove Characters + Use Reduce
+	Reduce
+	- Longest Word
+	- Remove Characters + Use Reduce
 */
 
 // let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test", "Propaganda_Two"];
@@ -3044,30 +3094,33 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // let finalString = removeChars.filter(function(ele){
 //   return !ele.startsWith("@");
+//   // return !(ele == "@");
 // })
 // .reduce(function(acc, current){
-//   return acc + "" + current;
+//   // return acc + "" + current;
+//   return `${acc}${current}`;
 // });
 
 // console.log(finalString);
 
-// ? ---- Lesson 77 - Higher Order Functions - ForEach and Practice ----
+// ? ---- Lesson 077 - Higher Order Functions - ForEach and Practice ----
 
 /*
-  - forEach
-  --- method executes a provided function once for each array element.
+	- forEach
+	--- method executes a provided function once for each array element.
 
-  Syntax forEach(callBackFunction(Element, Index, Array) { }, thisArgs))
-  - Element => The Current element being processed in the array.
-  - Index => The index of the current element being processed in the array.
-  - Array => The current Array
+	Syntax forEach(callBackFunction(Element, Index, Array) { }, thisArgs))
+	- Element => The Current element being processed in the array.
+	- Index => The index of the current element being processed in the array.
+	- Array => The current Array
 
-  Note
-  - Doesn't Return Anything [Undefined]
-  - Break Will Not Break the Loop
+	Note
+	- Doesn't Return Anything [Undefined]
+	- Break Will Not Break the Loop
 */
 
 // let allLis = document.querySelectorAll("ul li");
+// // console.log(allLis);
 // let allDivs = document.querySelectorAll(".content div");
 
 // allLis.forEach(function(ele){
@@ -3078,48 +3131,101 @@ let myNums = [1, 2, 3, 4, 5, 6];
 //       });
 //       // Add Active Class To This Element
 //       this.classList.add("active");
-//       // Hide All Divs
-//       allDivs.forEach(function(ele){
-//         ele.style.display="none";
+//       allDivs.forEach(function(d){
+//         d.style.display = "none";
+//         d.classList.remove("active");
+//         if (d.classList[0] === ele.classList[0] && ele.classList[1] === "active") {
+//           d.classList.add("active");
+//           d.style.display = "block";
+//         }
 //       });
 //     };
 // });
 
-// ? ---- Lesson 78 - Higher Order Functions - Challenge ----
+
+/* ChatGPT
+
+// Get all list items and content divs
+const allLis = document.querySelectorAll("ul li"); // Array of elemnts
+const allDivs = document.querySelectorAll(".content div"); // Array of Elements
+
+// Add click event listener to each list item
+allLis.forEach((li) => {
+	li.addEventListener("click", () => {
+		// Remove the active class from all list items and hide all divs
+		allLis.forEach((li) => li.classList.remove("active"));
+		allDivs.forEach((div) => {
+			div.style.display = "none";
+			div.classList.remove("active");
+		});
+
+		// Add the active class to the clicked list item
+		li.classList.add("active");
+
+		// Show the corresponding div and add the active class
+		const correspondingDiv = document.querySelector(`.content .${li.classList[0]}`);
+		if (correspondingDiv) {
+			correspondingDiv.style.display = "block";
+			correspondingDiv.classList.add("active");
+		}
+	});
+});
+
+*/
+
+
+// ? ---- Lesson 078 - Higher Order Functions - Challenge ----
 
 /*
-  Higher Order Functions Challenges
+	Higher Order Functions Challenges
 
-  You Can Use
-  - ,
-  - _
-  - Space
-  - True => 1 => One Time Only In The Code
+	You Can Use
+	- ,
+	- _
+	- Space
+	- True => 1 => One Time Only In The Code
 
-  You Cannot Use
-  - Numbers
-  - Letters
+	You Cannot Use
+	- Numbers
+	- Letters
 
-  - You Must Use [Filter + Map + Reduce + Your Knowledge]
-  - Order Is Not Important
-  - All In One Chain
+	- You Must Use [Filter + Map + Reduce + Your Knowledge]
+	- Order Is Not Important
+	- All In One Chain
 
 */
 
 // let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
+// // My_Solution
+// let solution = myString.split("")
+//   .filter((e)=>!(e.startsWith(","))&&isNaN(e))
+//   .map((e,i,a)=>i===e.length-e.length||i===a.length-e.length? "":e)
+//   .reduce((acc,curr,i,a)=> (acc+curr).split("_").join(" "));
+
+// console.log(solution);
+
+// =============================================================================
+
 // let solution = myString.split(",").filter(function(e){
 //  // Return a string without any numbers
 //   return isNaN(e);
-// }).map(function(e){
+// })
+// .map(function(e){
 // // Return a string without first Character
-//   return e[e.length-e.length][e.length-e.length];
+//   return e === "_"? " ":e;
 // })
 // .reduce(function(a, c, i, arr){
-//   return (a+c).split("_").join(" ").substr(arr.length-arr.length, arr.length-true);
-// });
+//   return (a + c);
+// }).slice(true, -isNaN(myString));
 
 // console.log(solution); // Elzero Web School
+
+
+
+// =============================================================================
+
+
 
 // AnotherSolution
 
@@ -3134,13 +3240,13 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // console.log(solution); // Elzero Web School
 
-// ? ---- Lesson 079 - Object - Introduction ----
+// ? ---- Lesson 079 - Object - Introduction ---- /** Importnt Topic */
 
 /*
-  Object
-  - Intro And What Is Object?
-  - Testing Window Object
-  - Accessing Object
+	Object
+	- Intro And What Is Object?
+	- Testing Window Object
+	- Accessing Object
 */
 
 // let user = {
@@ -3160,43 +3266,43 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 080 - Object - Dot Notation vs Bracket Notation ----
 
 /*
-  Object
-  - Dig Deeper
-  - Dot Notation vs Bracket Notation
-  - Dynamic Property Name
+	Object
+	- Dig Deeper
+	- Dot Notation vs Bracket Notation
+	- Dynamic Property Name
 */
 
 // let myVar="country";
 
 // let user={
-//   theName: "Mustafa",
+//   theName: "Osama",
 //   country_of: "Egypt",
 //   "live in": "Berlin",
 //   100: "Number",
 //   country: "Egypt"
 // };
 
-// console.log(user.theName); // Using period notation
-// console.log(user["theName"]); // Using Bracket Notation
-// console.log(user.country_of); // Using period Notation
-// console.log(user["country_of"]); // Using bracket Notation
-// console.log(user["100"]); // Using bracket notation with integer with a double quotes or without it
-// console.log(user["live in"]); // You should using bracket with invalid name like string has a space
-// // console.log(user.myVar); // user.country Here you can't use "dot notation" for accessing an value from "dynamic property name" OUTPUT: undefined
-// console.log(user[myVar]); // user[country]="Egypt" using bracket notation
+// console.log(user.theName);
+// console.log(user["theName"]);
+// console.log(user.country_of);
+// console.log(user["country_of"]);
+// console.log(user["100"]);
+// console.log(user["live in"]);
+// console.log(user.myVar);
+// console.log(user[myVar]);
 
 // ? ---- Lesson 081 - Nested Object And Advanced Trainings ----
 
 /*
-  Object
-  - Nested Object And Trainings
+	Object
+	- Nested Object And Trainings
 */
 
-// let available = true;
+// let available = true; // Global Scrope
 
 // let user = {
-//   name: "Mustafa",
-//   age: 22,
+//   name: "Osama",
+//   age: 38,
 //   skills: ["HTML", "CSS", "JS"],
 //   available: false,
 //   addresses: {
@@ -3207,7 +3313,7 @@ let myNums = [1, 2, 3, 4, 5, 6];
 //     },
 //   },
 //   checkAv: function () {
-//     if (user.available === true) {
+//     if (available === true) {
 //       return `Free For Work`;
 //     } else {
 //       return `Not Free`;
@@ -3231,27 +3337,27 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 082 - Create Object With New Keyword ----
 
 /*
-  Object
-  - Create With New Keyword new Object();
+	Object
+	- Create With New Keyword new Object();
 */
 
 // let user={
 //   age:20
 // };
 
-// let user = new Object({age: 20}); // new keyword Using ObjectConstructor
+// let user = new Object({age:20}); // new keyword Using ObjectConstructor
 
 // console.log(user);
 
-// user.age=22;
+// user.age=38;
 // user["country"]="Egypt";
 
-// console.log(user);
 
 // user.sayHello=function(){
-//   return `Hello, Mustafa`;
+//   return `Hello`;
 // };
 
+// console.log(user);
 // console.log(user.age);
 // console.log(user["country"]);
 // console.log(user.sayHello());
@@ -3259,24 +3365,24 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 083 - This Keyword - Important ----
 
 /*
-  Function this Keyword
-  - this Introduction
-  - this inside Object method
-  --- when a function is called as a method of an object,
-  --- its this is set to the object the method is called on.
-  - Global Object
-  - Test Variables With window And This
-  - Global Context
-  - Function Context
+	Function this Keyword
+	- this Introduction
+	- this inside Object method
+	--- when a function is called as a method of an object,
+	--- its this is set to the object the method is called on.
+	- Global Object
+	- Test Variables With window And This
+	- Global Context
+	- Function Context
 
-  Search - Important
-  - Strict Mode
+	Search - Important
+	- Strict Mode
 */
 
 // console.log(this);
 // console.log(this === window); // true
 
-// myVar = 100;
+// var myVar = 100;
 // console.log(window.myVar); // 100
 // console.log(this.myVar); // 100
 
@@ -3307,8 +3413,8 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 084 - Create Object With Create Method ----
 
 /*
-  Object
-  - Create Object with Create Method
+	Object
+	- Create Object with Create Method (prototype)
 */
 
 // let user = {
@@ -3323,7 +3429,8 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // console.log(user.age);
 // console.log(user.doubleAge());
 
-// let obj = Object.create(user); // create an empty object
+// let obj = Object.create(user);
+// let obj = Object.create({}); // create an empty object
 
 // obj.a = 100;
 
@@ -3331,11 +3438,11 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // let copyObj = Object.create(user);
 
-// // copyObj.age = 20;
+// copyObj.age = 20;
 
-// // console.log(copyObj);
-// // console.log(copyObj.age); // 20
-// // console.log(copyObj.doubleAge()); // 80 because user use doubleAge that returns user.age not this.age * 2
+// console.log(copyObj);
+// console.log(copyObj.age); // 20
+// console.log(copyObj.doubleAge());
 
 // copyObj.age = 50;
 
@@ -3346,9 +3453,10 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 085 - Create Object With Assign Method ----
 
 /*
-  Object
-  - Create Object With assign Method
+	Object
+	- Create Object With assign Method
 */
+
 
 // let obj1 = {
 //   prop1: 1,
@@ -3371,8 +3479,8 @@ let myNums = [1, 2, 3, 4, 5, 6];
 
 // let finalObject = Object.assign(targetObject, obj1, obj2);
 
-// // finalObject.prop1 = 200;
-// // finalObject.prop4 = 4;
+// finalObject.prop1 = 200;
+// finalObject.prop4 = 4;
 
 // console.log(finalObject);
 
@@ -3394,19 +3502,19 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 086 - What Is Dom? And Select Elements ----
 
 /*
-  DOM
-  - What Is DOM?
-  - DOM Selectors
-  --- Find Element By ID
-  --- Find Element By Tag Name
-  --- Find Element By Class Name
-  --- Find Element By CSS Selectors
-  --- Find Element By Collection
-  ------ title
-  ------ body
-  ------ images
-  ------ forms
-  ------ links
+	DOM = Document Object Model
+	- What Is DOM?
+	- DOM Selectors
+	--- Find Element By ID
+	--- Find Element By Tag Name
+	--- Find Element By Class Name
+	--- Find Element By CSS Selectors
+	--- Find Element By Collection
+	------ title
+	------ body
+	------ images
+	------ forms
+	------ links
 */
 
 // let myIdElement = document.getElementById("my-div");
@@ -3444,17 +3552,17 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 087 - Get Set Elements Content And Attributes ----
 
 /*
-  Dom [Get / Set Elements Content And Attributes]
-  - innerHTML
-  - textContent
-  - Change Attributes Directly
-  - Change Attributes With Methods
-  --- getAttribute
-  --- setAttribute
+	Dom [Get / Set Elements Content And Attributes]
+	- innerHTML
+	- textContent
+	- Change Attributes Directly
+	- Change Attributes With Methods
+	--- getAttribute
+	--- setAttribute
 
 
-  *Search
-  - innerText
+	Search
+	- innerText
 */
 
 // let myElement = document.querySelector(".js"); // Select first element of class="js"
@@ -3482,16 +3590,16 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // console.log(myLink.getAttribute("href"));
 
 // myLink.setAttribute("href", "https://twitter.com");
-// myLink.setAttribute("title", "Twitter");
+// myLink.setAttribute("title", "Twitter"); // If the Attribute does NOT exist it will be ADDED to the element
 
 // ? ---- Lesson 088 - Check Attributes And Examples ----
 
 /*
-  DOM [Check Attributes]
-  - Element.attributes
-  - Element.hasAttribute
-  - Element.hasAttributes
-  - Element.removeAttribute
+	DOM [Check Attributes]
+	- Element.attributes
+	- Element.hasAttribute
+	- Element.hasAttributes
+	- Element.removeAttribute
 */
 
 // console.log(document.getElementsByTagName("p")[0].attributes);
@@ -3522,12 +3630,12 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 089 - Create And Append Elements ----
 
 /*
-  DOM [Create Element]
-  - createElement
-  - createComment
-  - createTextNode
-  - crateAttribute vs SetAttribute
-  - appendChild
+	DOM [Create Element]
+	- createElement
+	- createComment
+	- createTextNode
+	- crateAttribute vs SetAttribute
+	- appendChild
 */
 
 // let myElement = document.createElement("div");
@@ -3539,22 +3647,22 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // myElement.setAttributeNode(myAttr); // Create attribute node not exist and it will be empty
 // myElement.setAttribute("data-test", "Testing");
 
-// // Append Comment To Element
+// // // Append Comment To Element
 // myElement.appendChild(myComment);
 
-// // Append Text To Element
+// // // Append Text To Element
 // myElement.appendChild(myText);
 
-// // Append Element to Body
+// // // Append Element to Body
 // document.body.appendChild(myElement);
 
-// // console.log(myElement);
+// console.log(myElement);
 
 // ? ---- Lesson 090 - Product With Title And Description Practice ----
 
 /*
-  Dom [Create Elements]
-  - Practice Product With Heading And Paragraph
+	Dom [Create Elements]
+	- Practice Product With Heading And Paragraph
 */
 
 // for(let i=0;i<100;i++){
@@ -3582,22 +3690,48 @@ let myNums = [1, 2, 3, 4, 5, 6];
 //   document.body.appendChild(myDiv);
 // }
 
+/*
+	Create a Main div with class="product" has inside it h3 heading with [text] and paragraph with [text]
+	Create with 100 product in body
+*/
+
+// for(let i=0;i<100;++i) {
+//   const myProduct=document.createElement("div");
+//   const myHeading=document.createElement("h3");
+//   const myPara=document.createElement("p");
+//   const separatedLine=document.createElement("hr")
+//   const myHeadText=document.createTextNode(`Product ${i+1}`);
+//   const myParaText=document.createTextNode(`product description ${i+1}`);
+
+//   myProduct.className="product";
+
+//   myProduct.appendChild(myHeading);
+//   myProduct.appendChild(myPara);
+
+//   myHeading.appendChild(myHeadText);
+//   myPara.appendChild(myParaText);
+
+//   myProduct.appendChild(separatedLine);
+
+//   document.body.appendChild(myProduct)
+// }
+
 // ? ---- Lesson 091 - Deal With Children's ----
 
 /*
-  DOM [Deal With Childrens]
-  - children
-  - childNodes
-  - firstChild
-  - lastChild
-  - firstElementChild
-  - lastElementChild
+	DOM [Deal With Childrens]
+	- children
+	- childNodes
+	- firstChild
+	- lastChild
+	- firstElementChild
+	- lastElementChild
 */
 
 // let myElement = document.querySelector("div");
 
 // console.log(myElement);
-// console.log(myElement.children);
+// console.log(myElement.children); // Get the Eleemnt ONLY. NOT Comment or Text
 // console.log(myElement.children[0]);
 // console.log(myElement.childNodes);
 // console.log(myElement.childNodes[0]);
@@ -3611,21 +3745,21 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 092 - DOM Events ----
 
 /*
-  DOM [Events]
-  - Use Events On HTML
-  - Use Events On JS
-  --- onclick
-  --- oncontextmenu
-  --- onmouseenter
-  --- onmouseleave
+	DOM [Events]
+	- Use Events On HTML
+	- Use Events On JS
+	--- onclick
+	--- oncontextmenu
+	--- onmouseenter
+	--- onmouseleave
 
-  --- onload
-  --- onscroll
-  --- onresize
+	--- onload
+	--- onscroll
+	--- onresize
 
-  --- onfocus
-  --- onblur
-  --- onsubmit
+	--- onfocus
+	--- onblur
+	--- onsubmit
 */
 
 // let myBtn = document.getElementById("btn");
@@ -3657,30 +3791,30 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 093 - Validate Form And Prevent Default ----
 
 /*
-  DOM [Events]
-  - Validate Form Pratice
-  - Prevent Default
+	DOM [Events]
+	- Validate Form Pratice
+	- Prevent Default
 */
 
-// userInput = document.querySelector("[name=\"username\"");
-// AgeInput = document.querySelector("[name=\"age\"]");
+// const userInput = document.querySelector("[name='username'");
+// const ageInput = document.querySelector("[name='age']");
 
-// document.forms[0].onsubmit = function(e){
+// document.forms[0].onsubmit = function (e) {
 //   let userValid = false;
 //   let ageValid = false;
 
 //   // console.log(userInput.value);
 //   // console.log(userInput.value.length);
 
-//   if(userInput.value !== "" && userInput.value.length <= 10) {
+//   if (userInput.value !== "" && userInput.value.length <= 10) {
 //     userValid = true;
 //   }
 
-//   if(AgeInput.value !== "") {
+//   if (ageInput.value !== "") {
 //     ageValid = true;
 //   }
 
-//   if(userValid === false || ageValid===false){
+//   if (userValid === false || ageValid === false) {
 //     e.preventDefault();
 //   }
 // };
@@ -3693,10 +3827,10 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 094 - Event Simulation - Click Focus Blur ----
 
 /*
-  DOM [Event Simulation]
-  - click
-  - focus
-  - blur
+	DOM [Event Simulation]
+	- click
+	- focus
+	- blur
 */
 
 // let one = document.querySelector(".one");
@@ -3713,22 +3847,24 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 095 - Class List Object And Methods ----
 
 /*
-  DOM [Class List]
-  - classlist
-  --- length
-  --- contains
-  --- items(index)
-  --- add
-  --- remove
-  --- toggle (add, remove)
+	DOM [Class List]
+	- classlist
+	--- length
+	--- contains
+	--- items(index)
+	--- add
+	--- remove
+	--- toggle (add, remove)
 */
 
 // let element = document.getElementById("my-div");
 
 // console.log(element.classList);
 // console.log(typeof element.classList); // Object
-// console.log(element.classList.contains("mustafa")); // Not Found => False
+// console.log(element.classList.length);
+// console.log(element.classList.contains("unnamed")); // Not Found => False
 // console.log(element.classList.contains("show"));
+// console.log(element.classList.item(0)); // class: one
 // console.log(element.classList.item(3)); // class: test
 // console.log(element.classList.item(2)); // class: show
 
@@ -3748,17 +3884,17 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 096 - CSS Styling And Stylesheets ----
 
 /*
-  DOM [CSS]
-  - style
-  - cssText
-  - removeProperty(propertyName) [Inline, Stylesheet]
-  - setProperty(propertyName, Value, priority)
+	DOM [CSS]
+	- style
+	- cssText
+	- removeProperty(propertyName) [Inline, Stylesheet]
+	- setProperty(propertyName, Value, priority)
 */
 
 // let element = document.getElementById("my-div");
 
 // // An Inline CSS Styles And Property Using "CamalCase" Name Conversion
-// element.style.color = "dodgerBlue";
+// element.style.color = "red";
 // element.style.fontWeight = "bold";
 // // element.style.backgroundColor = "Tomato";
 
@@ -3775,12 +3911,12 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 097 - Before, After, Prepend, Append, Remove ----
 
 /*
-  DOM [Deal With Elements]
-  - before [Element || String]
-  - after [Element || String]
-  - append [Element || String]
-  - prepend [Element || String]
-  - remove
+	DOM [Deal With Elements]
+	- before [Element || String]
+	- after [Element || String]
+	- append [Element || String]
+	- prepend [Element || String]
+	- remove
 */
 
 // let element = document.getElementById("my-div");
@@ -3801,12 +3937,12 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 098 - DOM Traversing ----
 
 /*
-  DOM [Traversing]
-  - nextSibling
-  - previousSibling
-  - nextElementSibling
-  - previousElementSibling
-  - parentElement
+	DOM [Traversing]
+	- nextSibling
+	- previousSibling
+	- nextElementSibling
+	- previousElementSibling
+	- parentElement
 */
 
 // let span = document.querySelector(".two");
@@ -3825,8 +3961,8 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 099 - DOM Cloning ----
 
 /*
-  DOM [Cloning]
-  - CloneNode(Deep) - Deep if true takes the elements and text and its children. if Deep is false, it takes only the element with its attributes without any children or inner text or elements
+	DOM [Cloning]
+	- CloneNode(Deep) - Deep if true takes the elements and text and its children. if Deep is false, it takes only the element with its attributes without any children or inner text or elements
 */
 
 // let myP = document.querySelector("p").cloneNode(true);
@@ -3840,15 +3976,15 @@ let myNums = [1, 2, 3, 4, 5, 6];
 // ? ---- Lesson 100 - AddEventListener ---- * Very Important *
 
 /*
-  DOM [Add Event Listener]
-  - AddEventListener
-  - Use Without On
-  - Attach Multiple Events
-  - Error Test
+	DOM [Add Event Listener]
+	- AddEventListener
+	- Use Without On
+	- Attach Multiple Events
+	- Error Test
 
-  Search
-  - Capture & Bubbling JavaScript
-  - removeEventListener
+	Search
+	- Capture & Bubbling JavaScript
+	- removeEventListener
 */
 
 // let myP = document.querySelector("p");
