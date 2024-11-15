@@ -1,7 +1,6 @@
 /*
 	Topic: JavaScript Bootcamp 2021
 	Date: 20/6/2023
-	Author: Mustafa Shehata
 */
 
 /*
@@ -20,7 +19,7 @@
 //   document.querySelector("h1").style.color = "Blue"; // Single Line comment
 // };
 
-// Note: best practice to put your javaScript Code at the end of the body of HTML file
+// NOTE: Best practice to put your javaScript code at the end of the body of HTML file
 
 // ? ---- Lesson 006 - Comments And Bad Practices ----
 
@@ -72,14 +71,25 @@
 // x.style.backgroundColor = "black";
 // document.body.appendChild(x);
 
-// console.log("Hello From Js File"); // Logging The String In Console
+// console.log("Hello From Js File"); // Logging The String In Console - The most popular usage of console.log() is to logging and tracking your code
 
 // ? ---- Lesson 008 - Console Methods And Styling And WebAPI ----
 
 /*
+  console.log() = console.debug = console.info
+  console.warn()
+  console.error()
+  console.clear()
+  console.time()
+  console.group() - console.groupCollapsed()
+  console.table()
+  console.trace()
+*/
+
+/*
 	Console Methods
-	- log
-	- Error
+	- log (to record / logging a message in a console window in browser)
+	- error
 	- table
 
 	Web API
@@ -96,6 +106,7 @@
 // console.table(["Osama", "Ahmed", "Sayed"]); array in table format
 // console.table({ name: "Mustafa", email: "mustafa@gmail.com" }); object in table format
 
+// console.groupCollapsed("Groups");
 // console.group("group-1");
 // console.group("child-1");
 // console.log("child-1-1");
@@ -107,25 +118,28 @@
 // console.group("group-2");
 // console.log("group-2-e-1");
 // console.groupEnd();
-
-// /*
-//   Styling "Js File" red and font-size: 40px for first word "%cJs"
-//   and blue color and font 40px for "%cFile"
-// */
+// console.groupEnd();
+/*
+  Styling "Js File" red and font-size: 40px for first word "%cJs"
+  and blue color and font 40px for "%cFile"
+*/
 
 // const styles = "background-color:white;padding:10px;color:green";
 // console.log("%cHello, World!", styles);
 
+// console.groupCollapsed("Styling");
 // console.log(
 //   "Hello From %cJS %cFile",
 //   "color: red; font-size: 40px",
 //   "color: blue; font-size: 40px"
 // );
+// console.groupEnd();
 
 // ? ---- Lesson 009 - What is ECMAScript ----
 
 /*
 	ES6
+		- ECMA
 */
 
 // var myName = "Osama";
@@ -157,19 +171,19 @@
 	- Boolean (true or false)
 */
 
-// console.log('Osama Mohamed');
-// console.log("Osama Mohamed");
-// console.log(typeof "Osama Mohamed");
-// console.log(typeof("Osama Mohamed"));
-// console.log(typeof 5000); // number
-// console.log(typeof 5000.99); // number(Decimal)
-// console.log(typeof [10, 15, 17]); // Object => Array of Numbers
-// console.log(typeof ["Os", "Ah", "Sa"]); // Object => Array of Strings
-// console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // Object
-// console.log(typeof true); // boolean
-// console.log(typeof false); // boolean
-// console.log(typeof undefined); // undefined
-// console.log(typeof null); // object
+console.log('Osama Mohamed'); // string with single quotes
+console.log("Osama Mohamed"); // string with a double quotes
+console.log(typeof "Osama Mohamed"); // typeof without braces
+console.log(typeof("Osama Mohamed")); // typeof with braces
+console.log(typeof 5000); // number
+console.log(typeof 5000.99); // number(Decimal)
+console.log(typeof [10, 15, 17]); // Object => Array of Numbers
+console.log(typeof ["Os", "Ah", "Sa"]); // Object => Array of Strings
+console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // Object
+console.log(typeof true); // boolean
+console.log(typeof false); // boolean
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
 
 /*
 	* Searching Topics:
