@@ -1,11 +1,9 @@
-
-// First Method To Ignroe This Code
+// 1
 // console.log("Iam In Console");
 // document.write("Iam In Page");
 
-
-// Second Method To Ignore This Code
-/* 
+// 2
+/*
   console.log("Iam In Console");
   document.write("Iam In Page");
 */

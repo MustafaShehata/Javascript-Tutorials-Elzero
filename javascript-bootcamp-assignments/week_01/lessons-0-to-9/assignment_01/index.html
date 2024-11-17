@@ -1,39 +1,50 @@
-<!-- Assignment_01 -->
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Assignment-01</title>
-    <script>
-      // Code One
-      document.getElementById("el").style.color = "red";
-      /*
-        This Code doesn't work because It loads before the HTML element was created, and 
-        JavaScript code should not be executed before the HTML Element is loaded.
-      */
-    </script>
-    <script>
-      // Code Two
-      window.onload = function () {
-        document.getElementById("el").style.color = "blue"; // it will override on last Js Code in tail of body of HTMl element
-      };
-      /*
-        This Code works because window.onload allows the JavaScript code to work only after
-        the HTML Element is fully loaded.
-      */
-    </script>
-  </head>
-  <body>
-    <h1 id="el">Page Title</h1>
-    <script>
-      // Code Three
-      document.getElementById("el").style.color = "red";
-      /*
-        This Code works well because It loads after The Content of
-        Body executes and It is in the tail of body of html and all Content
-        Will be Loaded, and the script will be loaded after them.
-      */
-    </script>
-  </body>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-01</title>
+  <script>
+    // Code One
+    document.getElementById("el").style.color = "red";
+    /*
+      This Code doesn't work because It loads before the HTML element was created, and
+      JavaScript code should not be executed before the HTML Element is loaded.
+    */
+  </script>
+  <script>
+    // Code Two
+    window.onload = function () {
+      document.getElementById("el").style.color = "blue"; // it will override on last Js Code in tail of body of HTMl element
+    };
+    /*
+      This Code works because window.onload allows the JavaScript code to work only after
+      the HTML Element is fully loaded.
+    */
+  </script>
+
+</head>
+
+<body>
+
+  <h1 id="el">Page Title</h1>
+
+
+
+
+  <script>
+    // Code Three
+    document.getElementById("el").style.color = "red";
+    /*
+      This Code works well because It loads after The Content of
+      Body executes and It is in the tail of body of html and all Content
+      Will be Loaded, and the script will be loaded after them.
+    */
+  </script>
+
+</body>
+
 </html>
