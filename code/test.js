@@ -95,3 +95,79 @@
   console.table()
   console.trace()
 */
+
+
+// let a = 10;
+// let b = "20";
+// let c = 80;
+
+// console.log( ++a + +b++ + +c++ - +a++ );
+
+/*
+[++a]
+value: 11
+explain: preincrement
+[+]
+explain: addition operator
+[+]
+explain: Unary Operator
+[b++]
+value: 20
+explain: postincrement
+[+]
+explain: addition operator
+[+]
+explain: unary operator
+[c++]
+value: 80
+explain: postincrement
+[-]
+explain: subtraction operator
+[+]
+explain: unary operator
+[a++]
+value: 11
+explain: postincrement
+
+total: 11+20+80+11 = 20 + 80 = 100
+
+*/
+
+// console.log( ++a + -b + +c++ - -a++ + +a );
+/*
+
+*/
+
+
+// console.log( --c + +b + --a * +b++ - +b * a + --a - +true );
+
+
+
+// const a = 100;
+// const b = 200.5;
+// const c = 1e2;
+// const d = 2.4;
+
+
+// console.log(parseInt(Math.min(a, b, c, d)));
+
+
+// console.log(Math.pow(a, parseInt(d))); // 10000
+
+
+// console.log(Math.round(d));
+// console.log(Math.floor(d));
+// console.log(Math.trunc(d));
+// console.log(parseInt(d));
+
+// // b + d
+// console.log((Math.floor(b)/Math.ceil(d)).toFixed(2).toString()); // "66.67"
+// console.log(); // 67 => Number
+
+
+
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
