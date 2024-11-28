@@ -171,25 +171,44 @@
 	- Boolean (true or false)
 */
 
-console.log('Osama Mohamed'); // string with single quotes
-console.log("Osama Mohamed"); // string with a double quotes
-console.log(typeof "Osama Mohamed"); // typeof without braces
-console.log(typeof("Osama Mohamed")); // typeof with braces
-console.log(typeof 5000); // number
-console.log(typeof 5000.99); // number(Decimal)
-console.log(typeof [10, 15, 17]); // Object => Array of Numbers
-console.log(typeof ["Os", "Ah", "Sa"]); // Object => Array of Strings
-console.log(typeof {name: 'Osama', age: 17, country: "Eg"}); // Object
-console.log(typeof true); // boolean
-console.log(typeof false); // boolean
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+// console.log('Osama Mohamed'); // string with single quotes
+// console.log("Osama Mohamed"); // string with a double quotes
+// console.log(typeof "Osama Mohamed"); // typeof without braces -- Most Common
+// console.log(typeof("Osama Mohamed")); // typeof with braces
+// console.log(typeof 5000); // number
+// console.log(typeof 5000.99); // number(Decimal)
+// console.log(typeof [10, 15, 17]); // Object => Array of Numbers
+// console.log(typeof ["Os", "Ah", "Sa"]); // Object => Array of Strings
+// console.log(typeof {name: 'Osama', age: 17, country: 'Eg'}); // Object
+// console.log(typeof true); // boolean
+// console.log(typeof false); // boolean
+// console.log(typeof undefined); // undefined
+// console.log(typeof null); // object
+// console.log('NaN is type of "' + typeof NaN + '"'); // Number
+
 
 /*
 	* Searching Topics:
-	- Differences between Null and Undefined
-	- More Data Types: symbol and BigInt in JavaScript
+	- Differences between Null and Undefined [done]
+	- More Data Types: symbol and BigInt in JavaScript []
 */
+
+
+/* 												******	 quick notes   ******
+
+	* undefined: means a variable has been declared but has not yet been assigned a value.
+	* null: is an assignment value, meaning that a variable has been declared and given the value of "null".
+
+*/
+
+// let x;
+// console.log(x); // logs 'undefined'
+
+// let y = null;
+// console.log(y); // logs 'null'
+
+// console.log(typeof z); // z is undefined
+// console.log(typeof y); // y is null so it will be an Object
 
 // ? ---- Lesson 011 - Variables Introduction ----
 
@@ -215,19 +234,21 @@ console.log(typeof null); // object
 // var user = "Mustafa";
 
 /*
-	NOTE:
-	Declare A Variable First Then Use It
+	NOTE: Declare A Variable First Then Use It
 */
 
 // Normal way and correct: Declare variable and then use it
+
 // var user = "Muhammed";
 // console.log(user);
 
-// var user = "Sayed", age = 37;
+// var user = "Sayed",
+// 		age = 37;
 
 // console.log(user);
 // console.log(age);
 // console.log(hello); // A Global Id Called "hello" In HTML File
+// console.log(show);
 
 // hello.innerHTML = "Option"; // Edit Id in HTML File That id = "hello"
 
@@ -259,14 +280,14 @@ console.log(typeof null); // object
 	- firstname = lowercase
 */
 
-// var __userName__ = "MUstafa"; // Valid Identifier
+// var __userName__ = "Mustafa"; // Valid Identifier
 
 // var _us_1er_1 = "Sayed"; // Valid Identifiers
 // var $us$1er$1 = "Sayed"; // Valid Name
 // var $us$1er$1 = "Sayed"; // Valid Name
 // var user = "Osama"; // Identifier is Case Sensitive user - User - USER - uSer - usEr - is different
 // var User = "Muhammed"; // Identifier is Case Sensitive
-// var userName = "Sayed"; // camelCase is used in JS
+// var userName = "Sayed"; // camelCase is common used in JS
 
 // console.log(user); // javascript is case sensitive
 // console.log(User); // case sensitive => lowerCase and UpperCase is distinct
@@ -277,7 +298,7 @@ console.log(typeof null); // object
 /*
 	Var
 	- Redeclare (Yes)
-	- Access Before Declare (Undefined)
+	- Access Before Declare (undefined without error)
 	- Variable Scope Drama [Added To Window] () -- Search for it
 	- Block Or Function Scope
 
@@ -296,31 +317,31 @@ console.log(typeof null); // object
 
 // var a = 2;
 // var a = 2;
-// console.log(a); // doesn't get an Error
-
-/*
-var a = 1; // Declare and Initialization
-console.log(a); // 1
-var a = 2; // Redeclare and Assignment
-console.log(a); // 2
+// console.log(a); // We didn't get an Error
 
 
-let b = 1; // Declare and Initialization
-console.log(b); // 1
-// let a = 2; // Redeclare and Reinitialization - Error - Identifier 'a' has already been declared
+// -------
+// var a = 1; // Declare and Initialization
+// console.log(a); // 1
+// var a = 2; // Redeclare and Assignment
 // console.log(a); // 2
 
-
-const c = 1; // Declare and Initialization
-console.log(c); // 1
-// const a = 2; // Redeclare and Reinitialization - Identifier 'a' has already been declared
+// let b = 1; // Declare and Initialization
+// console.log(b); // 1
+// let b = 2; // Redeclare and Reinitialization - Error - Identifier 'a' has already been declared
 // console.log(a); // 2
-*/
+
+// const c = 1; // Declare and Initialization
+// console.log(c); // 1
+// const c = 2; // Redeclare and initialization again - Identifier 'a' has already been declared
+// console.log(a); // 2
+// -------
+
 
 // We can't declare the same name of a variable "Identifier"
 
 // Access Before Declare A Variable -- With Var Not Given An Error but it will be Undefined
-// console.log(a); // Undefined
+// console.log(a); // undefined
 // var a = 1;
 
 // Access Before Declare A Variable -- With Let Gives An Error
@@ -333,11 +354,11 @@ console.log(c); // 1
 
 // Variable Scope Drama
 
-// var aabb = 1; // It adds to Window Object
+// var aabb = 1; // It adds to Window Object when using var keyword
 
 // let aabb = 1; // It doesn't add To Window Object // Global Scope
 
-// Search For "javaScript Scope Drama" Important
+// Search For "javaScript/variable Scope Drama" Important
 
 // ? ---- Lesson 014 - String Syntax And Character Escape Sequence  ----
 
@@ -383,7 +404,7 @@ console.log(c); // 1
 // document.write(a + b);
 // document.write(a + c + b);
 // document.write(a + " " + b);
-// console.log(a, b); // seperate between a and b by a space
+// console.log(a, b); // Comma will separate between a and b by space
 
 // ? ---- Lesson 016 - Template Literals Template Strings  ----
 
@@ -436,7 +457,7 @@ console.log(c); // 1
 // == Variables And Concatenation Challenge ==
 // ===========================================
 
-// [1] Create 3 Variables [Title, Desctiption, Date]
+// [1] Create 3 Variables [Title, Description, Date]
 // -- All In One Statement
 // -- Variable Name Must Be Two Words
 // -- Title Content Is "Elzero"
@@ -453,7 +474,7 @@ console.log(c); // 1
 // - Use ES6 Repeat
 
 // camelCasing
-// let articleTitle = "Elzero", articleDesc = "Elzero Web School", articleDate="25/10";
+// let articleTitle = "Elzero", articleDesc = "Elzero Web School", articleDate = "25/10";
 
 // let article = `
 //   <div class="card">
@@ -491,6 +512,41 @@ console.log(c); // 1
 
 // // Write the markup to the document four times using repeat method
 // document.write(markUp.repeat(4));
+
+
+
+
+// ------------------------------
+// NOTE: My Solution in more creative way using javascript only with Styling CSS
+
+// SOL START HERE
+
+// const titleContent = "Elzero", descriptionContent = "Elzero Web School", DateContent = "25/10";
+
+// const card = `
+//   <div>
+//     <h3>Hello, ${titleContent}</h3>
+//     <p>${descriptionContent}</p>
+//     <span>${DateContent}</span>
+//   </div>
+// `;
+
+// document.write(card.repeat(4));
+
+// const myDiv = document.querySelectorAll("div");
+
+// const colors = ["red", "green", "blue", "yellow"];
+
+// for(let i=0; i<4; ++i){
+//   myDiv[i].setAttribute("class", `card-${i+1}`);
+//   let randomIndex = Math.floor(Math.random()*colors.length);
+//   myDiv[i].setAttribute("style", `background-color:${colors[randomIndex]}`);
+//   colors.splice(randomIndex, 1);
+// }
+
+// END OF MY SOLUTION
+// ------------------------------
+
 
 /*
 	Searching Topics:
@@ -576,7 +632,11 @@ console.log(c); // 1
 // console.log(-false); // -0
 // console.log(-true); // -1
 
-// console.log(Number("100")); // Convert a String into a number
+// console.log(Number("100")); // Convert a String into a number using Number() constructor
+
+/* Topics to search for
+	hexadecimal vs decimal in javascript
+*/
 
 // ? ---- Lesson 020 - Type Coercion ----
 
@@ -588,29 +648,29 @@ console.log(c); // 1
 	- false - true
 */
 
-/* let a = "10";
-let b = 20;
-let c = true;
+// let a = "10";
+// let b = 20;
+// let c = true;
 
-console.log(a + b); // 1020 - Concatenation
-console.log(+a + b); // 10 + 20 = 30 - Addition As Numbers
-console.log(Number(a) + b); // 30 = Convert a by using Constructor Number() To Convert It Into a Number
-console.log(a - b); // -10 => a Is A String And The Interpreter Convert It Into A Number
-console.log(b - a); // 10 => as same as above
-console.log("" - 2); // -2
-console.log(0 - 2); // -2
-console.log(+""); // 0
-console.log(false - true); // -1
-console.log(0 - 1); // -1
-console.log(+false - +true); // -1
-console.log(b + c); // 21
-console.log(a + b + c); // 10 + 20 + true => string => 1020true
-console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
+// console.log(a + b); // 1020 - Concatenation
+// console.log(+a + b); // 10 + 20 = 30 - Addition As Numbers
+// console.log(Number(a) + b); // 30 = Convert a by using Constructor Number() To Convert It Into a Number
+// console.log(a - b); // -10 => a Is A String And The Interpreter Convert It Into A Number
+// console.log(b - a); // 10 => as same as above
+// console.log("" - 2); // -2
+// console.log(0 - 2); // -2
+// console.log(+""); // 0
+// console.log(false - true); // -1
+// console.log(0 - 1); // -1
+// console.log(+false - +true); // -1
+// console.log(b + c); // 21
+// console.log(a + b + c); // 10 + 20 + true => string => 1020true
+// console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31
 
 // ? ---- Lesson 021 - Assignment Operators ----
 
 /*
-	Assignment Operators && Augmanted Assignment Operator
+	Assignment Operators
 */
 
 //  let a = 10;
@@ -837,8 +897,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(10 * 10 * 10 * 10 * 10 * 10);
 // console.log(1000000.000000);
 // console.log(1000000.0);
+// console.log(1000000.2);
 
-// console.log(Number("100"));
+// console.log(Number("100")); // Convert String to a number
+// console.log(Number(true)); // Convert boolean to a number
 // console.log(typeof Number); // Function
 // console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
 // console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
@@ -872,22 +934,26 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(Number("100"));
 // console.log(+"Osama 100"); // NaN
 // console.log(Number("Osama 100")); // NaN
-// console.log(parseInt("100 Osama")); // 100 as a Number - "parseInt" is the best choice to convert string to a number
+// console.log(parseInt("100 Osama")); // 100 as a Number
 // console.log(parseInt("Osama 100")); // NaN
 // console.log(parseInt("Osama 100 Osama")); // NaN
 
 // console.log(parseFloat("100 Osama")); // 100
 // console.log(parseFloat("100.500 Osama")); // 100.5
-// console.log(parseInt("100.500 Osama")); // 100 without rounding off the Number as 1.5 => 1 not 2
+// console.log(parseInt("100.500 Osama")); // 100
 // console.log(parseInt("1.5")); // 1 not 2
 
-// console.log(Number.isInteger("100")); // false ? Is he will convert string to a number then check isInteger() or Not? An: he will check only if he an integer or not
+// console.log(Number.isInteger("100")); // false
 // console.log(Number.isInteger(100.500)); // false
 // console.log(Number.isInteger(100)); // true
 
 // console.log(Number.isNaN("Osama")); // false
 // console.log(Number.isNaN(1)); // false
-// console.log(Number.isNaN("Osama"/20)); // true
+// console.log(Number.isNaN("Osama" / 20)); // true
+
+/*
+	isNaN() - Searching for it.
+*/
 
 // ? ---- Lesson 025 - Math Object ----
 
@@ -915,29 +981,30 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(Math.floor(-99.2)); // -100
 // console.log(Math.floor(-99.9)); // -100
 // console.log(Math.floor(99.9)); // 99
+// console.log(Math.floor(99.1)); // 99
 
-// console.log(Math.min(10, 20, 100, -100, 90)); // -100 - minimum value
-// console.log(Math.max(10, 20, 100, -100, 90)); // 100 - mazimum value
+// console.log(Math.min(10, 20, 100, -100, 90)); // -100
+// console.log(Math.max(10, 20, 100, -100, 90)); // 100
 
-// // Math.pow(base, powerOFbase)
+// Math.pow(base, powerOFbase)
 // console.log(Math.pow(2, 4)); // 16
 
 /*
 	Math.random():
 	This function returns a floating-point number between 0 and 1 (exclusive),
 	which means it generates a random decimal value greater than or equal to 0
-	and less than 1. 0 >= num < 1
+	and less than 1. (0>=num< 1)
 */
 
 /*
 	Math.random() * 10: Multiplying the random number generated by 10
 	gives us a random decimal value between 0 and 10 (exclusive).
 	This means the result can be any decimal number greater than or equal to 0
-	and less than 10. 0>= num < 10 exclusive for all decimal numbers
+	and less than 10. (0>=num<10) exclusive for all decimal numbers
 */
 
 /*
-	0 >= num < 9 for only Integer numbers
+	(0>=num<9) for only Integer numbers
 */
 
 /*
@@ -956,8 +1023,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 // truncate = cutting
 // console.log(Math.trunc(99.5)); // 99
-
-// * Note: search for "floor and trunc" -- your Task "24-6-2023"
+// console.log(Math.trunc(-99.7)); // -99
+// console.log(Math.trunc(-99.1)); // -99
 
 // ? ---- Lesson 026 - Number Challenge ----
 
@@ -978,7 +1045,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // // Use Variables a + d One Time To Get The Needed Output
 // console.log(a ** Math.trunc(d)); // 100^2 = 10000
 // console.log(Math.pow(a, Math.trunc(d))); // 100^2 = 10000
-// console.log(Math.pow(a, Math.round(d))); // 100^6 = 10000
+// console.log(Math.pow(a, Math.round(d))); // 100^2 = 10000
 
 // // Get Integer "2" From d Variable With 4 Methods
 // console.log(Math.round(d));
@@ -987,7 +1054,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(parseInt(d));
 
 // // Use Variables b + d To Get This Value
-// console.log((Math.floor(b) / Math.ceil(d)).toFixed(2).toString()); // 66.67 => String
+// console.log((Math.floor(b) / Math.ceil(d)).toFixed(2).toString()); // "66.67" => String
 // console.log(Math.round(b) / Math.ceil(d)); // 67 => Number
 
 // ? ---- Lesson 27 - String Methods Part 1 ----
@@ -1006,7 +1073,7 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // let theName = "Ahmed";
 // let theList = [1, 2, 3, 4, 5]; // Array
 
-// // * Search for difference between Index[] and CharAt()
+// * Search for difference between Index[] and CharAt()
 // console.log(theName); // Ahmed
 // console.log(theName[1]); // h
 // console.log(theName[5]); // undefined
@@ -1022,20 +1089,26 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 // let theName2 = "  Ahmed  ";
 
-// console.log(theName2[1]);
+// console.log(theName2[1]); // space
 // console.log(theName2[5]); // e
 
 // console.log(theName2.length); // 9
 
+// console.log(theName2);
 // console.log(theName2.trim()); // Remove the leading and trailing white spaces "Ahmed"
+// console.log(theName2.length);
 
-// // Task Trim() theName2 Without White Spaces and Convert alphabet "m" to CAPITAL "M"
+// Task Trim() theName2 Without White Spaces and Convert alphabet "m" to CAPITAL "M"
 
 // console.log(theName2.trim()[2].toUpperCase()); // M
 // console.log(theName2.trim().toUpperCase()[2]); // M
 // console.log(theName2.trim().charAt(2).toUpperCase()); // M
 
-// console.log(theName2.replace("m", "M").trim()); // ahMed -- review it
+// * The Output of next two logs "AhMed"
+// const trimmedAhmedSpace = theName2.trim();
+
+// console.log(trimmedAhmedSpace.slice(0, 2) + trimmedAhmedSpace[2].toUpperCase() + trimmedAhmedSpace.substring(3,));
+// console.log(theName2.replace("m", "M").trim());
 
 // ? ---- Lesson 028 - String Methods Part 2 ----
 
@@ -1045,27 +1118,36 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 	- lastIndexOf(value [Mand], Start [Opt] Length)
 	- slice(Start [Mand], End [Opt] Not Include End)
 	- repeat(Times) [ES6]
-	- split(Separator [Opt], Limit [Opt])
+	- split(Separator [Opt], Limit:number [Opt])
 */
 
 // let a = "Elzero Web School";
+// const aLength = a.length;
+// console.log(aLength); // 17
 
-// // while you don't specify the index the should start search from it will search
-// // from index "zero"
+// while you don't specify the index the should start search from it will search from index 0
 // console.log(a.indexOf("Web")); // 7
-// console.log(a.indexOf("Web", 8)); // -1 (Not Found)
+// console.log(a.indexOf("Web", 8)); // returns -1 (Not Found)
 
 // console.log(a.lastIndexOf("Web")); // 7
 
-// console.log(a.lastIndexOf("o")); // 15
-// console.log(a.indexOf("o")); // 5
+// console.log(a[7]); // "W" access by String.[indexOfString]
+
+// console.log(a.lastIndexOf("o")); // 15 last scho"o"l
+// console.log(a.lastIndexOf("o", aLength)) // 15 last scho"o"l
+// console.log(a.lastIndexOf("o", 14)) // 14 middle sch"o"ol
+// console.log(a.lastIndexOf("o", 7)); // 5 first "o" start from "W"
+// console.log(a.indexOf("o")); // 5 first "o"
 
 // console.log(a.slice(0)); // "Elzero Web School" - (Start = 0, end not specified so it will be the end)
-// console.log(a.slice(11)); // Take (Start, to the last element if you don't write it) // "School"
+// console.log(a.slice(11)); // Take (Start(s), End(at the end[Not Specified])) // "School"
 // console.log(a.slice(2, 7)); // Take (Start, End But It Is Not Included) // "zero "
 // console.log(a.slice(2, 8)); // "zero w"
 // console.log(a.slice(2, 6)); // "zero"
+// console.log(a.slice(6, 11)); // " web "
 
+// console.log(a.slice(-2)); // "ol"
+// console.log(a.slice(-5)); // "chool"
 // console.log(a.slice(-6)); // "School"
 // console.log(a.slice(-1)); // "l"
 // console.log(a.slice(-5, -3)); // "ch" [Not included the end]
@@ -1077,10 +1159,10 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(a.split("")); // ["E", "l", "z", "e", "r", "o", " ", "W", "e", "b", " ", "S", "c", "h", "o", "o", "l"]
 // console.log(a.split(" ")); // ["Elzero", "Web", "School"]
 // console.log(a.split(" ", 2)); // ["Elzero", "Web"]
+// console.log(a.split(a.charAt(6), 1)); // ["Elzero"]
 // console.log(a.split("", 6)); // ["E", "l", "z", "e", "r", "o"]
 
 // let b = "Elzero|Web|School";
-
 // console.log(b.split("|")); // ["Elzero", "Web", "School"]
 
 // ? ---- Lesson 029 - String Methods Part 3 ----
@@ -1099,13 +1181,14 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 	- endsWith(Value [Mand], length [Opt] Default Full Length) [ES6]
 */
 
-// let a = "Elzero Web School"; // length = 17 starts from 1
+// let a = "Elzero Web School"; // length = 17
 
-// console.log(a.length);
+// console.log(a.length); // 17
 
 // console.log(a.substring(2)); // Starts form index 0 so 2 - a.length (17)
 // console.log(a.substring(2, 6)); // zero
-// console.log(a.substring(6, 2)); // same as 2 - 6 (Swaping)
+// console.log(a.substring(6, 2)); // same as 2 - 6 (swapped)
+// console.log(a.substring(-1, 6)); // 0 - 6 (not included the end)
 // console.log(a.substring(-10, 6)); // Any number less than 0 will start from 0 such as -10 or -1
 // console.log(a.substring(17)); // out of scope (string) will return empty string
 // console.log(a.substring(a.length)); // 17
@@ -1125,12 +1208,14 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 // console.log(a.startsWith("E")); // true
 // console.log(a.startsWith("E", 2)); // false
+// console.log(a.startsWith("Z", 2)); // false - Z not z (case sensitive)
+// console.log(a.startsWith("z", 2)); // true - z === z
 // console.log(a.startsWith("zero", 2)); // true
 
 // console.log(a.endsWith("o", 6)); // true - Elzer"o"
 // console.log(a.endsWith("o")); // false - "a" ends with 'l'
 // console.log(a.endsWith("ro", 6)); // true - Elze"ro"
-// console.log(a.endsWith("l")); // true - "a" ends with l without specifing the length of the string
+// console.log(a.endsWith("l")); // true - "a" ends with l without specifying the length of the string
 
 // ? ---- Lesson 030 - String Challenge ----
 
@@ -1158,8 +1243,8 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // // Solution Must Be Dynamic And String May Change
 // console.log(
 //   a.charAt(0).toLowerCase() +
-//     a.substring(1, a.length - 1).toUpperCase() +
-//     a.charAt(a.length - 1).toLowerCase()
+// 	a.substring(1, a.length - 1).toUpperCase() +
+// 	a.charAt(a.length - 1).toLowerCase()
 // ); // eLZERO WEB SCHOOl
 
 // console.log(
@@ -1194,18 +1279,18 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 // console.log(-100 == "-100"); // true - Compare Value Only
 // console.log(10 != "10"); // false - Compare Value Only
 
-// TODO: === Most Used In JS (Recommended)
+// NOTE: === Most Used In JS (Recommended)
 // console.log(10 === "10"); // false - Compare Value + Type
 // console.log(10 !== "10"); // true - Compare Value + Type
 // console.log(10 !== 10); // false - Compare Value + Type
 
 // console.log(10 > 20); // true
 // console.log(10 > 10); // false
-// console.log(10 >= 10); // true
+// console.log(10 >= 10); // true - 10 greater than or equal to 10
 
 // console.log(10 < 20); // true
 // console.log(10 < 10); // false
-// console.log(10 <= 10); // true - Two Condition Must Be True
+// console.log(10 <= 10); // true - 10 less than or equal to 10
 
 // console.log("Osama" === "Ahmed"); // false - Not the Same Value but the same Type
 // console.log("Osama" == "Ahmed"); // false
@@ -1224,18 +1309,20 @@ console.log(+a + b + c); // +"10" + 20 + true = 10 + 20 + 1 = 31 */
 
 // console.log(true); // true
 // console.log(!true); // false
+// console.log(false); // false
+// console.log(!false); // true
 
 // console.log(!false); // false
 
-// console.log(!(10 == "10")); // Guess the answer
+// console.log(!(10 == "10")); // Guess the answer - compare type only !(true) = not(true) = false
 
-// console.log(10 == "10" && 10 > 8); // true && true
+// console.log(10 == "10" && 10 > 8); // true && true = true
 
 // console.log(10 == "10" && 10 > 8 && 10 >= 10); // true && true && true = true
 
-// console.log(10 == "10" && 10 > 8 && 10 > 50); // true && true && false = false
+// console.log(10 == "10" && 10 > 8 && 10 > 50); // true && true && [false] = false
 
-// console.log(10 == "10" || 10 > 80 || 10 > 50); // (true || true || false) = true - Any Condition can be true will be true
+// console.log(10 == "10" || 10 > 80 || 10 > 50); // (true || false || false) = true - Any Condition can be true will be true
 
 // ? ---- Lesson 033 - If Conditions ----
 
