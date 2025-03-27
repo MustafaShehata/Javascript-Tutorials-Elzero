@@ -186,13 +186,11 @@
 // console.log(typeof null); // object
 // console.log('NaN is type of "' + typeof NaN + '"'); // Number
 
-
 /*
   * Searching Topics:
   - Differences between Null and Undefined [done]
   - More Data Types: symbol and BigInt in JavaScript []
 */
-
 
 /* 												******	 quick notes   ******
 
@@ -319,7 +317,6 @@
 // var a = 2;
 // console.log(a); // We didn't get an Error
 
-
 // -------
 // var a = 1; // Declare and Initialization
 // console.log(a); // 1
@@ -336,7 +333,6 @@
 // const c = 2; // Redeclare and initialization again - Identifier 'a' has already been declared
 // console.log(a); // 2
 // -------
-
 
 // We can't declare the same name of a variable "Identifier"
 
@@ -513,9 +509,6 @@
 // // Write the markup to the document four times using repeat method
 // document.write(markUp.repeat(4));
 
-
-
-
 // ------------------------------
 // NOTE: My Solution in more creative way using javascript only with Styling CSS
 
@@ -546,7 +539,6 @@
 
 // END OF MY SOLUTION
 // ------------------------------
-
 
 /*
   Searching Topics:
@@ -1463,16 +1455,18 @@
 // let price6 = undefined;
 // console.log(`The Price Is ${price6 || 200}`); // 200
 
-// console.log(Boolean(100));
-// console.log(Boolean(-100));
-// console.log(Boolean(0));
-// console.log(Boolean(""));
-// console.log(Boolean(null));
+// * Using Boolean(value) Constructor returns true or false
+
+// console.log(Boolean(100)); // true
+// console.log(Boolean(-100)); // true
+// console.log(Boolean(0)); // false
+// console.log(Boolean("")); // false
+// console.log(Boolean(null)); // false
 
 /*
  * falsy values => 0, "", false, NaN - nullish coalescing operator ?? will return the first truthy value
- * null and undefined will return after nullish coalescing operator ??
-*/
+ * null and undefined will return after nullish coalescing operator ?? like (undefined or null) ?? value => value
+ */
 
 // Nullish Coalescing Operator
 // let price = null;
@@ -1509,7 +1503,6 @@
 
 // console.log(cash);
 
-
 // ? ---- Lesson 037 - If Condition Challenge ----
 
 /*
@@ -1528,9 +1521,9 @@
 //   console.log("Unknown");
 // }
 
-// // Write With Ternary If Syntax
+// Write With Ternary conditional operator If Syntax
 
-// // MySolution
+// MySolution
 // a < 10
 //   ? console.log(10)
 //   : a >= 10 && a <= 40
@@ -1539,10 +1532,10 @@
 //   ? console.log("> 40")
 //   : console.log("Unknown");
 
-// let st = "Elzero Web School";
+// const st = "Elzero Web School";
 // console.log(st.length); // 17
 
-// if ( st.repeat(2).length.toFixed() === "34" ) {
+// if (st.repeat(2).length.toFixed() === "34") {
 //   console.log("Good");
 // }
 
@@ -1552,7 +1545,8 @@
 //   console.log("Good");
 // }
 
-// // // W Position May Change - Dynamic Position
+// W Position May Change - Dynamic Position
+
 // if (st.charAt(st.lastIndexOf("W")).toLowerCase() === "w") {
 //   console.log("Good");
 // }
@@ -1562,11 +1556,11 @@
 // console.log(st[st.lastIndexOf("W")]); // W
 // console.log(st[st.lastIndexOf("W")].toLowerCase()); // w
 
-// if (st.charAt(st.indexOf("W")).toLowerCase() === "w") {
+// if (st.charAt(st.indexOf("W")).toLowerCase() === "w") { // true
 //   console.log("Good");
 // }
 
-// if ( typeof(st.length) !== "string") {
+// if (typeof(st.length) !== "string") {
 //   console.log("Good");
 // }
 
@@ -1584,7 +1578,7 @@
 
 // CodePen.io
 
-// ? ---- Lesson 038 - Switch Statemnent ----
+// ? ---- Lesson 038 - Switch Statement ----
 
 /*
   Switch Statement
@@ -1603,7 +1597,7 @@
   - ===
 */
 
-// Note: Try to Search for differneces between
+// Note: Try to Search for differences between
 // If Condition Statement and Switch Statement
 
 // let day = 7;
@@ -1616,8 +1610,6 @@
 //     console.log("Sunday");
 //     break;
 //   case 2:
-//     console.log("Monday");
-//     break;
 //   case 3:
 //     console.log("Tuesday");
 //     break;
@@ -1629,7 +1621,7 @@
   You can put Default in Any Place in Switch-case But Should write break after block of code
 */
 
-// day = 6;
+// day = 3;
 
 // switch (day) {
 //   default:
@@ -1642,10 +1634,8 @@
 //     console.log("Sunday");
 //     break;
 //   case 2:
-//     console.log("Monday");
-//     break;
 //   case 3:
-//     console.log("Tuesday");
+//     console.log("Monday");
 //     break;
 // }
 
@@ -1780,7 +1770,7 @@
 // myFriends[3] = ["Sameh", "Ameer"];
 // console.log(myFriends);
 
-// console.log(typeof myFriends); // Object - The Correct Name Is - Array
+// console.log(typeof myFriends); // object - The Correct Name Is - Array
 
 // console.log(Array.isArray(myFriends)); // true
 
@@ -1794,14 +1784,15 @@
   - Length
 */
 
-// Index Starts From 0 [ 0, 1, 2, 3, 4 ]
+// Index Starts From 0 [ 0, 1, 2, 3, 4, 5]
 
 // let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa", "Osama"];
 
-// console.log(myFriends.length);
+// console.log(myFriends.length); // 5
 
 // myFriends[6] = "Gamal";
 // console.log(myFriends);
+
 // console.log(myFriends.length); // 7
 
 // myFriends[myFriends.length] = "Gamal";
@@ -1829,15 +1820,15 @@
 */
 
 // let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
-
+// console.log(myFriends.length);
 // console.log(myFriends);
 
-// myFriends.unshift("Osama", "Nabil");
-
+// const unshiftedLength = myFriends.unshift("Osama", "Nabil"); // unshift return the length of new array after adding Items
+// console.log(unshiftedLength); // 6 (NEW INFO)
 // console.log(myFriends);
 
-// myFriends.push("Samah", "Eman");
-
+// const pushedLength = myFriends.push("Samah", "Eman");
+// console.log(pushedLength); // push is same as unshift returns the length of the new array after adding to the end of array
 // console.log(myFriends);
 
 // let first = myFriends.shift();
@@ -1897,7 +1888,7 @@
 
 // console.log(elements);
 // console.log(elements.sort());
-// // console.log(elements.sort(/*compareFn*/))
+// console.log(elements.sort(/*compareFn*/))
 // console.log(elements.reverse());
 // console.log(elements.sort().reverse()); // Chaining methods
 
@@ -2002,6 +1993,18 @@
 */
 
 // let zero = 0;
+// let counter = 3;
+// const my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// console.log(my.slice(zero, ++counter).reverse());
+
+// console.log(my.slice(++zero, --counter).reverse()); // ["Elham", "Mazero"]
+
+// console.log(my[++zero].slice(false, my[zero].length-counter).concat(my[--zero].slice(++zero))); // "Elzero"
+
+// console.log(my[--zero].charAt(++counter)+my[zero].charAt(--my[zero].length).toUpperCase()); // rO
+
+// let zero = 0;
 // let cnt = 3;
 
 // let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
@@ -2039,7 +2042,17 @@
 */
 
 // let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 5, "Ali", "Amira"];
+// console.log(myFriends);
 // let onlyNames = [];
+
+// for (let i = 0; i < myFriends.length; i++) {
+//   if (isNaN(myFriends[i])) {
+//     // onlyNames.unshift(myFriends[i]);
+//     onlyNames.push(myFriends[i]);
+//   }
+// }
+
+// console.log(onlyNames);
 
 // if (typeof myFriends[0] === "string") {
 //   onlyNames.push(myFriends[0]);
@@ -2109,7 +2122,7 @@
   - Label - Not so common but should you use if you need
 */
 
-// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+// let products = ["Keyboard", "Mouse", 10, 20, "Pen", "Pad", 30, 40, "Monitor"];
 // let colors = ["Red", "Green", "Black"];
 // mainLoop: for (let i = 0; i < products.length; i++) {
 //   // if (typeof products[i] === "number") {
@@ -2122,6 +2135,14 @@
 //     }
 //     console.log(`- ${colors[j]}`);
 //   }
+// }
+
+// My Test Sol
+// for (let i = 0; i < products.length; i++) {
+//   if (!isNaN(products[i])) {
+//     continue; // skip numbers only
+//   }
+//   console.log(products[i]);
 // }
 
 // ? ---- Lesson 052 - Loop - For Advanced Example ----
@@ -2137,7 +2158,7 @@
 //   console.log(products[i]);
 //   // i += 2;
 //   i++;
-//   if (i === products.length) break;
+//   if (i >== products.length) break;
 // }
 
 // ? ---- Lesson 053 - Practice - Add Products To Page ----
@@ -2512,9 +2533,7 @@
 //   console.log(`Hello ${name}, Your Age Is ${age}, You ${availableOrNot}`);
 // }
 
-
 // ---- MySolution 3 ----
-
 
 // function showDetails(a, b, c) {
 //   const name = typeof a === "string" ? a : typeof b === "string" ? b : c;
@@ -2525,8 +2544,6 @@
 
 //   console.log(`Hello ${name}, Your Age Is ${age}, ${availabilityMessage}`);
 // }
-
-
 
 // showDetails("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 // showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
@@ -2660,7 +2677,6 @@
 //   return 10;
 // };
 
-
 // let print = () => 10;
 // let print = _ => 10;
 
@@ -2668,12 +2684,10 @@
 //   return num;
 // };
 
-
 // let print = (num) => num;
 // let print = num => num; // In Case One Parameter You Can Remove braces
 
 // console.log(print(100));
-
 
 // let print = function(num1, num2) {
 //   return num1 + num2;
@@ -2821,7 +2835,6 @@
 // [1] One Statement In Function
 // [2] Convert To Arrow Function
 // [3] Print The Output [Arguments May Change]
-
 
 // ======== Sol 24/5/2024 ========
 
@@ -2994,7 +3007,6 @@
 // });
 
 // console.log(inv);
-
 
 // ================== My-Sol - 5/26/2024 ==================
 // console.log(typeof(5));
@@ -3244,7 +3256,6 @@
 //     };
 // });
 
-
 /* ChatGPT
 
 // Get all list items and content divs
@@ -3274,7 +3285,6 @@ allLis.forEach((li) => {
 });
 
 */
-
 
 // ? ---- Lesson 078 - Higher Order Functions - Challenge ----
 
@@ -3323,11 +3333,7 @@ allLis.forEach((li) => {
 
 // console.log(solution); // Elzero Web School
 
-
-
 // =============================================================================
-
-
 
 // AnotherSolution
 
@@ -3454,7 +3460,6 @@ allLis.forEach((li) => {
 // user.age=38;
 // user["country"]="Egypt";
 
-
 // user.sayHello=function(){
 //   return `Hello`;
 // };
@@ -3558,7 +3563,6 @@ allLis.forEach((li) => {
   Object
   - Create Object With assign Method
 */
-
 
 // let obj1 = {
 //   prop1: 1,

@@ -7,7 +7,6 @@
 // Single Line Comment
 // Single Line Comment
 
-
 /* Single Line Comment */
 
 /*
@@ -35,7 +34,6 @@
 
 // document.write("<h1>Hello <span>Page</span></h1>");
 // document.createElement("");
-
 
 // console.log("Hello from JS file!");
 
@@ -84,7 +82,6 @@
 
 // console.timeEnd();
 
-
 /*
   console.log() = console.debug = console.info
   console.warn()
@@ -95,7 +92,6 @@
   console.table()
   console.trace()
 */
-
 
 // let a = 10;
 // let b = "20";
@@ -138,22 +134,16 @@ total: 11+20+80+11 = 20 + 80 = 100
 
 */
 
-
 // console.log( --c + +b + --a * +b++ - +b * a + --a - +true );
-
-
 
 // const a = 100;
 // const b = 200.5;
 // const c = 1e2;
 // const d = 2.4;
 
-
 // console.log(parseInt(Math.min(a, b, c, d)));
 
-
 // console.log(Math.pow(a, parseInt(d))); // 10000
-
 
 // console.log(Math.round(d));
 // console.log(Math.floor(d));
@@ -164,10 +154,126 @@ total: 11+20+80+11 = 20 + 80 = 100
 // console.log((Math.floor(b)/Math.ceil(d)).toFixed(2).toString()); // "66.67"
 // console.log(); // 67 => Number
 
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
+// console.log("Hi!");
+
+// left ?? right
+
+// Nullish Coalescing Operator returns left side except (null or undefined)
+
+// const gameConfig = {
+//   startingCoins: 0
+// };
+
+// const character = {
+//   coins: gameConfig.startingCoins ?? 1000
+// };
+
+// console.info(character);
+
+// ========================================================================================
+
+// console.log("Hello World!");
+
+// function printHeadline(headline) {
+//   const headerOne=document.createElement("h1");
+//   headerOne.textContent=headline;
+//   document.body.appendChild(headerOne);
+// }
+
+// printHeadline("New H1 created with JavaScript");
+
+// ========================================================================================
+
+// Set the given checkbox (#my-checkbox) checked.
+
+// function checkMe() {
+//   const myCheckbox=document.getElementById("my-checkbox");
+//   myCheckbox.checked = true;
+//   console.log(myCheckbox);
+// }
+
+// checkMe();
+
+// ========================================================================================
+
+// function easyLoop() {
+//   let string = "";
+//   for(let i=0; i<=99; ++i) {
+//     string+=i%7===0?i:"";
+//   }
+//   return string;
+// }
+
+// console.log(easyLoop());
+
+// ========================================================================================
+
+// Amazon Coding Interview Question - firstNonRepeatingCharacter
+
+// ex1.   aaabcccdeeef
+// Here's the NonRepeatingCharacter are b , d , f
+// but we need the first one so it will be  "b"
+// Implement all the cases from One character to 10000
+
+// const s = "aaabcccdeeef";
+
+// const inp = "aaabcccdeeef";
+
+// const nonRepeatingCharacters = [];
+// const repeatingCharacters = [];
+
+// // if(inp.length === 1){
+// //   nonRepeatingCharacters.push(inp[0]);
+// // }
 
 
-// console.log("Hi!");
-// console.log("Hi!");
-// console.log("Hi!");
-// console.log("Hi!");
-// console.log("Hi!");
+// for(let i = 0; i < inp.length; i++){
+//   for(let j = 0; j < inp.length; j++){
+//     let isDup = false;
+//     if(inp[i] === inp[j] && i !== j){
+//       repeatingCharacters.push(inp[j]);
+//       isDup = true
+//       break;
+//     }if(!isDup){
+
+//       nonRepeatingCharacters.push(inp[i]);
+//     }
+//   }
+
+// }
+
+// const firstNonRepeatingCharacter = nonRepeatingCharacters[0];
+
+
+// console.log(repeatingCharacters);
+// console.log(nonRepeatingCharacters);
+// console.log(firstNonRepeatingCharacter);
+
+// const s = "aebcbdefa";
+
+
+// const firstNonRepeatingCharacter = (s) => {
+//   for (let i=0; i<s.length; i++) {
+//     let seenDuplicate = false;
+//     for (let j=0; j<s.length; j++) {
+//       if (s.charAt(i) === s.charAt(j) && (i !== j)) {
+//         seenDuplicate = true;
+//         break;
+//       }
+//     }
+//     if (!seenDuplicate) return s.charAt(i);
+//   }
+//   return "_";
+// };
+
+// const s = "cdchgdhe";
+
+// console.log(firstNonRepeatingCharacter(s));
+
+// ========================================================================================
+
+
